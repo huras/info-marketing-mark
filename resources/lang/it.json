@@ -1,0 +1,13 @@
+{
+    "first name" : "nome",
+    "last name" : "cognome",
+    "phone" : "telefono",
+    "Type your first name here" : "Digita il tuo nome qui",
+    "Type your last name here" : "Scrivi qui il tuo cognome",
+    "Type your email here" : "Scrivi qui la tua email",
+    "Type your phone number here" : "Digita il tuo numero di telefono qui",
+    "About" : "Chi siamo",
+    "Blog" : "Blog",
+    "Contact" : "Contatto",
+    "Maritime training and orientation" : "Formazione ed orientamento marittimo"
+}
