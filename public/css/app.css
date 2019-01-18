@@ -10502,8 +10502,8 @@ h1 {
 }
 
 .home-main-slider .item {
-  height: 800px;
-  width: 1220px;
+  height: 610px;
+  width: 100%;
   background-position: center;
   background-size: 100%;
   transition: background-size 1.5s ease;
@@ -10677,14 +10677,14 @@ body {
   height: 650px;
   background-position: center;
   background-position-y: 45px;
-  padding-top: 225px;
-  padding-left: calc(100% - 650px - 50px);
+  padding-top: 180px;
+  padding-left: calc(100% - 650px - -30px);
 }
 
 .who {
-  max-width: 650px;
+  max-width: 540px;
   background-color: rgba(0, 0, 0, 0.685);
-  padding: 16px;
+  padding: 40px;
   border-radius: 8px;
 }
 
@@ -10756,7 +10756,149 @@ body {
   color: lightgray;
 }
 
+.mosaics-area {
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+.mosaics .mosaic.top {
+  height: 420px;
+  padding: 15px 15px;
+}
+
+.mosaics .mosaic.top .title {
+  color: white;
+  font-size: 37px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: Lato, sans-serif;
+  padding: 5px 10px;
+  text-shadow: -3px 3px black;
+  text-transform: uppercase;
+}
+
+.mosaics .mosaic.top .call {
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+  padding: 5px 10px;
+  padding-bottom: 15px;
+  text-shadow: -2px 2px black;
+}
+
+.mosaics .mosaic.bottom {
+  height: 320px;
+  padding: 10px 10px;
+}
+
+.mosaics .mosaic.bottom .title {
+  color: white;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: Lato, sans-serif;
+  padding: 5px 10px;
+  text-shadow: -3px 3px black;
+}
+
+.mosaics .mosaic.bottom .call {
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+  padding: 5px 10px;
+  padding-bottom: 15px;
+  text-shadow: -2px 2px black;
+}
+
+.mosaics .mosaic .cover {
+  background-image: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  transition: 1.5s all ease;
+  -webkit-transform: perspective(500px) translate3d(0px, 0, 0px);
+          transform: perspective(500px) translate3d(0px, 0, 0px);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.mosaics .mosaic:hover .cover {
+  -webkit-transform: perspective(500px) translate3d(0px, 0, 25px);
+          transform: perspective(500px) translate3d(0px, 0, 25px);
+  transition: 0.5s all ease;
+}
+
+.learn-circles {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 96px;
+  margin-bottom: 32px;
+}
+
+.learn-circles h1 {
+  padding-bottom: 64px;
+}
+
+.circle-separator {
+  height: 64px;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+}
+
+.circle.big .imagem {
+  height: 255px;
+}
+
+.circle.small .imagem {
+  height: 335px;
+}
+
+.circle .imagem {
+  width: 100%;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  border: 5px #bebebe solid;
+}
+
+.circle .caption {
+  text-align: center;
+  color: #eeeeee;
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.main-slider .slick-dots {
+  bottom: -25px;
+}
+
+.main-slider .slick-dots li button {
+  background-color: #616161;
+  border: 0;
+  border-radius: 50%;
+}
+
+.main-slider .slick-dots li button:before {
+  display: none;
+}
+
+.main-slider .slick-dots li:hover button {
+  background-color: #4e5472;
+}
+
+.main-slider .slick-dots li.slick-active button {
+  background-color: #d8d8d8;
+}
+
 .infomarketing-header {
+  transition: padding 0.5s ease;
   padding: 16px 0px;
   background-color: #010311;
   position: relative;
@@ -10798,8 +10940,8 @@ body {
 .infomarketing-header .options a {
   color: white;
   font-size: 18px;
-  margin: 6px 18px;
-  transition: all 0.5s ease;
+  margin: 0px 8px;
+  transition: all 1.5s ease;
   font-family: Montserrat;
   text-transform: uppercase;
   font-weight: 700;
@@ -10807,8 +10949,9 @@ body {
 
 .infomarketing-header .options a:hover {
   transition: all 0.5s ease;
-  font-size: 24px;
-  margin: 0px 12px;
+  font-size: 19px;
+  margin: 0px 2px;
+  color: #99ffff;
 }
 
 .sticky {
@@ -10816,6 +10959,8 @@ body {
   top: 0;
   width: 100%;
   z-index: 13;
+  padding: 2px 0px;
+  transition: padding 1s ease;
 }
 
 .sticky + .enchendo-linguica {
@@ -10832,6 +10977,7 @@ body {
   text-align: center;
   padding: 24px 0px;
   padding-bottom: 16px;
+  margin-top: 8px;
 }
 
 .container-blog {

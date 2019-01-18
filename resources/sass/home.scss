@@ -18,8 +18,8 @@
     // margin-top: 16px;
 
     .item{
-        height: 800px;
-        width: 1220px;
+        height: 610px;
+        width: 100%;
         background-position: center;
         background-size: 100%;
         transition: background-size 1.5s ease;
@@ -201,16 +201,15 @@ body{
         height: 650px;
         background-position: center;
         background-position-y: 45px;
-        // margin-bottom: 32px;
-        padding-top: 225px;
-        padding-left: calc(100% - 650px - 50px);
+        padding-top: 180px;
+        padding-left: calc(100% - 650px - -30px);
     }
 }
 
 .who{
-    max-width: 650px;
+    max-width: 540px;
     background-color: rgba(0, 0, 0, 0.685);
-    padding: 16px;
+    padding: 40px;
     border-radius: 8px;
 
     .title{
@@ -262,9 +261,167 @@ body{
         }
 
         input[type=submit]{
+            
+        }
+    }
+}
 
+.mosaics-area{
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.mosaics{
+    .mosaic{
+        &.top{
+            height: 420px;
+            padding: 15px 15px;        
+            
+            .title{
+                color: white;
+                font-size: 37px;
+                line-height: 1;
+                font-weight: bold;
+                font-family: Lato, sans-serif;
+                padding: 5px 10px;
+                text-shadow: -3px 3px black;
+                text-transform: uppercase;
+            }
+    
+            .call{
+                color: white;
+                font-size: 20px;
+                line-height: 1;
+                padding: 5px 10px;
+                padding-bottom: 15px;
+                text-shadow: -2px 2px black;
+            }
+        }
+    
+        &.bottom{
+            height: 320px;
+            padding: 10px 10px;
+
+            .title{
+                color: white;
+                font-size: 24px;                
+                line-height: 1;
+                font-weight: bold;
+                font-family: Lato, sans-serif;
+                padding: 5px 10px;
+                text-shadow: -3px 3px black;
+            }
+    
+            .call{
+                color: white;
+                font-size: 20px;
+                line-height: 1;
+                padding: 5px 10px;
+                padding-bottom: 15px;
+                text-shadow: -2px 2px black;
+            }
+        }
+
+        .cover{
+            background-image: center;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            transition: 1.5s all ease;
+            transform: perspective(500px) translate3d(0px, 0, 0px);
+            background-repeat: no-repeat;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        &:hover{
+            .cover{
+                transform: perspective(500px) translate3d(0px, 0, 25px);
+                transition: 0.5s all ease;
+            }
         }
     }
 }
 
 // ========================
+
+.learn-circles{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 96px;
+    margin-bottom: 32px;
+
+    h1{
+        padding-bottom: 64px;
+    }
+}
+.circle-separator{
+    height: 64px;
+}
+.circle{
+
+    &.big{
+        .imagem{
+            height: 255px;
+        }
+    }
+
+    &.small{
+        
+        .imagem{
+            height: 335px;
+        }
+    }
+
+    .imagem{
+        width: 100%;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        border: 5px rgb(190, 190, 190) solid;
+    }
+
+    display: flex;
+    flex-direction: column; 
+
+    .caption{
+        text-align: center;
+        color: rgb(238, 238, 238);
+        font-size: 18px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+.main-slider{
+    .slick-dots{        
+        bottom: -25px;
+
+        li{
+            button{
+                background-color: rgb(97, 97, 97);
+                border: 0;
+                border-radius: 50%;
+
+                &:before{
+                    display: none;
+                }
+            }
+
+            &:hover{
+                button{
+                    background-color: rgb(78, 84, 114);
+                }
+            }
+
+            &.slick-active{
+                button{
+                    background-color: rgb(216, 216, 216);
+                }
+            }
+        }
+    }
+}
