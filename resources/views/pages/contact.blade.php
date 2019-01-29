@@ -4,42 +4,51 @@
     @include('partials/home-header')
         <div class='container'>
             <div class='row contact-form'>
-                <div class='col-md-6'>
-                    <h1> {{__('Contact')}} </h1>
-                    <form method='POST' action=''>
-                        <div class='form-group'>
-                            <label> Nome </label>
-                            <input type='text' name='name'>
+                    <h1 style='text-align: center;'> {{__('Contact')}} </h1>
+                    <form method='POST' action='/contact' class='w-100' style='display: flex; flex-wrap: wrap;'>
+                        {{ csrf_field() }}
+
+                        <div class='col-md-6'>
+                            <div class='form-group'>
+                                <label> Nome </label>
+                                <input type='text' name='name'>
+                            </div>
                         </div>
 
-                        <div class='form-group'>
-                            <label> E-mail </label>
-                            <input type='text' name='email'>
+                        <div class='col-md-6'>
+                            <div class='form-group'>
+                                <label> E-mail </label>
+                                <input type='text' name='email'>
+                            </div>
                         </div>
 
-                        <div class='form-group'>
-                            <label> Telefone </label>
-                            <input type='text' name='phone'>
+                        <div class='col-md-6'>
+                            <div class='form-group'>
+                                <label> Telefone </label>
+                                <input type='text' name='phone'>
+                            </div>
                         </div>
 
-                        <div class='form-group'>
-                            <label> Assunto </label>
-                            <input type='text' name='assunto'>
+                        <div class='col-md-6'>
+                            <div class='form-group'>
+                                <label> Assunto </label>
+                                <input type='text' name='topic'>
+                            </div>
                         </div>
 
-                        <div class='form-group'>
-                            <label> Mensagem </label>
-                            <textarea name='message'></textarea>
+                        <div class='col-md-12'>
+                            <div class='form-group'>
+                                <label> Mensagem </label>
+                                <textarea rows='7' name='message'></textarea>
+                            </div>
                         </div>
 
-                        <div class='form-group'>
-                            <input type='submit' value='enviar'>
+                        <div class='col-md-6'>
+                            <div class='form-group'>
+                                <input type='submit' value='enviar'>
+                            </div>
                         </div>
                     </form>
-                </div>
-                <div class='col-md-6'>
-                    <h1> {{__('Fale Conosco')}} </h1>
-
                 </div>
             </div>
         </div>

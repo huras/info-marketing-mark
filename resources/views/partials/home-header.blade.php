@@ -15,6 +15,7 @@
                     @endforeach
                 @endif
                 <a href='/blog' class='nlink'> {{ __('Blog') }} </a>
+                <a href='/login' class='nlink'> {{ __('Login') }} </a>
                 <a href='/contact' class='nlink'> {{ __('Contact') }} </a>
             </div>
         </div>

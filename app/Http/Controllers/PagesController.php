@@ -18,7 +18,7 @@ class PagesController extends Controller
     }
 
     public function blog(){
-        $posts = BlogPost::orderBy('created_at', 'desc')->get();
+        $posts = BlogPost::orderBy('created_at', 'desc')->where('status', 1)->paginate(5);
         $meses_abreviados = ['Not a month','Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
 
         return view('blog/index', compact('posts','meses_abreviados'));

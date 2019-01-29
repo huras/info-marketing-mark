@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\BlogPost;
 
-class PostType extends Model
+class CoverTypes extends Model
 {
     protected $table = 'post_cover_types';
     public $timestamps = true;
