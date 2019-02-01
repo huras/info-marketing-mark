@@ -10659,9 +10659,10 @@ body {
 .paralax.n1 {
   height: 800px;
   background-position: center;
-  background-position-y: -375px;
+  background-position-y: -275px;
   padding-top: 160px;
   padding-left: 80px;
+  background-size: cover;
 }
 
 @media (max-width: 414px) {
