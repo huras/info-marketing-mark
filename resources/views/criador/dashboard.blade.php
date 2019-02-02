@@ -25,6 +25,7 @@
 
     <div class='container dashboard'>
         <div class='row'>
+            <a href='/' > <h2 style='color: rgb(45,45,160); margin-top: 32px;'> <i class="fas fa-home"></i> Home  </h2> </a>
             <h1 style='color: black;'> Dashboard </h1>
         </div>
         <div class='row'>
