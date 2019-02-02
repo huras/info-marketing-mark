@@ -25,36 +25,19 @@
     <div class='container'>
         <div class='row'>
             <div class='col-md-12'>
-                <h1> Videos </h1>
+                <iframe width="100%" height="580"  src="https://www.youtube.com/embed/89JsUScrOec?autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen> </iframe>
             </div>
         </div>
-    </div>
-
-    <div class='container'>
-        <div class='row'>
-            <div class='col-md-12'>
-                <h1> Blog e Form </h1>
-            </div>
-        </div>
-    </div>
-
-    <div class='container'>
-        <div class='row'>
-            <div class='col-md-12'>
-                <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
-                <script type="IN/FollowCompany" data-id="1337" data-counter="top"></script>
-            </div>
-        </div>
-    </div>
+    </div> 
 
     <div class='container'>
         <div class='row video-contact'>
             <div class='col-md-12'>
-                <h1> Faça seu curriculo </h1>
+                <h1> Create your curriculum </h1>
             </div>
-            <div class='col-md-8'>
+            <div class='col-md-8'>            
                 <iframe width="100%" height="420"
-                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                src="https://www.youtube.com/embed/q5tPsoSwrq4">
                 </iframe>
             </div>
             <div class='col-md-4 mini-contact-form'>
