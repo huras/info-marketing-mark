@@ -63,7 +63,7 @@
                     </div>
 
                     <div class='form-group'>
-                        <input type='submit' value='Cadastrar' class='cadastrar'>
+                        <input type='submit' value='Subscribe' class='cadastrar'>
                     </div>
                 </form>
             </div>
