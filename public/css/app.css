@@ -11305,6 +11305,10 @@ body {
   align-items: center;
 }
 
+.criador-breadcrumb a i {
+  color: #39ce9c;
+}
+
 .criador-breadcrumb i {
   color: black;
   font-size: 24px;
