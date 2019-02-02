@@ -4,6 +4,7 @@
     <div class='container'>
         <div class='row criador-breadcrumb'>
             <h1 style='color: black;'> 
+                <a href='/'> <i class="fas fa-home"></i> </a> <i class="fas fa-caret-right"></i>
                 <a href='/admin/dashboard'> Dashboard </a> <i class="fas fa-caret-right"></i>
                 <a href='/admin/blog'> Blog </a> <i class="fas fa-caret-right"></i>
                 <span> New Blog Post </span>
