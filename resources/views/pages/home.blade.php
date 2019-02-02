@@ -35,12 +35,12 @@
             <div class='col-md-12'>
                 <h1> Create your curriculum </h1>
             </div>
-            <div class='col-md-8'>            
-                <iframe width="100%" height="420"
+            <div class='col-md-7 col-sm-12'>            
+                <iframe width="100%" height="400"
                 src="https://www.youtube.com/embed/q5tPsoSwrq4">
                 </iframe>
             </div>
-            <div class='col-md-4 mini-contact-form'>
+            <div class='col-md-5 col-sm-12 mini-contact-form'>
                 <form action='/contact/new' method='POST'>
                     <div class='form-group'>
                         <label> {{ __('first name') }} </label>
@@ -69,9 +69,7 @@
             </div>
         </div>
     </div>
-
     
-    @include('partials/homePartials/novidades')
 
     <div class='paralax n2' style="background-image: url('img/site/marco-ship.jpg');">
         <div class='who'>
