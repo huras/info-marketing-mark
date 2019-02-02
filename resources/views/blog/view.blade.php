@@ -22,7 +22,7 @@
                                 @break
                             @endswitch
                         </div>
-                        <div class='date'> Postado em : {{$post->created_at}} Atualizado pela ultima vez em : {{$post->updated_at}} </div>
+                        <div class='date'> Posted at : {{$post->created_at}} Last updated at : {{$post->updated_at}} </div>
                         <div class='title'> {{$post->title}} </div>
                         <div class='call'> {{$post->call}} </div>
                         <div class='line-separator'>  </div>

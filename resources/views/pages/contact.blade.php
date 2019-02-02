@@ -8,7 +8,7 @@
                     <form method='POST' action='/contact' class='w-100' style='display: flex; flex-wrap: wrap;'>
                         {{ csrf_field() }}
 
-                        <div class='col-md-6'>
+                        <div class='col-md-12'>
                             <div class='form-group'>
                                 <label> Name </label>
                                 <input type='text' name='name'>
@@ -32,7 +32,11 @@
                         <div class='col-md-6'>
                             <div class='form-group'>
                                 <label> Topic </label>
-                                <input type='text' name='topic'>
+                                <select name='topic'>
+                                    @foreach($topics as $topic)
+                                        <option value='{{$topic}}'> {{$topic}} </option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
 
@@ -43,9 +47,9 @@
                             </div>
                         </div>
 
-                        <div class='col-md-6'>
-                            <div class='form-group'>
-                                <input type='submit' value='enviar'>
+                        <div class='col-md-12'>
+                            <div class='form-group' style='width:100%; display:flex; justify-content:center; align-items: center;'>
+                                <input type='submit' style='width:50%;' value='Submit'>
                             </div>
                         </div>
                     </form>

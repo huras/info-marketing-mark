@@ -25,7 +25,8 @@ class PagesController extends Controller
     }
 
     public function contact(){
-        return view('pages/contact');
+        $topics = ['Sugestion' ,'Other'];
+        return view('pages/contact', compact('topics'));
     }
 
     public function about(){

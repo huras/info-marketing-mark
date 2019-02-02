@@ -320,12 +320,14 @@ body{
         flex-direction: column;
 
         label{
+            margin-top: 8px;
             color: white;
+            font-size: 18px;
         }
 
-        input[type=text]{
+        input[type=text], select{
             height: 40px;
-            padding-left: 15px;
+            padding-left: 16px;
             color: black;
 
             ::placeholder{
@@ -334,13 +336,26 @@ body{
         }
 
         textarea{
-            ::placeholder{
-                color: lightgray;
-            }
+            padding-left: 16px;
+            padding-top: 8px;
         }
 
         input[type=submit]{
-            
+            margin-top: 24px;
+            margin-bottom: 32px;
+            cursor: pointer;
+            border: 0;
+            background-color: #2c2c73;
+            color: white;
+            border-radius: 8px;
+            padding: 8px 0px;
+            transition: background-color 1s ease;
+            font-size: 18px;
+
+            &:hover{
+                transition: background-color 0.5s ease;
+                background-color: #4a4aa7;
+            }
         }
     }
 }
