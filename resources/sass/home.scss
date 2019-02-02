@@ -144,12 +144,55 @@
             // border-radius: 50%;
             // border: 3px solid white;
             padding: 8px;
+
+            &.fa-instagram{
+                color: #d378fd;
+            }
+            &.fa-facebook{
+                color: #787afd;
+            }
+            &.fa-youtube{
+                color: #ff8b8b;
+            }
+        }
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        
+        .contact-info{
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+
+            i{
+                font-size: 42px;
+                color: white;
+                
+                &.fa-whatsapp{
+                    color: #76d871;
+                }
+                &.fa-envelope{
+                    color: #71c9d8;
+                }
+            }
+
+            .value{
+                margin-left: 16px;
+                color: white;
+                font-size: 18px;
+            }
         }
     }
 
     .infos{
         justify-content: center;
         align-content: center;
+        display: flex;
+        flex-direction: column;
 
         .titulo{
             color: white;
@@ -167,6 +210,29 @@
 
 body{
     height: 100%;
+}
+
+.who{
+    max-width: 540px;
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 40px;
+    border-radius: 8px;
+
+    .title{
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-family: Arial;
+    }
+    .conteudo{
+        padding-top: 16px;
+        color: white;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 1.3;
+    }
 }
 
 .paralax {
@@ -194,10 +260,21 @@ body{
         background-size: cover;
 
         @media(max-width: 414px){
-            background-position-y: -135px;
-            height: 460px;
-            padding-top: 20px;
-            padding-left: 20px;
+            height: 760px;
+            width: 100%;
+            padding-top: 310px;
+            padding-left: 5px;
+            background-size: cover;
+            background-position: center;
+
+            .who{
+                max-width: 98%;
+                padding: 20px;
+
+                .title{
+                    font-size: 16px;
+                }
+            }
         }
     }
 
@@ -207,31 +284,29 @@ body{
         background-position-y: 45px;
         padding-top: 180px;
         padding-left: calc(100% - 650px - -30px);
+
+        @media(max-width: 414px){
+            height: 760px;
+            width: 100%;
+            padding-top: 20px;
+            padding-left: 5px;
+            background-size: cover;
+            background-position-x: -287px;
+            background-position-y: 165px;
+
+            .who{
+                max-width: 98%;
+                padding: 20px;
+
+                .title{
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }
 
-.who{
-    max-width: 540px;
-    background-color: rgba(0, 0, 0, 0.685);
-    padding: 40px;
-    border-radius: 8px;
 
-    .title{
-        color: white;
-        font-size: 28px;
-        font-weight: bold;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        font-family: Arial;
-    }
-    .conteudo{
-        padding-top: 16px;
-        color: white;
-        font-size: 20px;
-        font-family: 'Times New Roman', Times, serif;
-        line-height: 1.3;
-    }
-}
 
 // Contact Page ===========
 
@@ -327,7 +402,7 @@ body{
         }
 
         .cover{
-            background-image: center;
+            background-position: center;
             background-size: cover;
             height: 100%;
             width: 100%;
