@@ -11589,6 +11589,30 @@ body {
   color: white;
 }
 
+.about-us {
+  background-color: #0e0d13;
+}
+
+.about-us .texts {
+  margin: 32px 0px;
+}
+
+.about-us .cover {
+  margin-top: 8px;
+  background-position: 0% 47%;
+  height: 580px;
+  background-size: cover;
+}
+
+.about-us .text-content {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  padding: 0px 64px;
+  line-height: 28px;
+  overflow-wrap: break-word;
+  color: white;
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
