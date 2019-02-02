@@ -10,7 +10,7 @@
 
                         <div class='col-md-6'>
                             <div class='form-group'>
-                                <label> Nome </label>
+                                <label> Name </label>
                                 <input type='text' name='name'>
                             </div>
                         </div>
@@ -24,21 +24,21 @@
 
                         <div class='col-md-6'>
                             <div class='form-group'>
-                                <label> Telefone </label>
+                                <label> Phone </label>
                                 <input type='text' name='phone'>
                             </div>
                         </div>
 
                         <div class='col-md-6'>
                             <div class='form-group'>
-                                <label> Assunto </label>
+                                <label> Topic </label>
                                 <input type='text' name='topic'>
                             </div>
                         </div>
 
                         <div class='col-md-12'>
                             <div class='form-group'>
-                                <label> Mensagem </label>
+                                <label> Message </label>
                                 <textarea rows='7' name='message'></textarea>
                             </div>
                         </div>
