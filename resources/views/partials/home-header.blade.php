@@ -8,15 +8,18 @@
                 </div>
             </div>
             <div class='col-md-7 options'>
-                <a href='/about' class='nlink'> {{ __('About') }} </a>
+                <a href='/' class='nlink' target='_blank'> Home </a>
+                <a href='/about' class='nlink'> {{ __('About Us') }} </a>
+                <a href='/contact' class='nlink'> {{ __('Contact') }} </a>
+                <a href='/services' class='nlink'> {{ __('Services') }} </a>
+
+                <a href='/admin/dashboard' class='nlink'> {{ __('Admin') }} </a>
+
                 @if(isset($links))
                     @foreach($links as $link)
-                        <a href='{{$link["url"]}}' class='nlink'> {{$link["title"]}}</a>
+                        <!-- <a href='{{$link["url"]}}' class='nlink'> {{$link["title"]}}</a> -->
                     @endforeach
                 @endif
-                <a href='/blog' class='nlink'> {{ __('Blog') }} </a>
-                <a href='/login' class='nlink'> {{ __('Login') }} </a>
-                <a href='/contact' class='nlink'> {{ __('Contact') }} </a>
             </div>
         </div>
     </div>
