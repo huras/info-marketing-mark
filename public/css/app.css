@@ -11020,17 +11020,48 @@ body {
   color: white;
   font-size: 18px;
   margin: 0px 8px;
-  transition: all 1.5s ease;
+  padding-bottom: 0px;
+  transition: all 0.5s;
   font-family: Montserrat;
   text-transform: uppercase;
   font-weight: 700;
+  border-bottom: 0px solid #082b58;
 }
 
 .infomarketing-header .options a:hover {
   transition: all 0.5s ease;
-  font-size: 19px;
-  margin: 0px 2px;
-  color: #99ffff;
+  padding-bottom: 6px;
+  color: #bcffff;
+  border-bottom: 2.5px solid #4ec7f7;
+}
+
+.infomarketing-header .options a.access i {
+  transition: all 0.5s ease;
+  font-size: 18px;
+  padding: 0px;
+}
+
+.infomarketing-header .options a.access .fa-unlock {
+  display: none;
+}
+
+.infomarketing-header .options a.access:hover {
+  border-bottom: 0px solid black;
+  padding-bottom: 0px;
+}
+
+.infomarketing-header .options a.access:hover .fa-lock {
+  display: none;
+}
+
+.infomarketing-header .options a.access:hover .fa-unlock {
+  display: block;
+}
+
+.infomarketing-header .options a.access:hover i {
+  font-size: 24px;
+  transition: all 0.5s ease;
+  padding: 6px;
 }
 
 .sticky {

@@ -46,16 +46,47 @@
             color: white;
             font-size: 18px;
             margin: 0px 8px;
-            transition: all 1.5s ease;
+            padding-bottom: 0px;
+            transition: all 0.5s;
             font-family: Montserrat;
             text-transform: uppercase;
             font-weight: 700;
+            border-bottom: 0px solid rgb(8, 43, 88);
 
             &:hover{
                 transition: all 0.5s ease;
-                font-size: 19px;
-                margin: 0px 2px;
-                color: rgb(153, 255, 255);
+                padding-bottom: 6px;
+                color: rgb(188, 255, 255);
+                border-bottom: 2.5px solid rgb(78, 199, 247);
+            }
+
+            &.access{
+                i{
+                    transition: all 0.5s ease;
+                    font-size: 18px;
+                    padding: 0px;
+                }
+
+                .fa-unlock{
+                    display: none;
+                }
+
+                &:hover{
+                    .fa-lock{
+                        display: none;                        
+                    }
+                    .fa-unlock{
+                        display: block;
+                    }
+                    i{
+                        font-size: 24px;
+                        transition: all 0.5s ease;
+                        padding: 6px;
+                    }                    
+                    
+                    border-bottom: 0px solid black;
+                    padding-bottom: 0px;
+                }
             }
         }
     }

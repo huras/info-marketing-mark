@@ -45,14 +45,14 @@
                                 <td>
                                     <div style='display: flex; justify-content:center; align-items:center;'>
                                         @switch($item->cover_type_id)
-                                            @case(0)
-                                                N/A
-                                            @break
                                             @case(1)
                                                 <img src="{{asset('images/posts/'.$item->id.'/'.$item->cover)}}">
                                             @break
                                             @case(2)
                                                 <iframe width="220" height="150" src="https://www.youtube.com/embed/{{$item->cover}}"> </iframe>
+                                            @break
+                                            @default
+                                                N/A
                                             @break
                                         @endswitch
                                     </div>

@@ -91,10 +91,10 @@
                 </div>
 
                 <div class='form-group col-md-6'>
-                    <input type='submit' class='my-btn save' value='Salvar'>
+                    <input type='submit' class='my-btn save' value='Save'>
                 </div>
                 <div class='form-group col-md-6'>
-                    <a href='/admin/blog' class='my-btn back' > Voltar </a>
+                    <a href='/admin/blog' class='my-btn back' > Back </a>
                 </div>
             </form>
         </div>

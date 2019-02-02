@@ -2,6 +2,7 @@
     <div class='row'>
         <div class='footer' style='width: 100%; display: flex; flex-wrap: wrap;'>
             <div class='col-md-4 infos'>
+                <!-- <div class='logo'> <img src='{{asset("/img/site/logo-trans.png")}}'> </div> -->
                 <div class='titulo'> Sogniamo in Grande ® </div>
                 <div class='sub-titulo'> All rights reserved 2019 </div>
             </div>

@@ -13,7 +13,7 @@
         ];
 
         $slots = [
-            ['name' => 'Home Page', 'count' => null, 'icon' => 'fas fa-home', 'href' => '/admin/home-dashboard', 'use' => true],
+            ['name' => 'Home Page', 'count' => null, 'icon' => 'fas fa-home', 'href' => '/admin/home-dashboard', 'use' => false],
             ['name' => 'Newsletter', 'count' => null, 'icon' => 'fas fa-newspaper', 'href' => '#', 'use' => false],
             ['name' => 'Blog', 'count' => $totalPosts, 'icon' => 'fas fa-align-left', 'href' => '/admin/blog', 'use' => true],
             ['name' => 'Contacts', 'count' => $totalContacts, 'icon' => 'far fa-envelope', 'href' => '/admin/contacts', 'use' => true],
@@ -28,7 +28,7 @@
             <a href='/' > <h2 style='color: rgb(45,45,160); margin-top: 32px;'> <i class="fas fa-home"></i> Home  </h2> </a>
             <h1 style='color: black;'> Dashboard </h1>
         </div>
-        <div class='row'>
+        <div class='row' style='justify-content: center;'>
             @foreach($slots as $key => $slot)
                 @if($slot['use'])
                     <div class='col-md-4'>
