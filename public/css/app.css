@@ -11301,6 +11301,8 @@ body {
   text-decoration: none;
   color: #39ce9c;
   margin-right: 16px;
+  display: flex;
+  align-items: center;
 }
 
 .criador-breadcrumb i {
