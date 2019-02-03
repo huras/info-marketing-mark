@@ -47,41 +47,31 @@
             font-size: 18px;
             margin: 0px 8px;
             padding-bottom: 0px;
-            transition: all 0.5s;
+            transition: all 0.5s ease;
             font-family: Montserrat;
             text-transform: uppercase;
             font-weight: 700;
-            border-bottom: 0px solid rgb(8, 43, 88);
+            border-bottom: 0px solid rgb(0, 0, 0);
 
             &:hover{
-                transition: all 0.5s ease;
+                transition: all 0.5s ease-out;
                 padding-bottom: 6px;
                 color: rgb(188, 255, 255);
-                border-bottom: 2.5px solid rgb(78, 199, 247);
+                border-bottom: 3.5px solid rgb(78, 199, 247);
             }
 
             &.access{
                 i{
-                    transition: all 0.5s ease;
+                    transition: all 0.5s;
                     font-size: 18px;
                     padding: 0px;
-                }
-
-                .fa-unlock{
-                    display: none;
+                    color: rgb(59, 59, 59);
                 }
 
                 &:hover{
-                    .fa-lock{
-                        display: none;                        
-                    }
-                    .fa-unlock{
-                        display: block;
-                    }
                     i{
-                        font-size: 24px;
-                        transition: all 0.5s ease;
-                        padding: 6px;
+                        transition: all 0.5s ease-out;
+                        color: rgb(250, 106, 130);
                     }                    
                     
                     border-bottom: 0px solid black;

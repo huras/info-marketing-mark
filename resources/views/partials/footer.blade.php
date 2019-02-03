@@ -1,10 +1,16 @@
 <div class='container-fluid'>
     <div class='row'>
         <div class='footer' style='width: 100%; display: flex; flex-wrap: wrap;'>
-            <div class='col-md-4 infos'>
-                <!-- <div class='logo'> <img src='{{asset("/img/site/logo-trans.png")}}'> </div> -->
-                <div class='titulo'> Sogniamo in Grande ® </div>
-                <div class='sub-titulo'> All rights reserved 2019 </div>
+
+            <div class='col-md-4 contacts'>
+                <div class='contact-info'> 
+                    <i class="far fa-envelope"></i> 
+                    <div class='value'> sogniamoingrande@yahoo.com </div>
+                </div>
+                <div class='contact-info'> 
+                    <i class="fab fa-whatsapp"></i> 
+                    <div class='value'> +39 328 973 3662 </div>
+                </div>
             </div>
 
             <div class='col-md-4 social-nets'>
@@ -22,15 +28,10 @@
                 </a>
             </div>
 
-            <div class='col-md-4 contacts'>
-                <div class='contact-info'> 
-                    <i class="far fa-envelope"></i> 
-                    <div class='value'> sogniamoingrande@yahoo.com </div>
-                </div>
-                <div class='contact-info'> 
-                    <i class="fab fa-whatsapp"></i> 
-                    <div class='value'> +39 328 973 3662 </div>
-                </div>
+            <div class='col-md-4 infos'>
+                <!-- <div class='logo'> <img src='{{asset("/img/site/logo-trans.png")}}'> </div> -->
+                <div class='titulo'> Sogniamo in Grande ® </div>
+                <div class='sub-titulo'> All rights reserved 2019 </div>
             </div>
         </div>
     </div>

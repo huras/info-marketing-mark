@@ -10639,7 +10639,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .footer .contacts .contact-info {
@@ -11035,28 +11035,25 @@ body {
   font-size: 18px;
   margin: 0px 8px;
   padding-bottom: 0px;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
   font-family: Montserrat;
   text-transform: uppercase;
   font-weight: 700;
-  border-bottom: 0px solid #082b58;
+  border-bottom: 0px solid black;
 }
 
 .infomarketing-header .options a:hover {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
   padding-bottom: 6px;
   color: #bcffff;
-  border-bottom: 2.5px solid #4ec7f7;
+  border-bottom: 3.5px solid #4ec7f7;
 }
 
 .infomarketing-header .options a.access i {
-  transition: all 0.5s ease;
+  transition: all 0.5s;
   font-size: 18px;
   padding: 0px;
-}
-
-.infomarketing-header .options a.access .fa-unlock {
-  display: none;
+  color: #3b3b3b;
 }
 
 .infomarketing-header .options a.access:hover {
@@ -11064,18 +11061,9 @@ body {
   padding-bottom: 0px;
 }
 
-.infomarketing-header .options a.access:hover .fa-lock {
-  display: none;
-}
-
-.infomarketing-header .options a.access:hover .fa-unlock {
-  display: block;
-}
-
 .infomarketing-header .options a.access:hover i {
-  font-size: 24px;
-  transition: all 0.5s ease;
-  padding: 6px;
+  transition: all 0.5s ease-out;
+  color: #fa6a82;
 }
 
 .sticky {
