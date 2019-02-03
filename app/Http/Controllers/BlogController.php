@@ -111,7 +111,7 @@ class BlogController extends Controller
         }
         else if($cover_type == 2){
             preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $newData->cover, $matches);
-            if(count($matches >= 2)) {
+            if(count($matches) >= 2) {
                 $post->cover = $matches[1];
             }
                 
