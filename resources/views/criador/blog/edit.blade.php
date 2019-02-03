@@ -12,9 +12,13 @@
         </div>
 
         <div class='row criador-form'>
-            <form class='w-100' method="POST" action="/admin/blog/{{$post->id}}/update" enctype="multipart/form-data" style='padding-top: 24px; padding-bottom: 64px; '>
-                <div class='form-group w-100'>
+            <form class='w-100' method="POST" action="/admin/blog/{{$post->id}}/update" enctype="multipart/form-data" style='padding-top: 24px; padding-bottom: 64px; '>                
+
+                <div class='form-group col-md-6'>
                     <input type='submit' class='my-btn save' value='Save'>
+                </div>
+                <div class='form-group col-md-6'>
+                    <a href='/admin/blog' class='my-btn back' > Cancel </a>
                 </div>
                 {{ csrf_field() }}
 
@@ -107,13 +111,6 @@
                                 <label> {{ __('Content') }} </label>
                                 <textarea class="{{ $errors->has('content') ? ' is-invalid' : '' }}" id='blog-ckeditor' name='content'><?php if(old('content')) echo old('content'); else echo $post->content; ?></textarea>
                                 @include('partials/form-errors', ['errors' => $errors, 'fieldName' => 'content'])
-                            </div>
-
-                            <div class='form-group col-md-6'>
-                                <input type='submit' class='my-btn save' value='Save'>
-                            </div>
-                            <div class='form-group col-md-6'>
-                                <a href='/admin/blog' class='my-btn back' > Back </a>
                             </div>
                         </div>
                     </div>
