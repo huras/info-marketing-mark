@@ -17,6 +17,10 @@ class PagesController extends Controller
         return view('pages/home');
     }
 
+    public function cvVicente(){
+        return view('pages/curriculo');
+    }
+
     public function blog(){
         $posts = BlogPost::orderBy('created_at', 'desc')->where('status', 1)->paginate(5);
         $meses_abreviados = ['Not a month','Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];

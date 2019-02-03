@@ -28,48 +28,7 @@
                 <iframe width="100%" height="580"  src="https://www.youtube.com/embed/89JsUScrOec?autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen> </iframe>
             </div>
         </div>
-    </div> 
-
-    <!-- <div class='container'>
-        <div class='row video-contact'>
-            <div class='col-md-12'>
-                <h1> Create your curriculum </h1>
-            </div>
-            <div class='col-md-7 col-sm-12'>            
-                <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/q5tPsoSwrq4">
-                </iframe>
-            </div>
-            <div class='col-md-5 col-sm-12 mini-contact-form'>
-                <form action='/contact/new' method='POST'>
-                    <div class='form-group'>
-                        <label> {{ __('first name') }} </label>
-                        <input type='text' name='firstname' placeholder="{{ __('Type your first name here') }}">
-                    </div>
-
-                    <div class='form-group'>
-                        <label> {{ __('last name') }} </label>
-                        <input type='text' name='lastname' placeholder="{{ __('Type your last name here') }}">
-                    </div>
-
-                    <div class='form-group'>
-                        <label> E-mail </label>
-                        <input type='text' name='email' placeholder="{{ __('Type your email here') }}">
-                    </div>
-
-                    <div class='form-group'>
-                        <label> {{ __('phone') }} </label>
-                        <input type='text' name='phone' placeholder="{{ __('Type your phone number here') }}">
-                    </div>
-
-                    <div class='form-group'>
-                        <input type='submit' value='Subscribe' class='cadastrar'>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> -->
-    
+    </div>
 
     <div class='paralax n2' style="background-image: url('img/site/marco-ship.jpg');">
         <div class='who'>

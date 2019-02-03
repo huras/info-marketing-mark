@@ -20,6 +20,8 @@ Route::get('/blog', 'PagesController@blog');
 Route::get('/post/{id}', 'BlogController@post');
 Route::get('/about', 'PagesController@about');
 
+Route::get('/facciamo-cv-vicente', 'PagesController@cvVicente');
+
 Route::post('/newsletter', 'PagesController@newsletter');
 
 Route::get('/admin', 'CriadorController@logout');
