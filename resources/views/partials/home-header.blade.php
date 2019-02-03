@@ -13,7 +13,7 @@
                 <a href='/contact' class='nlink'> {{ __('Contact') }} </a>
                 <a href='/services' class='nlink'> {{ __('Services') }} </a>
 
-                <a href='/admin/dashboard' class='nlink access'> <i class="fas fa-lock"></i> </a>
+                <!-- <a href='/admin/dashboard' class='nlink access'> <i class="fas fa-lock"></i> </a> -->
 
                 @if(isset($links))
                     @foreach($links as $link)

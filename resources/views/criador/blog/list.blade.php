@@ -92,7 +92,7 @@
                 {{ $posts->links() }}
             </div>            
             @else
-                <h1> Nenhum registro </h1>
+                <h1 style='color: black;'> No entry </h1>
             @endif
         </div>
     </div>

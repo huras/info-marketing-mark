@@ -66,6 +66,8 @@ class BlogController extends Controller
             $postData->cover = $matches[1];
 
             $post = BlogPost::create($postData);
+        }else {
+            BlogPost::create($postData);
         }
         
         return redirect()->action('BlogController@list');
