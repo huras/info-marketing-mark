@@ -22,7 +22,7 @@
 
     @include('partials/homePartials/quadrados')
 
-    <div class='container'>
+    <div class='container' style='margin-bottom: 32px;'>
         <div class='row'>
             <div class='col-md-12'>
                 <iframe width="100%" height="580"  src="https://www.youtube.com/embed/89JsUScrOec?autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen> </iframe>
@@ -30,7 +30,7 @@
         </div>
     </div> 
 
-    <div class='container'>
+    <!-- <div class='container'>
         <div class='row video-contact'>
             <div class='col-md-12'>
                 <h1> Create your curriculum </h1>
@@ -68,7 +68,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
     
 
     <div class='paralax n2' style="background-image: url('img/site/marco-ship.jpg');">

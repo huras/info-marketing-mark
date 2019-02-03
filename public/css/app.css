@@ -10885,13 +10885,13 @@ body {
 }
 
 .mosaics .mosaic.bottom .title {
-  color: white;
+  color: #c7c3ff;
   font-size: 24px;
   line-height: 1;
   font-weight: bold;
   font-family: Lato, sans-serif;
   padding: 5px 10px;
-  text-shadow: -3px 3px black;
+  text-shadow: -2px 2px black;
 }
 
 .mosaics .mosaic.bottom .call {
