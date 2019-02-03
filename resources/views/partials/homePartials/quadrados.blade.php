@@ -7,7 +7,7 @@
 
                 $bottomMosaics = [
                     ['title' => 'TV Sogniamo in grande', 'call' => '', 'cover' => 'youtube.png', 'url' => 'https://www.youtube.com/channel/UCL6PL_3UhIO-VqFJ_IJWu3g', 'cover-type' => 1],
-                    ['title' => 'Il saturatore', 'call' => '', 'cover' => '2.jpg', 'url' => 'https://www.ilsaturatore.it', 'cover-type' => 1],
+                    ['title' => 'Il saturatore', 'call' => '', 'cover' => '2.jpg', 'url' => 'http://www.saturatore.it/', 'cover-type' => 1],
                     ['title' => 'Blog and News', 'call' => '', 'cover' => 'blog.jpg', 'url' => '/blog', 'cover-type' => 1],
                     //['title' => 'ASSIST TO THE WEBINAR.', 'call' => '', 'cover' => 'webinar.jpg', 'url' => '', 'cover-type' => 1]
                 ];
