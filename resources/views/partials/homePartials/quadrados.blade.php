@@ -7,7 +7,7 @@
                 ];
 
                 $bottomMosaics = [
-                    ['title' => 'Il saturatore', 'call' => '', 'cover' => '2.jpg', 'url' => 'http://www.saturatore.it/', 'cover-type' => 1],
+                    ['title' => 'Il saturatore', 'call' => '', 'cover' => '9.jpg', 'url' => 'http://www.saturatore.it/', 'cover-type' => 1],
                     ['title' => 'Blog and News', 'call' => '', 'cover' => 'blog.jpg', 'url' => '/blog', 'cover-type' => 1],
                     //['title' => 'ASSIST TO THE WEBINAR.', 'call' => '', 'cover' => 'webinar.jpg', 'url' => '', 'cover-type' => 1]
                 ];
