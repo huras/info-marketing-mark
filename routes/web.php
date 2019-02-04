@@ -16,13 +16,14 @@ Route::get('/', 'PagesController@home');
 Route::get('/home', 'PagesController@home')->name('home');
 Route::get('/contact', 'PagesController@contact');
 Route::post('/contact', 'ContactsController@create');
+Route::post('/newsletter/add', 'ContactsController@createNewsletterContact');
 Route::get('/blog', 'PagesController@blog');
 Route::get('/post/{id}', 'BlogController@post');
 Route::get('/about', 'PagesController@about');
 
 Route::get('/facciamo-cv-vicente', 'PagesController@cvVicente');
 
-Route::post('/newsletter', 'PagesController@newsletter');
+//Route::post('/newsletter', 'PagesController@newsletter');
 
 Route::get('/admin', 'CriadorController@logout');
 

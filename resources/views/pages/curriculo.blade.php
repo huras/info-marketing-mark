@@ -14,15 +14,17 @@
                 </iframe>
             </div>
             <div class='col-md-12 col-sm-12 mini-contact-form' style='margin-top: 24px;'>
-                <form action='/contact/new' method='POST' class='row' style='justify-content: center;'>
+                <form action='/newsletter/add' method='POST' class='row' style='justify-content: center;'>
+                    {{ csrf_field() }}
+
                     <div class='form-group col-md-6'>
                         <label> {{ __('first name') }} </label>
-                        <input type='text' name='firstname' placeholder="{{ __('Type your first name here') }}">
+                        <input type='text' name='first_name' placeholder="{{ __('Type your first name here') }}">
                     </div>
 
                     <div class='form-group col-md-6'>
                         <label> {{ __('last name') }} </label>
-                        <input type='text' name='lastname' placeholder="{{ __('Type your last name here') }}">
+                        <input type='text' name='last_name' placeholder="{{ __('Type your last name here') }}">
                     </div>
 
                     <div class='form-group col-md-6'>

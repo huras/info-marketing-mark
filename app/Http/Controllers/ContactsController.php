@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Models\NewsletterContact;
 
 class ContactsController extends Controller
 {
@@ -16,6 +17,11 @@ class ContactsController extends Controller
     function create(Request $request){
         $contact = Contact::create($request->all());
         return redirect()->action('PagesController@contact');
+    }
+
+    function createNewsletterContact(Request $request){
+        $contact = NewsletterContact::create($request->all());
+        return redirect()->action('PagesController@home');
     }
 
     function view($id){
