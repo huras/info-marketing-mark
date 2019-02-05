@@ -269,13 +269,17 @@ body{
         }
         @media(max-width:1024px){
             background-position-y: 14px;
-            
             padding-top: 20px;
             padding-left: 555px;
-
+            
             .who{
                 max-width: 460px;
             }
+        }
+        @media(max-width:768px){
+            background-position-y: 20px;
+            padding-top: 30px;
+            padding-left: 10px;
         }
         @media(max-width: 425px){
             height: 750px;
