@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class='col-md-7 options'>
-                <a href='/' class='nlink' target='_blank'> Home </a>
+                <a href='/' class='nlink'> Home </a>
                 <a href='/about' class='nlink'> {{ __('About Us') }} </a>
                 <a href='/contact' class='nlink'> {{ __('Contact') }} </a>
                 <a href='/services' class='nlink'> {{ __('Services') }} </a>
