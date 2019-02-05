@@ -10738,12 +10738,30 @@ body {
   background-size: cover;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 1440px) {
   .paralax.n1 {
-    height: 760px;
+    background-position-y: -100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .paralax.n1 {
+    background-position-y: 14px;
+    padding-top: 20px;
+    padding-left: 555px;
+  }
+
+  .paralax.n1 .who {
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 425px) {
+  .paralax.n1 {
+    height: 750px;
     width: 100%;
-    padding-top: 310px;
-    padding-left: 5px;
+    padding-top: 30px;
+    padding-left: 10px;
     background-size: cover;
     background-position: center;
   }
@@ -10755,6 +10773,10 @@ body {
 
   .paralax.n1 .who .title {
     font-size: 16px;
+  }
+
+  .paralax.n1 .who .conteudo {
+    font-size: 18px;
   }
 }
 
