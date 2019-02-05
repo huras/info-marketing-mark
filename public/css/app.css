@@ -10696,7 +10696,7 @@ body {
 
 .who {
   max-width: 540px;
-  background-color: rgba(0, 0, 0, 0.685);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 40px;
   border-radius: 8px;
 }
@@ -10753,6 +10753,14 @@ body {
 
   .paralax.n1 .who {
     max-width: 460px;
+  }
+}
+
+@media (max-width: 768px) {
+  .paralax.n1 {
+    background-position-y: 20px;
+    padding-top: 30px;
+    padding-left: 10px;
   }
 }
 
