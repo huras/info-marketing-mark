@@ -17,9 +17,10 @@ Route::get('/home', 'PagesController@home')->name('home');
 Route::get('/contact', 'PagesController@contact');
 Route::post('/contact', 'ContactsController@create');
 Route::post('/newsletter/add', 'ContactsController@createNewsletterContact');
-Route::get('/blog', 'PagesController@blog');
 Route::get('/post/{id}', 'BlogController@post');
 Route::get('/about', 'PagesController@about');
+Route::get('/blog', 'BlogController@blog');
+Route::post('/blog', 'BlogController@blog');
 
 Route::get('/facciamo-cv-vicente', 'PagesController@cvVicente');
 
@@ -34,6 +35,7 @@ Route::get('/admin/home-dashboard/bigMosaic', 'CriadorController@bigMosaic');
 Route::get('/admin/contacts', 'ContactsController@list');
 Route::get('/admin/contact/view/{id}', 'ContactsController@view');
 Route::get('/admin/contact/destroy/{id}', 'ContactsController@destroy');
+
 
 Route::get('/admin/blog', 'BlogController@list');
 Route::get('/admin/blog/new', 'BlogController@new');

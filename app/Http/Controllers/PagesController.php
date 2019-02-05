@@ -21,13 +21,6 @@ class PagesController extends Controller
         return view('pages/curriculo');
     }
 
-    public function blog(){
-        $posts = BlogPost::orderBy('created_at', 'desc')->where('status', 1)->paginate(5);
-        $meses_abreviados = ['Not a month','Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
-
-        return view('blog/index', compact('posts','meses_abreviados'));
-    }
-
     public function contact(){
         $topics = ['Sugestion' ,'Other'];
         return view('pages/contact', compact('topics'));

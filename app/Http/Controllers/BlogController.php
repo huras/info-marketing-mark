@@ -12,6 +12,29 @@ use App\Models\Image;
 
 class BlogController extends Controller
 {
+    public function blog(Request $request){
+        $meses_abreviados = ['Not a month','Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+        $oldQuery = [];
+
+        if ($request->isMethod('post'))//Check if has to filter
+        {
+            $query = BlogPost::where('status', 1);
+
+            $searchParams = $request->all();
+            if(isset($searchParams['title'])){
+                $oldQuery['title'] = $searchParams['title'];
+                $query->where('title', 'like', '%'.$searchParams['title'].'%');
+            }
+
+            $posts = $query->orderBy('created_at', 'desc')->paginate(5);
+        }
+        else{
+            $posts = BlogPost::orderBy('created_at', 'desc')->where('status', 1)->paginate(5);
+        }
+
+        return view('blog/index', compact('posts','meses_abreviados','oldQuery'));
+    }
+
     public function list(){
         $total = count(BlogPost::all());
         $posts = BlogPost::orderBy('created_at', 'desc')->paginate(10);

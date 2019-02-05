@@ -3,12 +3,35 @@
 @section('content')
     @include('partials/home-header')
     <div>
-        <div class='container container-blog'>
+        <div class='container container-blog' style='background-color: transparent;'>
             <div class='row'>
                 <div class='head col-md-12'>
                     Blog
-                </div>                
-                <div class='blog-posts col-md-12'>
+                </div>
+                <div class='col-md-12'>
+                    <form class='search-box' method='POST' action='/blog' id='post-search'>
+                        {{ csrf_field() }}
+
+                        <div class='row'>
+                            <div class='col-md-5'>
+                                <div class='form-group'>
+                                    <label> Title </label>
+                                    <input type='text' name='title' value='@if(isset($oldQuery["title"])) {{$oldQuery["title"]}} @endif'>
+                                </div>
+                            </div>
+                            <div class='col-md-7'>
+                            </div>
+
+                            <div class='col-md-3'>
+                                <div class='form-group wrap'>
+                                    <div class='f-btn std-themed-search' onclick="document.getElementById('post-search').submit();" > <i class='fa fa-search'></i> </div>
+                                    <a href='/blog' class='f-btn std-themed-clear nlink'> Clear </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class='blog-posts col-md-12' style='background-color: #040010;'>
                     @foreach($posts as $post)
                         <?php $data = date_parse($post['created_at']); ?>
 
