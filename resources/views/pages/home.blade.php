@@ -11,9 +11,9 @@
         <div class='row'>
             <div class='paralax n1' style="background-image: url('img/site/marco-explain-class1.jpg');">
                 <div class='who'>
-                    <div class='title'> Sognare è un diritto ed un dovere, sognare in grande invece è un privilegio di pochi, approfittane. </div>
+                    <div class='title'> SOGNIAMO IN GRANDE </div>
                     <div class='conteudo'> 
-                        Sogniamo in grande è un iniziativa dedicata a tutti i studenti di Istituti Nautici, con lo scopo di aiutarli ad avere una formazione professionale e qualificata per proporsi al mondo del lavoro internazionale.
+                        Iniziare una carriera a bordo di una nave puo` essere molto complicato e non sempre possibile, ma attraverso le competenze maturate nel settore marittimo in panorami internazionali, possiamo garantirti di aumentare le tue chances di impiego, aiutandoti in tutti i passi formativi necessari per creare in te un profilo vincente e professionale, una personalita` capace di sognare in grande e puntare a qualsiasi obbiettivo, anche i piu` impensabili.
                     </div>
                 </div>
             </div>
@@ -32,9 +32,9 @@
 
     <div class='paralax n2' style="background-image: url('img/site/marco-ship.jpg');">
         <div class='who'>
-            <div class='title'> Estratégias em um Novo Paradigma Globalizado </div>
+            <div class='title'> Sognare è un diritto ed un dovere, sognare in grande invece è un privilegio di pochi, approfittane. </div>
             <div class='conteudo'> 
-                Caros amigos, o desafiador cenário globalizado apresenta tendências no sentido de aprovar a manutenção do retorno esperado a longo prazo. Percebemos, cada vez mais, que o desenvolvimento contínuo de distintas formas de atuação agrega valor ao estabelecimento das posturas dos órgãos dirigentes com relação às suas atribuições. Por outro lado, a mobilidade dos capitais internacionais talvez venha a ressaltar a relatividade do processo de comunicação como um todo. 
+                Sogniamo in grande è un iniziativa dedicata a tutti i studenti di Istituti Nautici, con lo scopo di aiutarli ad avere una formazione professionale e qualificata per proporsi al mondo del lavoro internazionale.
             </div>
         </div>
     </div>
