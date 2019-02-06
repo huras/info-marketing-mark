@@ -17,6 +17,10 @@ class PagesController extends Controller
         return view('pages/home');
     }
 
+    public function videos(){
+        return view('pages/videos');
+    }
+
     public function social(){
         return view('pages/social');
     }

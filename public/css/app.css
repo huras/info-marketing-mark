@@ -11952,6 +11952,45 @@ body {
   color: white;
 }
 
+.home-videos {
+  background-color: white !important;
+  padding-top: 32px;
+}
+
+.video-list .title {
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  margin: 16px 4px;
+  width: calc(100px - 4px);
+}
+
+@media (max-width: 1440px) {
+  .video-list iframe {
+    height: calc(680px + 16px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .video-list iframe {
+    height: calc(580px + 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .video-list iframe {
+    height: calc(460px + 16px);
+  }
+}
+
+.video-list .video-slot-separator {
+  width: 95%;
+  background-color: rgba(50, 51, 59, 0.808);
+  height: 1px;
+  margin-bottom: 64px;
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
