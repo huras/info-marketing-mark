@@ -2,33 +2,6 @@
     <div class='row'>
         <div class='footer' style='width: 100%; display: flex; flex-wrap: wrap;'>
 
-            <div class='col-lg-4 col-md-6 register'>
-                <form class='row' method='POST' action='/newsletter/subscribe'>
-                    {{ csrf_field() }}
-                    <div class='w-100 form-holder'>
-                        <div class='form-group col-lg-6 col-md-12 '>
-                            <label> First Name </label>
-                            <input type='text' name='first_name'>
-                        </div>
-                        <div class='form-group col-lg-6 col-md-12 '>
-                            <label> Last Name </label>
-                            <input type='text' name='last_name'>
-                        </div>
-                        <div class='form-group col-lg-6 col-sm-12'>
-                            <label> Email </label>
-                            <input type='text' name='email'>
-                        </div>
-                        <div class='form-group col-lg-6 col-sm-12'>
-                            <label> Phone </label>
-                            <input type='text' name='phone'>
-                        </div>
-                        <div class='form-group col-md-12'>
-                            <input type='submit' value='Subscribe'>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
             <div class='col-lg-4 col-md-6 social-nets'>
                 <a class='social-net-icon' title='faceboook' target='_blank' href='https://www.facebook.com/Sogniamo-in-Grande-278875232794723/'>
                     <i class="fab fa-facebook"></i>
@@ -42,6 +15,23 @@
                 <a class='social-net-icon' title='youtube' target='_blank' href='https://www.youtube.com/channel/UCL6PL_3UhIO-VqFJ_IJWu3g'>
                     <i class="fab fa-youtube"></i>
                 </a>
+            </div>
+
+            <div class='col-lg-4 col-md-6 register'>
+                <form class='row' method='POST' action='/newsletter/subscribe'>
+                    {{ csrf_field() }}
+                    <div class='w-100 form-holder'>
+                        <div class='form-group col-sm-12' style='color: white; font-size: 18px; text-align: center; border-bottom: 1px solid #5f77a2; padding: 8px 16px;'>
+                            Inscriviti al sito per rimanere aggiornato su opportunitá di lavoro e news
+                        </div>
+                        <div class='form-group col-sm-12'>
+                            <input type='text' name='email' placeholder="@mail">
+                        </div>
+                        <div class='form-group col-md-12'>
+                            <div class='submit-button'> <span> Subscribe </span> </div>
+                        </div>
+                    </div>
+                </form>
             </div>
 
             <div class='col-lg-4 col-md-12 contacts'>
