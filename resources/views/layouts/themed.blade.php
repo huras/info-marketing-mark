@@ -9,13 +9,14 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rubik:100,300,400,500,600,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,500,600,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
 
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   @yield('styles')
   <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
   <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <title> @yield('title') </title>
+  <title> Sogniamo in Grande </title>
   <script src='{{asset("js/app.js")}}' ></script>
   <!-- <script src="{{ asset('js/moment.js') }}"></script> -->
   <!-- <script src="{{ asset('js/underscore-min.js') }}"></script> -->

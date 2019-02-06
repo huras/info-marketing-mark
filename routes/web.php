@@ -21,6 +21,7 @@ Route::get('/post/{id}', 'BlogController@post');
 Route::get('/about', 'PagesController@about');
 Route::get('/social', 'PagesController@social');
 Route::get('/blog', 'BlogController@blog');
+Route::get('/videos', 'PagesController@videos');
 Route::post('/blog', 'BlogController@blog');
 
 Route::get('/facciamo-cv-vicente', 'PagesController@cvVicente');
