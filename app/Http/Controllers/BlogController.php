@@ -13,7 +13,7 @@ use App\Models\Image;
 class BlogController extends Controller
 {
     public function blog(Request $request){
-        $meses_abreviados = ['Not a month','Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+        $meses_abreviados = ['Not a month','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
         $oldQuery = [];
 
         if ($request->isMethod('post'))//Check if has to filter
