@@ -14,7 +14,7 @@
                 </iframe>
             </div>
             <div class='col-md-12 col-sm-12 mini-contact-form' style='margin-top: 24px;'>
-                <form action='/newsletter/add' method='POST' class='row' style='justify-content: center;'>
+                <form action='/newsletter/subscribe' method='POST' class='row' style='justify-content: center;'>
                     {{ csrf_field() }}
 
                     <div class='form-group col-md-6'>

@@ -16,9 +16,10 @@ Route::get('/', 'PagesController@home');
 Route::get('/home', 'PagesController@home')->name('home');
 Route::get('/contact', 'PagesController@contact');
 Route::post('/contact', 'ContactsController@create');
-Route::post('/newsletter/add', 'ContactsController@createNewsletterContact');
+Route::post('/newsletter/subscribe', 'ContactsController@createNewsletterContact');
 Route::get('/post/{id}', 'BlogController@post');
 Route::get('/about', 'PagesController@about');
+Route::get('/social', 'PagesController@social');
 Route::get('/blog', 'BlogController@blog');
 Route::post('/blog', 'BlogController@blog');
 
