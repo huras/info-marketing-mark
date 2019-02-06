@@ -79,6 +79,11 @@
                 }
             }
         }
+
+        @media(max-width: 768px){
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
     }
 }
 
