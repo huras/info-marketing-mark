@@ -1,0 +1,146 @@
+.footer{
+    background-color: #14132d;
+    //height: 190px;
+    justify-content: flex-start;
+    padding-top: 32px;
+    position: relative;
+    
+    &:before {
+        content: "";
+        height: 8px;
+        position: absolute;
+        top: -8px;
+        width: 100%;
+        
+        background: rgba(0,85,189,1);
+        background: -moz-linear-gradient(left, rgba(0,85,189,1) 0%, rgba(0,58,127,1) 13%, rgba(0,26,56,1) 28%, rgba(82,158,240,1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,85,189,1)), color-stop(13%, rgba(0,58,127,1)), color-stop(28%, rgba(0,26,56,1)), color-stop(100%, rgba(82,158,240,1)));
+        background: -webkit-linear-gradient(left, rgba(0,85,189,1) 0%, rgba(0,58,127,1) 13%, rgba(0,26,56,1) 28%, rgba(82,158,240,1) 100%);
+        background: -o-linear-gradient(left, rgba(0,85,189,1) 0%, rgba(0,58,127,1) 13%, rgba(0,26,56,1) 28%, rgba(82,158,240,1) 100%);
+        background: -ms-linear-gradient(left, rgba(0,85,189,1) 0%, rgba(0,58,127,1) 13%, rgba(0,26,56,1) 28%, rgba(82,158,240,1) 100%);
+        background: linear-gradient(to right, rgba(0,85,189,1) 0%, rgba(0,58,127,1) 13%, rgba(0,26,56,1) 28%, rgba(82,158,240,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0055bd', endColorstr='#529ef0', GradientType=1 );
+    }
+
+    .register{
+        margin-top: 24px;
+        margin-left: 0;
+
+        .form-holder{
+            background-color: #30356d;
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 24px;
+
+            @media(max-width: 425px){
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+        }
+
+        .form-group{
+            display: flex;
+            flex-wrap: wrap;
+
+            label{
+                width: 100%;
+                color: white;
+            }
+
+            input[type=text]{
+                width: 100%;
+            }
+
+            input[type=submit]{
+                width: 100%;
+            }
+        }
+    }
+
+    .social-nets{
+        margin-top: 24px;
+        display: flex;
+        // flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-net-icon{
+        margin: 0px 16px;
+        i{
+            color: white;
+            font-size: 42px;
+            // border-radius: 50%;
+            // border: 3px solid white;
+            padding: 8px;
+
+            @media(max-width: 425px){
+                font-size: 38px;
+                padding: 1px;
+            }
+
+            &.fa-instagram{
+                color: #d378fd;
+            }
+            &.fa-facebook{
+                color: #787afd;
+            }
+            &.fa-youtube{
+                color: #ff8b8b;
+            }
+        }
+    }
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 24px;
+        
+        .contact-info{
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+
+            i{
+                font-size: 42px;
+                color: white;
+                
+                &.fa-whatsapp{
+                    color: #76d871;
+                }
+                &.fa-envelope{
+                    color: #71c9d8;
+                }
+            }
+
+            .value{
+                margin-left: 16px;
+                color: white;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .infos{
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+
+        .titulo{
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 16px;
+        }
+        .sub-titulo{
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}

@@ -31,6 +31,7 @@
   <!-- <script src="{{ asset('js/bootstrap.js') }}"></script> -->
   <!-- <script src="{{ asset('js/clndr.js') }}"></script> -->
   <!-- <script src="{{ asset('js/main.js') }}"></script> -->
+  <script src='{{asset("js/masks.js")}}' ></script>
   @yield('scripts')
 </body>
 </html>

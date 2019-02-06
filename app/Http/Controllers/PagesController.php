@@ -17,6 +17,10 @@ class PagesController extends Controller
         return view('pages/home');
     }
 
+    public function social(){
+        return view('pages/social');
+    }
+
     public function cvVicente(){
         return view('pages/curriculo');
     }

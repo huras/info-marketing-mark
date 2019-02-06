@@ -10,8 +10,11 @@
             <div class='col-md-7 options'>
                 <a href='/' class='nlink'> Home </a>
                 <a href='/about' class='nlink'> {{ __('About Us') }} </a>
+                <a href='/social' class='nlink'> {{ __('Social') }} </a>
                 <a href='/contact' class='nlink'> {{ __('Contact') }} </a>
-                <a href='/services' class='nlink'> {{ __('Services') }} </a>
+                <a href='/blog' class='nlink'> {{ __('Blog') }} </a>
+                <a href='/video' class='nlink'> {{ __('Video') }} </a>
+                <!-- <a href='/services' class='nlink'> {{ __('Services') }} </a> -->
 
                 <!-- <a href='/admin/dashboard' class='nlink access'> <i class="fas fa-lock"></i> </a> -->
 
