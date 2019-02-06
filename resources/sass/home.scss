@@ -207,6 +207,15 @@ body{
         padding-top: 180px;
         padding-left: calc(100% - 650px - -30px);
 
+        @media(max-width: 768px){
+            background-position-x: -264px;
+
+            .who{
+                .title{
+                    font-size: 20px;
+                }
+            }
+        }
         @media(max-width: 414px){
             height: 760px;
             width: 100%;

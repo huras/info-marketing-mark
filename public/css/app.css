@@ -10696,6 +10696,16 @@ body {
   padding-left: calc(100% - 650px - -30px);
 }
 
+@media (max-width: 768px) {
+  .paralax.n2 {
+    background-position-x: -264px;
+  }
+
+  .paralax.n2 .who .title {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 414px) {
   .paralax.n2 {
     height: 760px;
@@ -11021,6 +11031,13 @@ body {
   color: #fa6a82;
 }
 
+@media (max-width: 768px) {
+  .infomarketing-header .options {
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -11092,10 +11109,46 @@ body {
 
 .footer .register .form-group input[type=text] {
   width: 100%;
+  border-radius: 15px;
+  height: 35px;
+  padding-left: 15px;
 }
 
-.footer .register .form-group input[type=submit] {
+.footer .register .form-group input[type=text]::-webkit-input-placeholder {
+  color: #575757;
+}
+
+.footer .register .form-group input[type=text]:-ms-input-placeholder {
+  color: #575757;
+}
+
+.footer .register .form-group input[type=text]::-ms-input-placeholder {
+  color: #575757;
+}
+
+.footer .register .form-group input[type=text]::placeholder {
+  color: #575757;
+}
+
+.footer .register .form-group .submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  border: 0;
+  border-radius: 5px;
+  background-color: #151449;
+  cursor: pointer;
+  text-align: center;
+  height: 40px;
+}
+
+.footer .register .form-group .submit-button span {
+  color: white;
+}
+
+.footer .register .form-group .submit-button:hover {
+  background-color: #1e1d72;
 }
 
 .footer .social-nets {
