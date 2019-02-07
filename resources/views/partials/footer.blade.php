@@ -18,7 +18,7 @@
             </div>
 
             <div class='col-lg-4 col-md-6 register'>
-                <form class='row' method='POST' action='/newsletter/subscribe'>
+                <form class='row' method='POST' id='footer-form' action='/newsletter/subscribe'>
                     {{ csrf_field() }}
                     <div class='w-100 form-holder'>
                         <div class='form-group col-sm-12' style='color: white; font-size: 18px; text-align: center; border-bottom: 1px solid #5f77a2; padding: 8px 16px;'>
@@ -28,7 +28,7 @@
                             <input type='text' name='email' placeholder="@mail">
                         </div>
                         <div class='form-group col-md-12'>
-                            <div class='submit-button'> <span> Subscribe </span> </div>
+                            <div class='submit-button' onclick='document.getElementById("footer-form").submit();'> <span> Subscribe </span> </div>
                         </div>
                     </div>
                 </form>
