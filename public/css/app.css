@@ -11991,6 +11991,26 @@ body {
   margin-bottom: 64px;
 }
 
+.social-page .paralax.n1 {
+  height: 1900px !important;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding: 0px 10px;
+}
+
+@media (max-width: 768px) {
+  .social-page .paralax.n1 {
+    height: 1200px !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .social-page .paralax.n1 {
+    height: 900px !important;
+    padding: 0px 0px;
+  }
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
