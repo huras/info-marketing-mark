@@ -20,7 +20,7 @@
                     <div class='w-100'>
                         @foreach($images as $entry)
                             <div class='col-12'>
-                                <a href='{{$entry["url"]}}'> <img style='margin:36px 0px; width: 100%; height: auto;' src='{{asset("img/site/".$entry["image"])}}'> </a>
+                                <a target='_blank' href='{{$entry["url"]}}'> <img style='margin:36px 0px; width: 100%; height: auto;' src='{{asset("img/site/".$entry["image"])}}'> </a>
                             </div>
                         @endforeach
                     </div>
