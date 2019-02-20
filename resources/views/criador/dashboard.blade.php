@@ -24,6 +24,16 @@
     ?>
 
     <div class='container dashboard'>
+        <div class='row' style='background-color: #848484;  display: flex; justify-content: flex-end; align-items: center; padding: 8px 16px;'>
+            <a class='n-link' style='color: white; font-size: 18px;' href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+        </div>
         <div class='row criador-breadcrumb'>
             <h1 style='color: black;'> 
                 <a href='/'> <i class="fas fa-home"></i> </a> <i class="fas fa-caret-right"></i>

@@ -7,6 +7,7 @@
             ['image' => 'Social Card Instagram.png', 'url' => 'https://www.instagram.com/sogniamoingrande/'],
             ['image' => 'Social Card Youtube.png', 'url' => 'https://www.youtube.com/channel/UCL6PL_3UhIO-VqFJ_IJWu3g'],
             ['image' => 'Social Card Facebook.png', 'url' => 'https://www.facebook.com/Sogniamo-in-Grande-278875232794723/'],
+            ['image' => 'Social Card Linkedin.png', 'url' => 'https://www.linkedin.com/in/sogniamo-in-grande-marco-polito-a94748a7/'],
         ];
     ?>
 
