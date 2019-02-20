@@ -41,17 +41,17 @@
 
 .social-page{
     .paralax.n1{
-        height: 1900px!important;
+        height: 2500px!important;
 
         padding-top: 0px;
         padding-left: 0px;
         padding: 0px 10px;
 
         @media(max-width:768px){
-            height: 1200px!important;
+            height: 1600px!important;
         }
         @media(max-width:425px){
-            height: 900px!important;
+            height: 1100px!important;
             padding: 0px 0px;
         }
     }
