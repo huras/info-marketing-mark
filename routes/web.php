@@ -17,10 +17,10 @@ Route::get('/home', 'PagesController@home')->name('home');
 Route::get('/contact', 'PagesController@contact');
 Route::post('/contact', 'ContactsController@create');
 Route::post('/newsletter/subscribe', 'ContactsController@createNewsletterContact');
-Route::get('/post/{id}', 'BlogController@post');
+Route::get('/post/{id}', 'PagesController@post');
 Route::get('/about', 'PagesController@about');
 Route::get('/social', 'PagesController@social');
-Route::get('/blog', 'BlogController@blog');
+Route::get('/blog', 'PagesController@blog');
 Route::get('/videos', 'PagesController@videos');
 Route::post('/blog', 'BlogController@blog');
 
