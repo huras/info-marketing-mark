@@ -71,3 +71,20 @@
     }
 }
 
+.window-msg{
+    &.home{
+        .window-message{
+            &.success{
+                background-color: #188d22;
+            }
+            
+            min-height: 50px;
+            font-size: 32px;
+            margin-top: 8px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }        
+    }
+} 

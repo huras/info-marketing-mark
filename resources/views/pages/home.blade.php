@@ -6,6 +6,16 @@
     ]; ?>
 
     @include('partials/home-header',compact('links'))
+    
+    @if(isset($params['window_msg']))
+        <div class='container-fluid window-msg home'>
+            <div class='row'>
+                <div class='col-lg-12 col-md-6 col-sm-12'>
+                    <div class='window-message {{$params["window_msg_context"]}} w-100'> {{$params['window_msg']}} </div>
+                </div>
+            </div>
+        </div>
+    @endif
 
     <div class='container-fluid'>
         <div class='row'>

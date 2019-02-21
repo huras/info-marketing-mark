@@ -11450,6 +11450,20 @@ body {
   transition: background-color 0.7s ease-out;
 }
 
+.window-msg.home .window-message {
+  min-height: 50px;
+  font-size: 32px;
+  margin-top: 8px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window-msg.home .window-message.success {
+  background-color: #188d22;
+}
+
 .dashboard .slot {
   height: 200px;
   display: flex;

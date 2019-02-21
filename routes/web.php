@@ -14,9 +14,9 @@
 Auth::routes();
 Route::get('/', 'PagesController@home');
 Route::get('/home', 'PagesController@home')->name('home');
-Route::get('/contact', 'PagesController@contact');
+Route::get('/contact', 'ContactsController@contact');
 Route::post('/contact', 'ContactsController@create');
-Route::post('/newsletter/subscribe', 'ContactsController@createNewsletterContact');
+Route::post('/newsletter/subscribe', 'PagesController@createNewsletterContact');
 Route::get('/post/{id}', 'PagesController@post');
 Route::get('/about', 'PagesController@about');
 Route::get('/social', 'PagesController@social');

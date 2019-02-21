@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Models\BlogPost;
+use App\Models\NewsletterContact;
 use App;
 
 class PagesController extends Controller
@@ -13,8 +14,14 @@ class PagesController extends Controller
         //$this->middleware('auth');
     }
 
-    public function home(){
-        return view('pages/home');
+    public function home(Request $request){
+        $params = [];
+        if( isset($request->request->all()['msg']) ){
+            $params['window_msg'] = $request->request->all()['msg'];
+            $params['window_msg_context'] = $request->request->all()['msg_context'];
+        }
+        
+        return view('pages/home',compact('params'));
     }
 
     public function videos(){
@@ -29,19 +36,14 @@ class PagesController extends Controller
         return view('pages/curriculo');
     }
 
-    public function contact(){
-        $topics = ['Sugestion' ,'Other'];
-        return view('pages/contact', compact('topics'));
-    }
-
     public function about(){
         return view('pages/about');
     }
 
     public function newsletter(Request $request){
         Contact::create($request->all());
-        $homeflash = ['message' => 'Contact sent with success!', 'context' => 'success'];
-        return view('pages/home', compact('homeflash'));
+        $window_msg = ['message' => 'Contact sent with success!', 'context' => 'success'];
+        return view('pages/home', compact('window_msg'));
     }
 
     public function blog(Request $request){
@@ -73,5 +75,11 @@ class PagesController extends Controller
         $post->save();
         $posts = BlogPost::where('id', '<>', $id)->limit(5)->get();        
         return view('blog/view', compact('post', 'posts'));
+    }
+
+    function createNewsletterContact(Request $request){
+        $contact = NewsletterContact::create($request->all());
+        $window_msg = 'Submited with succes';
+        return redirect()->action('PagesController@home',['msg' => 'Contact sent with success!', 'msg_context' => 'success']);
     }
 }

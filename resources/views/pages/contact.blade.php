@@ -4,6 +4,15 @@
     @include('partials/home-header')
         <div class='container'>
             <div class='row contact-form'>
+                    @if(isset($params['window_msg']))
+                        <div class='container-fluid window-msg home'>
+                            <div class='row'>
+                                <div class='col-lg-12 col-md-6 col-sm-12'>
+                                    <div class='window-message {{$params["window_msg_context"]}} w-100'> {{$params['window_msg']}} </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
                     <h1 style='text-align: center;'> {{__('Contact')}} </h1>
                     <form method='POST' action='/contact' class='w-100' style='display: flex; flex-wrap: wrap;'>
                         {{ csrf_field() }}
