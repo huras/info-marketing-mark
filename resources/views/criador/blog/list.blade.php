@@ -78,7 +78,7 @@
                                             <i class="fas fa-edit"></i>
                                             <span> Edit </span> 
                                         </a>
-                                        <a href='/admin/blog/destroy/{{$item->id}}' class='table-action-button red' title='Delete this post (permanent)'>
+                                        <a href='#' onclick="confirmDelete({{$item->id}},'{{$item->title}}')" class='table-action-button red' title='Delete this post (permanent)'>
                                             <i class="fas fa-trash-alt"></i>
                                             <span> Delete </span> 
                                         </a>
@@ -96,4 +96,13 @@
             @endif
         </div>
     </div>
+
+    <script>
+    function confirmDelete(id, title){
+        if (window.confirm('Do you really want to delete the post '+title+' ?'))
+        { 
+            window.location = '/admin/blog/destroy/'+id;
+        }
+    }
+    </script>
 @endsection
