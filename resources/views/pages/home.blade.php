@@ -19,7 +19,7 @@
 
     <div class='container-fluid'>
         <div class='row'>
-            <div class='paralax n1' style="background-image: url('img/site/marco-explain-class1.jpg');">
+            <div class='paralax n1' style="background-image: url('img/site/Marco explain class 2.jpg');">
                 <div class='who'>
                     <div class='title'> SOGNIAMO IN GRANDE </div>
                     <div class='conteudo'> 

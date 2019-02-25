@@ -10638,10 +10638,10 @@ body {
 .paralax.n1 {
   height: 800px;
   background-position: center;
-  background-position-y: -275px;
   padding-top: 160px;
   padding-left: 80px;
   background-size: cover;
+  background-position-y: -193px;
 }
 
 @media (max-width: 1440px) {
@@ -10683,6 +10683,7 @@ body {
   .paralax.n1 .who {
     max-width: 98%;
     padding: 20px;
+    margin-top: 300px;
   }
 
   .paralax.n1 .who .title {
