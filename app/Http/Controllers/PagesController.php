@@ -79,7 +79,7 @@ class PagesController extends Controller
 
     function createNewsletterContact(Request $request){
         $contact = NewsletterContact::create($request->all());
-        $window_msg = 'Submited with succes';
-        return redirect()->action('PagesController@home',['msg' => 'Contact sent with success!', 'msg_context' => 'success']);
+        $window_msg = 'Subscribed with success!';
+        return redirect()->action('PagesController@home',['msg' => $window_msg, 'msg_context' => 'success']);
     }
 }

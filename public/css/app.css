@@ -10550,6 +10550,12 @@ h1 {
   border: 3px outset;
 }
 
+@media (max-width: 768px) {
+  .mini-contact-form {
+    padding: 16px 8px;
+  }
+}
+
 .mini-contact-form form {
   width: 100%;
 }
