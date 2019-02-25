@@ -29,13 +29,46 @@
             </div>
         </div>
     </div>
-
+    
     @include('partials/homePartials/quadrados')
 
     <div class='container' style='margin-bottom: 32px;'>
         <div class='row'>
             <div class='col-md-12'>
-                <iframe width="100%" height="580"  src="https://www.youtube.com/embed/89JsUScrOec?autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen> </iframe>
+                <iframe width="100%" height="580"  src="https://www.youtube.com/embed/NRwIslZXLZQ?autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen> </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class='container'>
+        <div class='row video-contact'>
+            <div class='w-100 mini-contact-form'>
+                <form action='/newsletter/subscribe' method='POST' class='w-100' style='display: flex; flex-wrap: wrap;'>
+                    {{ csrf_field() }}
+                    <div class='form-group col-lg-6 col-md-12'>
+                        <label> {{ __('first name') }} </label>
+                        <input type='text' name='firstname' placeholder="{{ __('Type your first name here') }}">
+                    </div>
+
+                    <div class='form-group  col-lg-6 col-md-12'>
+                        <label> {{ __('last name') }} </label>
+                        <input type='text' name='lastname' placeholder="{{ __('Type your last name here') }}">
+                    </div>
+
+                    <div class='form-group col-lg-6 col-md-12'>
+                        <label> E-mail </label>
+                        <input type='text' name='email' placeholder="{{ __('Type your email here') }}">
+                    </div>
+
+                    <div class='form-group col-lg-6 col-md-12'>
+                        <label> {{ __('phone') }} </label>
+                        <input type='text' name='phone' placeholder="{{ __('Type your phone number here') }}">
+                    </div>
+
+                    <div class='form-group'>
+                        <input type='submit' value='Subscribe' class='cadastrar'>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
