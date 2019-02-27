@@ -151,7 +151,7 @@ body{
     background-size: cover;
 
     &.n1{
-        height: 1000px;
+        height: 1050px;
         //background-position: center;
         //background-position-y: -375px;
         //padding-top: 160px;
@@ -176,7 +176,7 @@ body{
         // background-position-y: -275px;
         @media(max-width:1440px){
             background-position-y: -100px;
-            height: 1000px;
+            height: 1050px;
 
             .who{
                 left: 32px;
@@ -194,13 +194,13 @@ body{
         @media(max-width:768px){
             background-position-y: 20px;
 
-            height: 1124px;
+            height: 1164px;
             .who{
                 max-width: 960px;
             }
         }
         @media(max-width: 425px){
-            height: 1150px;
+            height: 1250px;
             width: 100%;
             background-size: cover;
             background-position: center;

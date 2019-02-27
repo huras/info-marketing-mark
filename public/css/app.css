@@ -10635,7 +10635,7 @@ body {
 }
 
 .paralax.n1 {
-  height: 1000px;
+  height: 1050px;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -10652,7 +10652,7 @@ body {
 @media (max-width: 1440px) {
   .paralax.n1 {
     background-position-y: -100px;
-    height: 1000px;
+    height: 1050px;
   }
 
   .paralax.n1 .who {
@@ -10675,7 +10675,7 @@ body {
 @media (max-width: 768px) {
   .paralax.n1 {
     background-position-y: 20px;
-    height: 1124px;
+    height: 1164px;
   }
 
   .paralax.n1 .who {
@@ -10685,7 +10685,7 @@ body {
 
 @media (max-width: 425px) {
   .paralax.n1 {
-    height: 1150px;
+    height: 1250px;
     width: 100%;
     background-size: cover;
     background-position: center;

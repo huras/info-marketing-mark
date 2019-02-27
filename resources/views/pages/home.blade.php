@@ -32,6 +32,8 @@
                     Ed ecco perché chi abbraccia il progetto Sogniamo in Grande, tende a fare carriera in maniera molto più veloce.  
 
                     Perché quello che conta per noi veramente, non è solo aiutare i giovani italiani ad inserirsi del mondo del lavoro internazionale, ma anche riproporre un nuova generazione di Ufficiali Italiani che possano farsi valere a bordo come già in nostri antenati fecero in passato.
+
+                    <a href='#'> Entra nel progetto Sogniamo in Grande </a>
                     </div>
                 </div>
             </div>
