@@ -22,8 +22,16 @@
             <div class='paralax n1' style="background-image: url('img/site/Marco explain class 2.jpg');">
                 <div class='who'>
                     <div class='title'> SOGNIAMO IN GRANDE </div>
-                    <div class='conteudo'> 
-                        Iniziare una carriera a bordo di una nave puo` essere molto complicato e non sempre possibile, ma attraverso le competenze maturate nel settore marittimo in panorami internazionali, possiamo garantirti di aumentare le tue chances di impiego, aiutandoti in tutti i passi formativi necessari per creare in te un profilo vincente e professionale, una personalita` capace di sognare in grande e puntare a qualsiasi obbiettivo, anche i piu` impensabili.
+                    <div class='conteudo'>
+                    Ogni singolo giorno aiutiamo tantissimi ragazzi a formarsi in maniera professionale per proporsi al mondo lavorativo del settore marittimo internazionale. 
+
+                    Con la globalizzazione, la crisi economica odierna  e la presenza di molti marittimi di altre nazioni sulle navi italiane, emergono non poche difficoltà nell’ambito marittimo nazionale, e iniziare una carriera a bordo di una nave diventa ogni anno più difficile e quasi impossibile senza le giuste conoscenze. Tuttavia ci sono ancora tantissime compagnie straniere che cercano personale marittimo, ma gli standard di valutazione ed i criteri di selezione di quest’ultime sono talvolta fuori portata dai giovani italiani. 
+
+                    Proprio per questo il i nostri programmi di formazione prevedono l'insegnamento di tutto quello che serve ad una persona per diventare un ufficiale in grado non solo di proporsi a qualsiasi compagnia di navigazione al mondo, ma anche all’acquisizione delle giuste conoscenze per brillare in maniera professionale anche una volta a bordo. 
+
+                    Ed ecco perché chi abbraccia il progetto Sogniamo in Grande, tende a fare carriera in maniera molto più veloce.  
+
+                    Perché quello che conta per noi veramente, non è solo aiutare i giovani italiani ad inserirsi del mondo del lavoro internazionale, ma anche riproporre un nuova generazione di Ufficiali Italiani che possano farsi valere a bordo come già in nostri antenati fecero in passato.
                     </div>
                 </div>
             </div>
@@ -36,6 +44,9 @@
         <div class='row'>
             <div class='col-md-12'>
                 <iframe width="100%" height="580"  src="https://www.youtube.com/embed/NRwIslZXLZQ?autoplay=0&showinfo=0&controls=0" frameborder="0" allowfullscreen> </iframe>
+                <div style='marign-top: 32px; color: white; font-size: 17px;'>
+                    Ci impegniamo tutti i giorni per raccogliere e filtrare le opportunità di lavoro da ogni parte del mondo, rimani aggiornato iscrivendoti al sito. Inoltre riceverai informazioni e contenuti interessanti che ti aiuteranno a scoprire come orientarti e organizzarti negli studi e nelle scelte professionali
+                </div>
             </div>
         </div>
     </div>

@@ -10601,7 +10601,6 @@ body {
 }
 
 .who {
-  max-width: 540px;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 40px;
   border-radius: 8px;
@@ -10617,11 +10616,11 @@ body {
 }
 
 .who .conteudo {
-  padding-top: 16px;
   color: white;
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
-  line-height: 1.3;
+  line-height: 1.2;
+  white-space: pre-line;
 }
 
 .paralax {
@@ -10636,54 +10635,69 @@ body {
 }
 
 .paralax.n1 {
-  height: 800px;
+  height: 1000px;
   background-position: center;
-  padding-top: 160px;
-  padding-left: 80px;
   background-size: cover;
-  background-position-y: -193px;
+  position: relative;
+  background-position-y: -256px;
+}
+
+.paralax.n1 .who {
+  position: absolute;
+  left: 32px;
+  top: 500px;
+  max-width: 1800px;
 }
 
 @media (max-width: 1440px) {
   .paralax.n1 {
     background-position-y: -100px;
+    height: 1000px;
+  }
+
+  .paralax.n1 .who {
+    left: 32px;
+    top: 350px;
+    max-width: 1300px;
   }
 }
 
 @media (max-width: 1024px) {
   .paralax.n1 {
     background-position-y: 14px;
-    padding-top: 20px;
-    padding-left: 555px;
   }
 
   .paralax.n1 .who {
-    max-width: 460px;
+    max-width: 960px;
   }
 }
 
 @media (max-width: 768px) {
   .paralax.n1 {
     background-position-y: 20px;
-    padding-top: 30px;
-    padding-left: 10px;
+    height: 1124px;
+  }
+
+  .paralax.n1 .who {
+    max-width: 960px;
   }
 }
 
 @media (max-width: 425px) {
   .paralax.n1 {
-    height: 750px;
+    height: 1150px;
     width: 100%;
-    padding-top: 30px;
-    padding-left: 10px;
     background-size: cover;
     background-position: center;
+    background-position-y: -45px;
   }
 
   .paralax.n1 .who {
-    max-width: 98%;
     padding: 20px;
-    margin-top: 300px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 8px;
+    top: 260px;
   }
 
   .paralax.n1 .who .title {
