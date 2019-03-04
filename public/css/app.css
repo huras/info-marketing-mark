@@ -10490,6 +10490,11 @@ a.text-dark:focus {
   }
 }
 
+.paralax.n1 {
+  background-position-y: 99px;
+  height: 1000px;
+}
+
 @media (max-width: 1440px) {
   .paralax.n1 {
     background-position-y: 50px;
