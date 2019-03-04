@@ -17,7 +17,8 @@ class CriadorController extends Controller
     public function dashboard() {
         $totalPosts = count(BlogPost::all());
         $totalContacts = count(Contact::all());
-        return view('criador/dashboard', compact('totalContacts', 'totalPosts'));
+        $totalNewsletter = count(NewsletterContact::all());
+        return view('criador/dashboard', compact('totalContacts', 'totalPosts', 'totalNewsletter'));
     }
 
     public function home_dashboard() {
@@ -29,7 +30,7 @@ class CriadorController extends Controller
     }
 
     public function subscriptions() {
-        $subs = NewsletterContact::all()->orderBy('created_at', 'desc');
+        $subs = NewsletterContact::orderBy('created_at', 'desc')->get();
         $total  = count($subs);
         return view('criador/subscriptions/list', compact('subs', 'total'));
     }
