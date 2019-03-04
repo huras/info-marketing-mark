@@ -38,7 +38,7 @@
                 <div class='texto'>
                     Con la globalizzazione, la crisi economica odierna  e la presenza di molti marittimi di altre nazioni sulle navi italiane, emergono non poche difficoltà nell’ambito marittimo nazionale, e iniziare una carriera a bordo di una nave diventa ogni anno più difficile e quasi impossibile senza le giuste conoscenze. Tuttavia ci sono ancora tantissime compagnie straniere che cercano personale marittimo, ma gli standard di valutazione ed i criteri di selezione di quest’ultime sono talvolta fuori portata dai giovani italiani. 
 
-                    Proprio per questo il i nostri programmi di formazione prevedono l'insegnamento di tutto quello che serve ad una persona per diventare un ufficiale in grado non solo di proporsi a qualsiasi compagnia di navigazione al mondo, ma anche all’acquisizione delle giuste conoscenze per brillare in maniera professionale anche una volta a bordo. 
+                    Proprio per questo i nostri programmi di formazione prevedono l'insegnamento di tutto quello che serve ad una persona per diventare un ufficiale in grado non solo di proporsi a qualsiasi compagnia di navigazione al mondo, ma anche all’acquisizione delle giuste conoscenze per brillare in maniera professionale anche una volta a bordo. 
 
                     Ed ecco perché chi abbraccia il progetto Sogniamo in Grande, tende a fare carriera in maniera molto più veloce.  
 
@@ -110,7 +110,7 @@
                         NON SMETTERE DI SOGNARE E QUANDO LO FAI, FALLO IN GRANDE.
                     </div>
                     <div class='conteudo'>
-                        Siamo la prima e unica iniziativa focalizzata nei giovani studenti dei Nautici Italiani che vogliono intraprendere una carriera lavorativa a bordo delle navi. I nostri ragazzi meritano l'opportunità di dimostrare il loro valore, noi gli diamo la possibilità di dimostrarlo su panorami internazionali, dove non sistono racoomandazioni e preferenze, ma solo meritocrazia. Non lasicare che le circostanze ti abbatano, regisci e non smettere di sognare.
+                        Siamo la prima e unica iniziativa focalizzata nei giovani studenti dei Nautici Italiani che vogliono intraprendere una carriera lavorativa a bordo delle navi. I nostri ragazzi meritano l'opportunità di dimostrare il loro valore, noi gli diamo la possibilità di dimostrarlo su panorami internazionali, dove non sistono racoomandazioni e preferenze, ma solo meritocrazia. Non lasciare che le circostanze ti abbattano, reagisci, rimettiti in piedi e sogna in grande.
                     </div>
                 </div>
             </div>
