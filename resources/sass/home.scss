@@ -1,6 +1,4 @@
 .paralax.n1{
-    background-position-y: 99px;
-    height: 1000px;
 
     @media(max-width: 1440px){
         background-position-y: 50px;
@@ -308,6 +306,8 @@ body{
         background-position: center;
         background-size: cover;
         position: relative;
+        background-position-y: 99px;
+        height: 800px;
     }
 
     &.n2{
