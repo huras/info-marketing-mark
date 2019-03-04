@@ -45,7 +45,7 @@
                     Perché quello che conta per noi veramente, non è solo aiutare i giovani italiani ad inserirsi del mondo del lavoro internazionale, ma anche riproporre un nuova generazione di Ufficiali Italiani che possano farsi valere a bordo come già in nostri antenati fecero in passato.
                 </div>
                 <div class='btn-1' style='min-height: 300px;'>
-                    <a href='#' class='btn-1'> Entra nel progetto Sogniamo in Grande </a>
+                    <a href='http://sogniamoingrande.wixsite.com/2019' class='btn-1'> Entra nel progetto Sogniamo in Grande </a>
                 </div>
             </div>
             <div class='col-lg-6 col-sm-12'>
