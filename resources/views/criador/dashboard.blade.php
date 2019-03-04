@@ -13,9 +13,9 @@
         ];
 
         $slots = [
-            ['name' => 'Home Page', 'count' => null, 'icon' => 'fas fa-home', 'href' => '/admin/home-dashboard', 'use' => false],
-            ['name' => 'Newsletter', 'count' => null, 'icon' => 'fas fa-newspaper', 'href' => '#', 'use' => false],
+            ['name' => 'Home Page', 'count' => null, 'icon' => 'fas fa-home', 'href' => '/admin/home-dashboard', 'use' => false],            
             ['name' => 'Blog', 'count' => $totalPosts, 'icon' => 'fas fa-align-left', 'href' => '/admin/blog', 'use' => true],
+            ['name' => 'Subscriptions', 'count' => null, 'icon' => 'fas fa-newspaper', 'href' => '/admin/subscriptions', 'use' => true],
             ['name' => 'Contacts', 'count' => $totalContacts, 'icon' => 'far fa-envelope', 'href' => '/admin/contacts', 'use' => true],
             ['name' => 'TV Sogniamoingrande', 'count' => 93, 'icon' => 'fab fa-youtube', 'href' => '#', 'use' => false],
             ['name' => 'Configs', 'count' => null, 'icon' => 'fas fa-cog', 'href' => '#', 'use' => false],

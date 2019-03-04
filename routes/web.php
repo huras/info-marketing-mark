@@ -38,6 +38,7 @@ Route::get('/admin/contacts', 'ContactsController@list');
 Route::get('/admin/contact/view/{id}', 'ContactsController@view');
 Route::get('/admin/contact/destroy/{id}', 'ContactsController@destroy');
 
+Route::get('/admin/subscriptions', 'CriadorController@subscriptions');
 
 Route::get('/admin/blog', 'BlogController@list');
 Route::get('/admin/blog/new', 'BlogController@new');
