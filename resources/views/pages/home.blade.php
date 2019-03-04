@@ -114,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class='col-lg-7 background-image' style="background-image: url('img/site/Marco explain class 2.jpg');">
+            <div class='col-lg-7 background-image' style="background-image: url('img/site/06-0088-.jpg');">
                 <div class="btn-1" style="height: 100%; align-items: flex-end;">
                     <a href="http://sogniamoingrande.wixsite.com/2019"> ENTRA A FAR PARTE DEL PROGETTO </a>
                 </div>

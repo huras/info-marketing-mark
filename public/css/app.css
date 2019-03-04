@@ -10493,7 +10493,23 @@ a.text-dark:focus {
 @media (max-width: 1440px) {
   .paralax.n1 {
     background-position-y: 50px;
-    height: 660px;
+    height: 800px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .paralax.n1 {
+    background-position-y: 65px;
+    height: 800px;
+    background-position-x: -274px;
+  }
+}
+
+@media (max-width: 425px) {
+  .paralax.n1 {
+    background-position-y: 166px;
+    height: 800px;
+    background-position-x: -274px;
   }
 }
 
@@ -10510,6 +10526,13 @@ a.text-dark:focus {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 425px) {
+  .paralax.n1 .texto-1 {
+    width: unset;
+    height: unset;
+  }
 }
 
 .paralax.n1 .texto-1 .title {
@@ -10555,19 +10578,20 @@ a.text-dark:focus {
 }
 
 .btn-1 a {
-  max-width: 250px;
+  max-width: 280px;
   padding: 8px;
   height: 40;
   text-align: center;
   font-size: 24px;
-  background-color: #015979;
+  background-color: #2c4998;
   color: white;
   border-radius: 8px;
   font-size: "Roboto";
+  border: inset 2px;
 }
 
 .btn-1 a:hover {
-  background-color: #0e79a0;
+  background-color: #2b55c7;
   text-decoration: none;
 }
 
@@ -10624,6 +10648,7 @@ a.text-dark:focus {
   background-size: cover;
   background-position: center;
   display: flex;
+  min-height: 400px;
 }
 
 .content-3 .texto {
@@ -10704,7 +10729,6 @@ h1 {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  border: 3px outset;
 }
 
 @media (max-width: 768px) {
@@ -10795,14 +10819,21 @@ body {
 .paralax.n2 {
   height: 650px;
   background-position: center;
-  background-position-y: -293px;
+  background-position-y: -20px;
   padding-top: 180px;
   padding-left: calc(100% - 650px - -30px);
+}
+
+@media (max-width: 1024px) {
+  .paralax.n2 {
+    background-position-y: 0;
+  }
 }
 
 @media (max-width: 768px) {
   .paralax.n2 {
     background-position-x: -264px;
+    background-position-y: 0;
   }
 
   .paralax.n2 .who .title {
@@ -11072,6 +11103,7 @@ body {
   position: absolute;
   bottom: -8px;
   width: 100%;
+  z-index: 15px;
   background: #0055bd;
   background: -webkit-gradient(left top, right top, color-stop(0%, #0055bd), color-stop(13%, #003a7f), color-stop(28%, #001a38), color-stop(100%, #529ef0));
   background: linear-gradient(to right, #0055bd 0%, #003a7f 13%, #001a38 28%, #529ef0 100%);
