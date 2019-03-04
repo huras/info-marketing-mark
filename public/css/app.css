@@ -10490,6 +10490,14 @@ a.text-dark:focus {
   }
 }
 
+.paralax.n1 {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-position-y: 99px;
+  height: 800px;
+}
+
 @media (max-width: 1440px) {
   .paralax.n1 {
     background-position-y: 50px;
@@ -10806,14 +10814,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.paralax.n1 {
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  background-position-y: 99px;
-  height: 800px;
 }
 
 .paralax.n2 {
