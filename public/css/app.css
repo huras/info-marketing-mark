@@ -10540,6 +10540,8 @@ a.text-dark:focus {
   .paralax.n1 .texto-1 {
     width: unset;
     height: unset;
+    margin-left: 8px;
+    right: 8px;
   }
 }
 
@@ -10660,7 +10662,7 @@ a.text-dark:focus {
 }
 
 .content-3 .texto {
-  padding: 16px 64px;
+  padding: 32px 64px;
 }
 
 .content-3 .texto .titulo {
@@ -10742,6 +10744,13 @@ h1 {
 @media (max-width: 768px) {
   .mini-contact-form {
     padding: 16px 8px;
+  }
+}
+
+@media (max-width: 425px) {
+  .mini-contact-form {
+    margin: 0px 8px;
+    margin-top: 16px;
   }
 }
 
@@ -11677,6 +11686,7 @@ body {
   margin-right: 16px;
   display: flex;
   align-items: center;
+  font-size: 26px;
 }
 
 .criador-breadcrumb a i {
