@@ -87,6 +87,19 @@ class PagesController extends Controller
             $message->to($target_email, 'NiobioXLI')->subject('Welcome!');
         });
 
+        $notification_target = 'sogniamoingrande@yahoo.com';
+        $req_all = $request->all();
+        $subscribers_name = '';
+        if(isset($req_all['first_name'])){
+            $subscribers_name .= $req_all['first_name'];
+        }
+        if(isset($req_all['last_name'])){
+            $subscribers_name .= $req_all['last_name'];
+        }
+        Mail::send('emails.new_subscriber', array('email' => $target_email, 'name' => $subscribers_name), function($message) use ($notification_target, $target_email){
+            $message->to($notification_target)->subject('New subscriber! email : '.$target_email);
+        });
+
         $window_msg = 'Subscribed with success!';
         return redirect()->action('PagesController@home',['msg' => $window_msg, 'msg_context' => 'success']);
     }
