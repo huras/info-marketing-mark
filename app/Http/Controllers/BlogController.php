@@ -62,8 +62,8 @@ class BlogController extends Controller
             }
         }
         else if($cover_type == 2){
-            preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $postData->cover, $matches);
-            $postData->cover = $matches[1];
+            preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $postData['cover'], $matches);
+            $postData['cover'] = $matches[1];
 
             $post = BlogPost::create($postData);
         }else {
