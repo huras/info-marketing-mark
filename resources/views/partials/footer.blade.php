@@ -25,6 +25,9 @@
                             Inscriviti al sito per rimanere aggiornato su opportunitá di lavoro e news
                         </div>
                         <div class='form-group col-sm-12'>
+                            <input type='text' name='first_name' placeholder="first name">
+                        </div>
+                        <div class='form-group col-sm-12'>
                             <input type='text' name='email' placeholder="@mail">
                         </div>
                         <div class='form-group col-md-12'>

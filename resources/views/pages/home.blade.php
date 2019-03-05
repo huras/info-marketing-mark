@@ -75,12 +75,12 @@
                     {{ csrf_field() }}
                     <div class='form-group col-lg-12'>
                         <label> {{ __('first name') }} </label>
-                        <input type='text' name='firstname' placeholder="{{ __('Type your first name here') }}">
+                        <input type='text' name='first_name' placeholder="{{ __('Type your first name here') }}">
                     </div>
 
                     <div class='form-group  col-lg-12'>
                         <label> {{ __('last name') }} </label>
-                        <input type='text' name='lastname' placeholder="{{ __('Type your last name here') }}">
+                        <input type='text' name='last_name' placeholder="{{ __('Type your last name here') }}">
                     </div>
 
                     <div class='form-group col-lg-12'>
