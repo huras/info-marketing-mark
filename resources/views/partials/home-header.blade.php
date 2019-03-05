@@ -4,7 +4,7 @@
             <div class='col-md-5' style='justify-content: center;    align-items: center;'>
                 <div class='row'>
                     <div class='col-sm-6' style='    display: flex;    justify-content: center;    align-items: center;'>
-                        <img src='img/site/Logo top.jpg' style='max-width: 135px;    height: auto;'>
+                        <img src='/img/site/Logo top.jpg' style='max-width: 135px;    height: auto;'>
                     </div>
                     <div class='col-sm-6' style='display: flex;    flex-direction: column;    justify-content: center;    align-items: center;'>
                         <a href='/' class='main-title nlink'> 
