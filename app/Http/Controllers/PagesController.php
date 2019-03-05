@@ -7,6 +7,7 @@ use App\Models\Contact;
 use App\Models\BlogPost;
 use App\Models\NewsletterContact;
 use App;
+use Illuminate\Support\Facades\Mail;
 
 class PagesController extends Controller
 {
@@ -79,6 +80,13 @@ class PagesController extends Controller
 
     function createNewsletterContact(Request $request){
         $contact = NewsletterContact::create($request->all());
+
+        $target_email = $request->all()['email'];
+        Mail::send('emails.welcome', array('nick' => 'Niobio41'), function($message) use ($target_email){
+            $message->from('sogniamoingrande@yahoo.com', 'sogniamoingrande.it');
+            $message->to($target_email, 'NiobioXLI')->subject('Welcome!');
+        });
+
         $window_msg = 'Subscribed with success!';
         return redirect()->action('PagesController@home',['msg' => $window_msg, 'msg_context' => 'success']);
     }

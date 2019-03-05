@@ -44,8 +44,6 @@ class BlogController extends Controller
         return redirect()->action('BlogController@list');
     }
 
-    
-
     public function create(BlogPostRequest $request, ImageRepository $repo){
         $postData = $request->all();
         $cover_type = $postData['cover_type_id'];

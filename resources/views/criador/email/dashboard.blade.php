@@ -1,0 +1,43 @@
+@extends('layouts/criador')
+
+@section('content')
+    <div class='container dashboard'>
+        <div class='row criador-breadcrumb'>
+            <h1 style='color: black;'> 
+                <a href='/'> <i class="fas fa-home"></i> </a> <i class="fas fa-caret-right"></i>
+                <a href='/admin/dashboard'> Dashboard </a> <i class="fas fa-caret-right"></i>
+                <span> Email System </span>
+            </h1>
+        </div>
+
+        <?php
+            $colors = [
+                ['main' => '#39ab75;', 'sub' => '#146738;'],
+            ];
+
+            $slots = [
+                ['name' => 'Send email to a group', 'count' => null, 'icon' => 'fas fa-users', 'href' => route('mail.newGroupMail'), 'use' => true],
+            ];
+        ?>
+
+        <div class='row email-system' style='justify-content: center;'>
+            @foreach($slots as $key => $slot)
+                @if($slot['use'])
+                    <div class='col-md-4'>
+                        <a class='slot' style='background-color: {{$colors[$key]["main"]}}' href='{{$slot["href"]}}'>
+                            <div class='icon' style='background-color: {{$colors[$key]["sub"]}}'>
+                                <i class='{{$slot["icon"]}}'></i>
+                                </div>
+                            <div class='title'>
+                                @if( $slot["count"] != null )
+                                    <span class='count'> {{$slot["count"]}} </span>
+                                @endif
+                                <span class='name'> {{$slot["name"]}} </span>
+                            </div>
+                        </a>
+                    </div>
+                @endif
+            @endforeach
+        </div>
+    </div>
+@endsection

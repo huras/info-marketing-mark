@@ -26,6 +26,12 @@ Route::post('/blog', 'BlogController@blog');
 
 Route::get('/facciamo-cv-vicente', 'PagesController@cvVicente');
 
+//Mail
+Route::get('/mail/dashboard', 'EmailsController@dashboard')->name('mail.dashboard');
+Route::get('/mail/new-group-mail', 'EmailsController@newGroupMail')->name('mail.newGroupMail');
+Route::post('/mail-to-list', 'EmailsController@sendEmailToList')->name('sendMailToGroup');
+Route::get('/test-mail', 'EmailsController@testMailLayout');
+
 //Route::post('/newsletter', 'PagesController@newsletter');
 
 Route::get('/admin', 'CriadorController@logout');

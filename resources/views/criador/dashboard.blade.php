@@ -9,6 +9,7 @@
             ['main' => '#1c944b', 'sub' => '#20672b'],
             ['main' => '#b10000', 'sub' => '#7c1212'],
             ['main' => '#2f94b5', 'sub' => '#00b8f7'],
+            ['main' => '#b77b14', 'sub' => '#f7b400'],
             ['main' => '#b77b14', 'sub' => '#f7b400']
         ];
 
@@ -19,7 +20,8 @@
             ['name' => 'Contacts', 'count' => $totalContacts, 'icon' => 'far fa-envelope', 'href' => '/admin/contacts', 'use' => true],
             ['name' => 'TV Sogniamoingrande', 'count' => 93, 'icon' => 'fab fa-youtube', 'href' => '#', 'use' => false],
             ['name' => 'Configs', 'count' => null, 'icon' => 'fas fa-cog', 'href' => '#', 'use' => false],
-            ['name' => 'Users', 'count' => 9, 'icon' => 'fas fa-users', 'href' => '#', 'use' => false]
+            ['name' => 'Users', 'count' => 9, 'icon' => 'fas fa-users', 'href' => '#', 'use' => false],
+            ['name' => 'Email System', 'count' => null, 'icon' => 'far fa-envelope', 'href' => '/mail/dashboard', 'use' => true]
         ];
     ?>
 
