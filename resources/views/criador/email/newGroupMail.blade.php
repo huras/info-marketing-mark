@@ -1,5 +1,13 @@
 @extends('layouts/criador')
 
+@section('styles')
+    <style>
+        .tab-content > .active{
+            display: flex!important;
+        }
+    </style>
+@endsection
+
 @section('content')
     <div class='container dashboard'>
         <div class='row criador-breadcrumb'>
@@ -21,13 +29,16 @@
                             <div class='separator'></div>
                         </div>
                         <li class="nav-item">
-                        <a class="nav-link  active show" id="targets-tab" data-toggle="tab" href="#targets" role="tab" aria-controls="targets" aria-selected="true">Step 1 - Targeted Emails</a>
+                            <a class="nav-link  active show" id="targets-tab" data-toggle="tab" href="#targets" role="tab" aria-controls="targets" aria-selected="true">Step 1 - Targeted Emails</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" id="content-tab" data-toggle="tab" href="#content" role="tab" aria-controls="content" aria-selected="false">Step 2 - Message Content</a>
+                            <a class="nav-link" id="layout-tab" data-toggle="tab" href="#layout" role="tab" aria-controls="layout" aria-selected="false">Step 2 - Email Layout</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" id="options-and-confirmation-tab" data-toggle="tab" href="#options-and-confirmation" role="tab" aria-controls="options-and-confirmation" aria-selected="false">Step 3 - Options and Confirmation</a>
+                            <a class="nav-link" id="content-tab" data-toggle="tab" href="#content" role="tab" aria-controls="content" aria-selected="false">Step 3 - Message Content</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="options-and-confirmation-tab" data-toggle="tab" href="#options-and-confirmation" role="tab" aria-controls="options-and-confirmation" aria-selected="false">Step 4 - Header Options and Confirmation</a>
                         </li>
                     </ul>
                     <div class="tab-content w-100" id="myTabContent">
@@ -44,7 +55,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="tab-pane fade row" id="content" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade row" id="layout" role="tabpanel" aria-labelledby="profile-tab">
                             <div class='form-group col-md-12'>
                                 <div class='separator'></div>
                             </div>
@@ -54,17 +65,28 @@
                                     <img style='max-width: 100%;' src='/img/site/email_template_1.png'>
                                 </div>
                             </div>
+                            <div class='form-group col-md-12'>
+                                <div class='separator'></div>
+                            </div>
                             <div class='form-group col-md-6'>
                                 <label> {{ __('Layouts') }} </label>
                                 <select name='email_layout'>
                                     <option value='emails.template_1'> Template 1</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="tab-pane fade row" id="content" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class='form-group col-md-12'>
+                                <div class='separator'></div>
+                            </div>
+                            
                             <div class='form-group col-md-12' style='white-space: pre-line;'>
                                 <h3 style='font-weight: bold'> Tips about email content text personalization </h3>
-                                [name] = First Name + Last Name of the person
-                                [firstname] = First Name of the person
-                                [lastname] = Last Name of the person
+                                Some words may change when the email is being sent to each person. The current pesonalization words are:                                
+
+                                [name] becomes First Name + Last Name of the person
+                                [firstname] becomes First Name of the person
+                                [lastname] becomes Last Name of the person
                             </div>
                             
                             <div class='form-group col-md-12'>
