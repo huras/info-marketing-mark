@@ -12019,8 +12019,7 @@ body {
 }
 
 .blog-view .post .cover img {
-  width: 800px;
-  height: 480px;
+  width: 100%;
 }
 
 .blog-view .post .date {
