@@ -33,7 +33,7 @@ Route::post('/mail-to-list', 'EmailsController@sendEmailToList')->name('sendMail
 Route::get('/test-mail', 'EmailsController@testMailLayout');
 
 //Subscribers
-Route::get('/admin/subscriber/destroy/{id}', 'NewsletterContactController@destroy')->name('mail.dashboard');
+Route::get('/admin/subscriber/destroy/{id}', 'NewsletterContactController@destroy')->name('mail.delete');
 
 //Route::post('/newsletter', 'PagesController@newsletter');
 
