@@ -87,6 +87,8 @@
                                 [name] becomes First Name + Last Name of the person
                                 [firstname] becomes First Name of the person
                                 [lastname] becomes Last Name of the person
+
+                                Example : If "Hello Mr [firstname]" is sent to a user with 'Jonas' as first name, Jonas will receive "Hello Mr Jonas" as the message
                             </div>
                             
                             <div class='form-group col-md-12'>
