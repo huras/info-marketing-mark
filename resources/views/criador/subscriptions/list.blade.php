@@ -18,11 +18,13 @@
                 <table class='col-md-12 criador-table hand'>
                     <thead>
                         <tr class='color-yes'>
+                            <th>ID</th>
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Email</th>
                             <th>Phone</th>
                             <th>Created At</th>
+                            <th style='min-width: 100px'>Actions</th>
                         </tr>
                     </thead>
 
@@ -30,11 +32,20 @@
                         <?php $tableColor = false; ?>
                         @foreach($subs as $item)
                             <tr <?php if($tableColor) { echo 'class="color-yes" '; $tableColor = !$tableColor; } else {$tableColor = !$tableColor; }  ?> >
+                                <td> {{$item->id}} </td>
                                 <td> {{$item->first_name}} </td>
                                 <td> {{$item->last_name}} </td>
                                 <td> {{$item->email}} </td>
                                 <td> {{$item->phone}} </td>
                                 <td> {{$item->created_at}} </td>
+                                <td>
+                                    <div class='actions'>
+                                        <a href='#' onclick="confirmDelete({{$item->id}},'{{$item->email}}')" class='table-action-button red' title='Delete this subscriber (permanent)'>
+                                            <i class="fas fa-trash-alt"></i>
+                                            <span> Delete </span> 
+                                        </a>
+                                    </div>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>
@@ -44,4 +55,13 @@
             @endif
         </div>
     </div>
+
+    <script>
+    function confirmDelete(id, title){
+        if (window.confirm('Do you really want to delete the subscriber with the id '+id+'?'))
+        { 
+            window.location = '/admin/subscriber/destroy/'+id;
+        }
+    }
+    </script>
 @endsection

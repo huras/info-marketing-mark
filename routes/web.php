@@ -32,6 +32,9 @@ Route::get('/mail/new-group-mail', 'EmailsController@newGroupMail')->name('mail.
 Route::post('/mail-to-list', 'EmailsController@sendEmailToList')->name('sendMailToGroup');
 Route::get('/test-mail', 'EmailsController@testMailLayout');
 
+//Subscribers
+Route::get('/admin/subscriber/destroy/{id}', 'NewsletterContactController@destroy')->name('mail.dashboard');
+
 //Route::post('/newsletter', 'PagesController@newsletter');
 
 Route::get('/admin', 'CriadorController@logout');
