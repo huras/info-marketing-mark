@@ -27,7 +27,7 @@
             ];
 
             $slots = [
-                ['name' => 'Send email to a group', 'count' => null, 'icon' => 'fas fa-users', 'href' => route('mail.newGroupMail'), 'use' => true],
+                ['name' => 'Send email(s)', 'count' => null, 'icon' => 'fas fa-mail-bulk', 'href' => route('mail.newGroupMail'), 'use' => true],
             ];
         ?>
 

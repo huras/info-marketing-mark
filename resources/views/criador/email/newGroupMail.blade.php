@@ -46,13 +46,26 @@
                             <div class='form-group col-md-12'>
                                 <div class='separator'></div>
                             </div>
-                            <div class='form-group col-md-6'>
-                                <label> {{ __('Targets') }} </label>
-                                <select name='target_type'>
+                            <div class='form-group col-md-12'>
+                                <label> {{ __('Target(s)') }} </label>
+                                <select name='target_type' id='Target_type_select' onchange='onChangeTargetType()'>
                                     <option value='all'> All Subscribers (with or without first and/or last names)</option>
                                     <option value='has-name'> All Subscribers with first name and last name </option>
                                     <option value='has-first_name'> All Subscribers with first name </option>
+                                    <option value='single-email'> Single Email (You write the email. The message will be sent to only 1 e-mail.) </option>
                                 </select>
+                            </div>
+                            <div class='form-group col-lg-4 col-sm-12' id='single-mail-input' style='    display: none;'>
+                                <label> {{ __('Target`s Email') }} </label>
+                                <input type='text' name='target_mail' required>
+                            </div>
+                            <div class='form-group col-lg-4 col-sm-12' id='single-mail-input-fname' style='    display: none;'>
+                                <label> {{ __('Target`s First Name') }} </label>
+                                <input type='text' name='first_name'>
+                            </div>
+                            <div class='form-group col-lg-4 col-sm-12' id='single-mail-input-lname' style='    display: none;'>
+                                <label> {{ __('Target`s Last Name') }} </label>
+                                <input type='text' name='last_name'>
                             </div>
                         </div>
                         <div class="tab-pane fade row" id="layout" role="tabpanel" aria-labelledby="profile-tab">
@@ -124,4 +137,31 @@
         </div>
 
     </div>
+@endsection
+
+@section('scripts')
+    <script>
+        function onChangeTargetType(){
+            var single_mail_input = document.getElementById("single-mail-input");
+            var single_mail_input_lname = document.getElementById("single-mail-input-lname");
+            var single_mail_input_fname = document.getElementById("single-mail-input-fname");
+            
+
+            var TargetTypeSelect = document.getElementById("Target_type_select");
+            if(TargetTypeSelect.value == 'single-email') {
+                single_mail_input.style.display = "flex";
+                single_mail_input_lname.style.display = "flex";
+                single_mail_input_fname.style.display = "flex";
+            }
+            else{
+                single_mail_input.style.display = "none";
+                single_mail_input_lname.style.display = "none";
+                single_mail_input_fname.style.display = "none";
+            }
+        }
+
+        $( document ).ready(function() {
+            onChangeTargetType();
+        });
+    </script>
 @endsection

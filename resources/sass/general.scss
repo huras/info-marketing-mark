@@ -77,7 +77,10 @@
             &.success{
                 background-color: #188d22;
             }
-            
+            &.error{
+                background-color: #8d1818;
+            }
+
             min-height: 50px;
             font-size: 32px;
             margin-top: 8px;

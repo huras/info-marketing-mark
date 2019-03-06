@@ -40,6 +40,14 @@ class EmailsController extends Controller
                 $target_list = NewsletterContact::where('first_name', '<>', '')->get();
             } else if($target_type == 'has-name'){
                 $target_list = NewsletterContact::where('first_name', '<>', '')->where('last_name', '<>', '')->get();
+            } else if ($target_type == 'single-email'){
+                $target_list = [
+                        [
+                            'email' => $request_all['target_mail'],
+                            'first_name' => $request_all['first_name'],
+                            'last_name' => $request_all['last_name'],
+                        ]
+                    ];
             }
             
             foreach($target_list as $target){
@@ -61,10 +69,16 @@ class EmailsController extends Controller
                         }
                 );
             }
+
+            session()->flash('window_msg', 'Emails sent with success!');
+            session()->flash('msg_context', 'success');
+        }
+        else{
+            session()->flash('window_msg', 'Emails sending failed!');
+            session()->flash('msg_context', 'error');
         }
         
-        session()->flash('window_msg', 'Emails sent with success!');
-        session()->flash('msg_context', 'success');
+        
         return redirect()->route('mail.dashboard');
     }
 }

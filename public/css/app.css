@@ -11609,6 +11609,10 @@ body {
   background-color: #188d22;
 }
 
+.window-msg.home .window-message.error {
+  background-color: #8d1818;
+}
+
 .dashboard .slot {
   height: 200px;
   display: flex;
