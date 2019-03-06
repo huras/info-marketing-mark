@@ -76,7 +76,7 @@
                     {{ csrf_field() }}
                     <div class='form-group col-lg-12'>
                         <label> {{ __('first name') }} </label>
-                        <input type='text' name='first_name' placeholder="{{ __('Type your first name here') }}">
+                        <input type='text' name='first_name' required placeholder="{{ __('Type your first name here') }}">
                     </div>
 
                     <div class='form-group  col-lg-12'>
@@ -86,7 +86,7 @@
 
                     <div class='form-group col-lg-12'>
                         <label> E-mail </label>
-                        <input type='text' name='email' placeholder="{{ __('Type your email here') }}">
+                        <input type='text' name='email' required placeholder="{{ __('Type your email here') }}">
                     </div>
 
                     <div class='form-group col-lg-12'>

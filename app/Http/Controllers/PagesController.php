@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Http\Requests\NewsletterContactRequest;
 use App\Models\BlogPost;
 use App\Models\NewsletterContact;
 use App;
@@ -73,7 +74,7 @@ class PagesController extends Controller
         return view('blog/view', compact('post', 'posts'));
     }
 
-    function createNewsletterContact(Request $request){
+    function createNewsletterContact(NewsletterContactRequest $request){
         $contact = NewsletterContact::create($request->all());
 
         $target_email = $request->all()['email'];

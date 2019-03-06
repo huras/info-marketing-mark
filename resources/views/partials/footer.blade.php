@@ -25,13 +25,16 @@
                             Inscriviti al sito per rimanere aggiornato su opportunitá di lavoro e news
                         </div>
                         <div class='form-group col-sm-12'>
-                            <input type='text' name='first_name' placeholder="first name">
+                            <input type='text' name='first_name' placeholder="first name" required>
+                            @include('partials/form-errors', ['errors' => $errors, 'fieldName' => 'first_name'])
                         </div>
                         <div class='form-group col-sm-12'>
-                            <input type='text' name='email' placeholder="@mail">
+                            <input type='text' name='email' placeholder="@mail" required>
+                            @include('partials/form-errors', ['errors' => $errors, 'fieldName' => 'email'])
                         </div>
                         <div class='form-group col-md-12'>
-                            <div class='submit-button' onclick='document.getElementById("footer-form").submit();'> <span> Subscribe </span> </div>
+                            <!-- <div class='submit-button' onclick='document.getElementById("footer-form").submit();'> <span> Subscribe </span> </div> -->
+                            <input type='submit' class='submit-button' style='color: white;' value='Subscribe'>
                         </div>
                     </div>
                 </form>
