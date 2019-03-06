@@ -16,13 +16,7 @@ class PagesController extends Controller
     }
 
     public function home(Request $request){
-        $params = [];
-        if( isset($request->request->all()['msg']) ){
-            $params['window_msg'] = $request->request->all()['msg'];
-            $params['window_msg_context'] = $request->request->all()['msg_context'];
-        }
-        
-        return view('pages/home',compact('params'));
+        return view('pages/home');
     }
 
     public function videos(){
@@ -43,8 +37,9 @@ class PagesController extends Controller
 
     public function newsletter(Request $request){
         Contact::create($request->all());
-        $window_msg = ['message' => 'Contact sent with success!', 'context' => 'success'];
-        return view('pages/home', compact('window_msg'));
+        session()->flash('window_msg', 'Contact sent with success!');
+        session()->flash('msg_context', 'success');
+        return view('pages/home');
     }
 
     public function blog(Request $request){
@@ -82,7 +77,7 @@ class PagesController extends Controller
         $contact = NewsletterContact::create($request->all());
 
         $target_email = $request->all()['email'];
-        Mail::send('emails.welcome', array('nick' => 'Niobio41'), function($message) use ($target_email){
+        Mail::send('emails.welcome', ['nick' => 'Niobio41'], function($message) use ($target_email){
             $message->from('sogniamoingrande@yahoo.com', 'sogniamoingrande.it');
             $message->to($target_email, 'NiobioXLI')->subject('Welcome!');
         });
@@ -99,8 +94,9 @@ class PagesController extends Controller
         Mail::send('emails.new_subscriber', array('email' => $target_email, 'name' => $subscribers_name), function($message) use ($notification_target, $target_email){
             $message->to($notification_target)->subject('New subscriber! email : '.$target_email);
         });
-
-        $window_msg = 'Subscribed with success!';
-        return redirect()->action('PagesController@home',['msg' => $window_msg, 'msg_context' => 'success']);
+        
+        session()->flash('window_msg', 'Subscribed with success!');
+        session()->flash('msg_context', 'success');
+        return redirect()->action('PagesController@home');
     }
 }

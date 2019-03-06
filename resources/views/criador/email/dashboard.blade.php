@@ -10,6 +10,17 @@
             </h1>
         </div>
 
+        @if(session()->has('window_msg'))
+            <div class='container-fluid window-msg home'>
+                <div class='row'>
+                    <div class='col-lg-12 col-md-6 col-sm-12'>
+                        <div class="window-message {{ Session::get('msg_context') }} w-100"> {{ Session::get('window_msg') }} </div>
+                    </div>
+                </div>
+            </div>
+            <p class="alert "></p>
+        @endif
+
         <?php
             $colors = [
                 ['main' => '#39ab75;', 'sub' => '#146738;'],

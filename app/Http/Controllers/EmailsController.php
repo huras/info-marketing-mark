@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\NewsletterContact;
+use Illuminate\Support\Facades\Mail;
 
 class EmailsController extends Controller
 {
@@ -22,13 +24,47 @@ class EmailsController extends Controller
         return view('emails/hello');
     }
 
-    function sendEmailToList(){
-        //$user = User::find($id);
- 
-        Mail::send('emails.hello', array('nick' => 'Niobio41'), function($message){
-            $message->to('hurast@gmail.com', 'NiobioXLI')->subject('Welcome!');
-        });
-                     
-        return Redirect::to('/');
+    function sendEmailToList(Request $request){
+        $request_all = $request->all();
+        $target_type = '';
+        $email_layout = '';
+
+        if(isset($request_all['target_type']) && isset($request_all['email_layout'])){
+            $target_type = $request_all['target_type'];
+            $email_layout = $request_all['email_layout'];
+
+            $target_list = [];
+            if($target_type == 'all'){
+                $target_list = NewsletterContact::all();   
+            } else if($target_type == 'has-fist_name'){
+                $target_list = NewsletterContact::where('first_name', '<>', '')->get();
+            } else if($target_type == 'has-name'){
+                $target_list = NewsletterContact::where('first_name', '<>', '')->where('last_name', '<>', '')->get();
+            }
+            
+            foreach($target_list as $target){
+                $name = $target['first_name'].' '.$target['last_name'];
+                $first_name = $target['first_name'];
+                $last_name = $target['last_name'];
+                $targets_email = $target['email'];
+                $content = $request_all['email_content'];
+                
+                $content = str_replace('[name]', $name, $content);
+                $content = str_replace('[firstname]', $first_name, $content);
+                $content = str_replace('[lastname]', $last_name, $content);
+
+                Mail::send($email_layout,
+                        ['name' => $name, 'first_name' => $first_name, 'last_name' => $last_name, 'content' => $content], 
+                        function($message) use ($targets_email, $request_all){
+                            $message->from('fromtest@yahoo.com', $request_all['name_in_the_from']);
+                            $message->to($targets_email, 'sogniamoningrande.it')->subject($request_all['email_topic']);
+                        }
+                );
+            }
+        }
+        
+        session()->flash('window_msg', 'Emails sent with success!');
+        session()->flash('msg_context', 'success');
+        return redirect()->route('mail.dashboard');
     }
 }
