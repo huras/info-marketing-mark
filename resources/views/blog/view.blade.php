@@ -1,5 +1,19 @@
 @extends('layouts/themed')
 
+@section('meta')
+    <meta property="og:url"           content="{{Request::url()}}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="{{$post->title}}" />
+    @if($post->call)
+        <meta property="og:description"   content="{{$post->call}}" />
+    @endif
+    @switch($post->cover_type_id)
+        @case(1)
+            <meta property="og:image"         content="{{asset('images/posts/'.$post->id.'/'.$post->cover)}}" />
+        @break
+    @endswitch
+@endsection
+
 @section('content')
     @include('partials/home-header')
     
@@ -11,6 +25,9 @@
             </div>
             <div class='row'>
                 <div class='col-md-9' style='padding-left: 0px; padding-right: 0;'>
+                    <div class='social-sharing' style='    background-color: white;    padding: 0px 16px;    padding-top: 16px;'>
+                        <div class="fb-share-button" data-href="{{Request::url()}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                    </div>
                     <div class='post'>
                         <div class='cover'>
                             @switch($post->cover_type_id)

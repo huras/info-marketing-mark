@@ -25,8 +25,12 @@
   <script src="{{ asset('js/slick.js') }}"></script>
   <!-- <script src="{{ asset('js/themed-slicks.js') }}"></script> -->
   <!-- <script src="{{ asset('js/select2.min.js') }}"></script> -->
+  @yield('meta')
 </head>
 <body class='themed-body' style=' background-image: url( {{ asset("img/site/home-bg-dark.jpg") }} ) '>
+  <div id="fb-root"></div>
+  <script async defer src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v3.2&appId=2018338701713124&autoLogAppEvents=1"></script>
+
   @yield('content')
 
   <!-- <script src="{{ asset('js/jquery.mask.js') }}"></script> -->
