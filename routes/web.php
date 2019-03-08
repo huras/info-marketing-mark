@@ -30,14 +30,17 @@ Route::get('/facciamo-cv-vicente', 'PagesController@cvVicente');
 Route::get('/mail/dashboard', 'EmailsController@dashboard')->name('mail.dashboard');
 Route::get('/mail/new-group-mail', 'EmailsController@newGroupMail')->name('mail.newGroupMail');
 Route::post('/mail-to-list', 'EmailsController@sendEmailToList')->name('sendMailToGroup');
-Route::get('/test-mail', 'EmailsController@testMailLayout');
+Route::get('/test-mail', function(){
+    return view('emails.newBlogPost', ['content' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quae non delectus in sequi at minus ipsa dolorem quisquam distinctio dolor dignissimos quibusdam culpa, qui vero sunt ducimus facere et molestiae aliquid rem quas quo esse. Aut eum perferendis asperiores, nemo eligendi totam doloribus? Ipsa doloribus quos minus sunt minima!',
+     'title' => 'Titulo Exemplo', 'cover' => 'http://sogniamoingrande.it/images/posts/66/1551110570618.jpg', 'blogPostLink' => urlencode('http://sogniamoingrande.it/post/66')]);
+});
 
 //Subscribers
 Route::get('/admin/subscriber/destroy/{id}', 'NewsletterContactController@destroy')->name('mail.delete');
 
 //Route::post('/newsletter', 'PagesController@newsletter');
 
-Route::get('/admin', 'CriadorController@logout');
+Route::get('/admin', 'CriadorController@dashboard');
 
 Route::get('/admin/dashboard', 'CriadorController@dashboard');
 Route::get('/admin/home-dashboard', 'CriadorController@home_dashboard');
