@@ -43,6 +43,11 @@
                                 <input class="{{ $errors->has('status') ? ' is-invalid' : '' }}" type='checkbox' name='status' value="{{ old('status') }}" >
                                 @include('partials/form-errors', ['errors' => $errors, 'fieldName' => 'status'])
                             </div>
+                            <div class='form-group col-md-6'>
+                                <label> {{ __('Send email to all subscribers') }} </label>
+                                <input class="{{ $errors->has('sendToEmail') ? ' is-invalid' : '' }}" type='checkbox' name='sendToEmail' value="true" >
+                                @include('partials/form-errors', ['errors' => $errors, 'fieldName' => 'sendToEmail'])
+                            </div>
                         </div>
                         <div class="tab-pane fade row" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class='form-group col-md-12'>
