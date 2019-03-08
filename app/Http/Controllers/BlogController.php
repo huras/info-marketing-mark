@@ -55,7 +55,7 @@ class BlogController extends Controller
             $post = BlogPost::create($request->except('cover'));
 
             if ($request->hasFile('cover')) {
-                $post->path_image = $repo->saveImage($request->cover, $post->id, 'posts', 250);
+                $post->path_image = $repo->saveImage($request->cover, $post->id, 'posts', 800);
                 
                 $originalName = basename($post->path_image).PHP_EOL;
                 $post = BlogPost::find($post->id);
