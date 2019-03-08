@@ -74,7 +74,7 @@ class BlogController extends Controller
         
         if ($postData['sendToEmail'] == 'true' ){
             $target_list = NewsletterContact::where('email', '<>', '')->where('email', '<>', null)->get();
-            $target_list = [['email' => 'hurast@gmail.com']];
+            // $target_list = [['email' => 'hurast@gmail.com']];
 
             $email_cover_type = $post['cover_type_id'];
             $email_cover = $post['cover'];
