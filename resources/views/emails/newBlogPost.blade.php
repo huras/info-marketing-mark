@@ -58,7 +58,7 @@
             @if($cover_type == 1)
                 <tr>
                     <td class='blog-post-cover'>
-                        <img src='{!! $cover !!}' style='width: 100%;'>
+                        <img src='http://sogniamoingrande.it/images/posts/{{$id}}/{!! $cover !!}' style='width: 100%;'>
                     </td>
                 </tr>
             @elseif($cover_type == 2)
