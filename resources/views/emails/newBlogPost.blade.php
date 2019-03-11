@@ -79,14 +79,14 @@
             </tr>
             <tr class='bottom-logo'>
                 <td style='background-color: #05406c; text-align: center; border: 0; padding-bottom: 16px;'>
-                    <a target='_blank' href='http://www.sogniamoingrande.it/admin/subscriptions'>
+                    <a target='_blank' href='http://www.sogniamoingrande.it/'>
                         <img src='http://www.sogniamoingrande.it/img/site/logo.jpg' style='max-height: 150px;'>
                     </a>
                 </td>
             </tr>
             <tr>
                 <td class='a1 blue-td' style='text-align: center; padding-bottom: 16px; font-size: 18px;'>     
-                    <a target='_blank' class='site-link' href='http://www.sogniamoingrande.it/admin/subscriptions'> sogniamoingrande.it </a>
+                    <a target='_blank' class='site-link' href='http://www.sogniamoingrande.it/'> sogniamoingrande.it </a>
                 </td>
             </tr>
             <tr class='sharings'>
