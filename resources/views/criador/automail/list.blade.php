@@ -137,7 +137,7 @@
                     </tbody>
                 </table>            
             @else
-                <h1 style='color: black;'> No entries </h1>
+                <h1 style='color: black;'> There are no entries </h1>
             @endif
         </div>
     </div>

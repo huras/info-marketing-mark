@@ -169,6 +169,7 @@
                             <div class='form-group col-md-12'>
                                 <label> {{ __('Active') }} </label>
                                 <input class="{{ $errors->has('active') ? ' is-invalid' : '' }}" type='checkbox' name='active' value="{{ old('active') }}" >
+                                <small> When not active, the automatic email system will not even test if the time conditions for this email are being met </small>
                                 @include('partials/form-errors', ['errors' => $errors, 'fieldName' => 'active'])
                             </div>
 

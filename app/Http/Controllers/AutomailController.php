@@ -85,7 +85,7 @@ class AutomailController extends Controller
         return redirect()->action('AutomailController@listAutomail');
     }
 
-    function dailyMailCheck(Request $request){
+    function autosend(Request $request){
         //The current date must be aquired before the loops because it will take sometime to send each email
         $now = date("Y-m-d H:i:s");
         $today = date("Y-m-d");
