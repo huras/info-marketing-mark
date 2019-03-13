@@ -45,7 +45,7 @@
         <div class='row' style='justify-content: center;'>
             @foreach($slots as $key => $slot)
                 @if($slot['use'])
-                    @if(!$slot['hidden'] || (Auth::user()->name == 'Marco Polito' || Auth::user()->name == 'Huras') )
+                    @if(!$slot['hidden'] || (Auth::user()->name == 'Marco Polito' || Auth::user()->name == 'Huras' || Auth::user()->name == 'Fabio') )
                     <div class='col-md-4'>
                         <a class='slot' style='background-color: {{$colors[$key]["main"]}}' href='{{$slot["href"]}}'>
                             <div class='icon' style='background-color: {{$colors[$key]["sub"]}}'>
