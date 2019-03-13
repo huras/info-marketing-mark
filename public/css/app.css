@@ -11757,6 +11757,7 @@ body {
 
 .criador-table {
   margin-top: 16px;
+  margin-bottom: 32px;
 }
 
 .criador-table.hand .actions {
@@ -11882,7 +11883,8 @@ body {
   padding-top: 32px;
 }
 
-.criador-form form .form-group input[type=text] {
+.criador-form form .form-group input[type=text],
+.criador-form form .form-group input[type=time] {
   width: 100%;
   height: 40px;
   padding-left: 8px;

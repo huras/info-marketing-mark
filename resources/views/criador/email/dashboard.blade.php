@@ -24,10 +24,12 @@
         <?php
             $colors = [
                 ['main' => '#39ab75;', 'sub' => '#146738;'],
+                ['sub' => '#671452;', 'main' => '#ab3974;'],
             ];
 
             $slots = [
                 ['name' => 'Send email(s)', 'count' => null, 'icon' => 'fas fa-mail-bulk', 'href' => route('mail.newGroupMail'), 'use' => true],
+                ['name' => 'Automails', 'count' => null, 'icon' => 'fas fa-envelope-square', 'href' => route('automail.list'), 'use' => true]
             ];
         ?>
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\NewsletterContact;
+use App\Models\Automail;
 use Illuminate\Support\Facades\Mail;
 
 class EmailsController extends Controller
@@ -34,13 +35,13 @@ class EmailsController extends Controller
             $email_layout = $request_all['email_layout'];
 
             $target_list = [];
-            if($target_type == 'all'){
-                $target_list = NewsletterContact::all();   
-            } else if($target_type == 'has-fist_name'){
+            if($target_type == 'all') {
+                $target_list = NewsletterContact::all();
+            } else if($target_type == 'has-fist_name') {
                 $target_list = NewsletterContact::where('first_name', '<>', '')->get();
-            } else if($target_type == 'has-name'){
+            } else if($target_type == 'has-name') {
                 $target_list = NewsletterContact::where('first_name', '<>', '')->where('last_name', '<>', '')->get();
-            } else if ($target_type == 'single-email'){
+            } else if ($target_type == 'single-email') {
                 $target_list = [
                         [
                             'email' => $request_all['target_mail'],
@@ -50,7 +51,7 @@ class EmailsController extends Controller
                     ];
             }
             
-            foreach($target_list as $target){
+            foreach($target_list as $target) {
                 $name = $target['first_name'].' '.$target['last_name'];
                 $first_name = $target['first_name'];
                 $last_name = $target['last_name'];
@@ -77,8 +78,7 @@ class EmailsController extends Controller
             session()->flash('window_msg', 'Emails sending failed!');
             session()->flash('msg_context', 'error');
         }
-        
-        
+
         return redirect()->route('mail.dashboard');
     }
 }
