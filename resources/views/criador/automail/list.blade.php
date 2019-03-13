@@ -54,7 +54,7 @@
                         <?php $tableColor = false; ?>
                         @foreach($automails as $item)
                             <tr>
-                                <td class="<?php if($item->active) echo 'published'; ?>"> {{$item->id}} </td>
+                                <td class="<?php if($item->active == 1) echo 'published'; ?>"> {{$item->id}} </td>
                                 <td style='text-align: center; max-width: 160px;'>
                                     @switch($item->target_type)
                                         @case('all')
@@ -72,7 +72,7 @@
                                     @endswitch
                                  </td>     
                                 <td style='text-align: center;'>
-                                    {{$item->time_condition_type}}
+                                    {{!!$item->time_condition_type!!}}
                                  </td>                                
                                 <td style='text-align: center;'>
                                     @switch($item->time_condition_type)

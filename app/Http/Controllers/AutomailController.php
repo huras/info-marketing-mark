@@ -85,21 +85,31 @@ class AutomailController extends Controller
         return redirect()->action('AutomailController@listAutomail');
     }
 
-    function autosend(Request $request){
+    function autosend(){
         //The current date must be aquired before the loops because it will take sometime to send each email
+        $mdebug = true;
         $now = date("Y-m-d H:i:s");
         $today = date("Y-m-d");
 
+        if($mdebug)
+            echo 'Current time = '.$now.' <br>';
+
         //Retrieve the scheduled emails to be shot
         $scheduled_emails = Automail::where('active', 1)->get();
+        if($mdebug)
+            echo 'found '.count($scheduled_emails).' active automails <br>';
 
         //Para cada email
-        foreach($scheduled_emails as $scheduled_email){
+        foreach($scheduled_emails as $key => $scheduled_email){
+            if($mdebug)
+                echo '<br>testing automail with index = '.$key.'<br>';
             //Testa se ele deve ou não ser disparado nessa iteração do cron
             //Check time conditions
             $time_conditions_result = false;
             
             $time_condition_type = $scheduled_email['time_condition_type'];
+            if($mdebug)
+                echo 'time condition type = '.($time_condition_type).'<br>';
             switch($time_condition_type){
                 case 'Daily':
                         //Time difference in minutes
@@ -111,6 +121,9 @@ class AutomailController extends Controller
                         //Positive difference means the email shot time is in the future
                         if($time_difference == 0){
                             $time_conditions_result = true;
+                        } else {
+                            if($mdebug)
+                                echo 'time difference = '.($time_difference).'<br>';
                         }
                     break;
                 case 'Weekly':
@@ -177,8 +190,12 @@ class AutomailController extends Controller
             
             //If time conditions are not met, the algorithm will not send the email
             if(!$time_conditions_result){
+                if($mdebug)
+                    echo 'time conditions were not met<br>';
                 continue;
             }
+            if($mdebug)
+                echo 'time conditions were met<br>';
 
             //Obtem os alvos do disparo
             $target_type = $scheduled_email['target_type'];
@@ -198,6 +215,8 @@ class AutomailController extends Controller
                         ]
                     ];
             }
+            if($mdebug)
+                echo 'Found '.count($email_targets).' email targets<br>';
 
             //Get the scheduled email template
             $template_name = $scheduled_email['template_name'];
@@ -207,6 +226,9 @@ class AutomailController extends Controller
             
             //Para cada destinatário
             foreach($email_targets as $target) {
+                if($mdebug)
+                    echo 'attempting to send to '.$target['email'].'<br>';
+
                 //Get target info
                 $name = $target['first_name'].' '.$target['last_name'];
                 $first_name = $target['first_name'];

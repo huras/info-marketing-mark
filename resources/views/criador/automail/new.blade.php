@@ -175,7 +175,7 @@
 
                             <div class='form-group col-md-6'>
                                 <label> {{ __('Subject') }} </label>
-                                <input class="{{ $errors->has('topic') ? ' is-invalid' : '' }}" type='text' name='email_topic' value="{{ old('topic') }}" >
+                                <input class="{{ $errors->has('topic') ? ' is-invalid' : '' }}" type='text' name='topic' value="{{ old('topic') }}" >
                                 @include('partials/form-errors', ['errors' => $errors, 'fieldName' => 'topic'])
                             </div>
 
