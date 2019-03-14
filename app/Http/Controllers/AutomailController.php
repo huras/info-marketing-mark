@@ -156,16 +156,25 @@ class AutomailController extends Controller
                 break;
                 case 'Annualy':
                     //Check the number of the day
-                    $todayDate = strtotime($today);
-                    $shotDay = strtotime(date('Y-m-d', strtotime($scheduled_email['special_day'])));
+                    $currentYear = date('Y',strtotime($today));
+                    $todayDate = strtotime($currentYear.'-'.date('m-d',strtotime($today)));
+                    $shotDay = strtotime($currentYear.'-'.date('m-d', strtotime($scheduled_email['special_day'])));
 
                     //Time difference in minutes
                     $current_time = strtotime($now);
                     $shot_time = strtotime($today." ".$scheduled_email['shot_time']);
                     $time_difference = round(($shot_time - $current_time) / 60,0);
 
-                    if($todayDate == $shotDay && $time_difference == 0){
-                        $time_conditions_result = true;
+                    if($time_difference == 0){
+                        if($todayDate == $shotDay)
+                            $time_conditions_result = true;
+                        else{
+                            if($mdebug)
+                                echo 'dates : Today Date = '.$todayDate.' <br>Shot Day '.$shotDay.'<br>';    
+                        }
+                    }else {
+                        if($mdebug)
+                            echo 'time difference = '.($time_difference).'<br>';
                     }
                 break;
                 case 'Once':

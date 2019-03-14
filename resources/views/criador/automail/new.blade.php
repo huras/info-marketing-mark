@@ -4,6 +4,13 @@
     <style>
         .tab-content > .active{
             display: flex!important;
+        }        
+
+        .clock {            
+            color: black;
+            font-size: 24px;
+            font-family: Orbitron;
+            letter-spacing: 7px;
         }
     </style>
 @endsection
@@ -19,7 +26,15 @@
                 <span> New Automail </span>
             </h1>
         </div>
-        
+
+        <div class='row'>
+            <div class='col-12'>
+                <div class='w-100' style='font-size: 16px; text-align: center; margin-top: 5px;'>
+                    Fields with an * after the name are required to be filled
+                </div>
+            </div>
+        </div>
+
         <div class='w-100 criador-form'>
             <form class='w-100' method="POST" action="{{route('automail.store')}}" enctype="multipart/form-data">
                 {{ csrf_field() }}
@@ -51,35 +66,46 @@
                             <div class='form-group col-md-12'>
                                 <div class='separator'></div>
                             </div>
-                            <div class='form-group col-md-6 col-sm-12'>
-                                <label> {{ __('Interval') }} </label>
-                                <select name='time_condition_type' id='TimeConditionTypeSelect' onchange='onChangeIntervalType()'>
+                            <div class='form-group col-md-12 col-sm-12'>
+                                <label> {{ __('Interval') }}* </label>
+                                <select name='time_condition_type' id='TimeConditionTypeSelect' onchange='onChangeIntervalType()' required>
                                     @foreach($timeCondition as $option)
                                         <option value='{{$option["value"]}}'> {{$option["label"]}} </option>
                                     @endforeach
                                 </select>
+                            </div>                            
+                            <div class='form-group col-lg-12 col-sm-12'>
+                                <div class='w-100' style='font-size: 16px; margin-top: 5px;'>
+                                    Remember that the time where the server is located is different from the time wherer you are.<br>
+                                    Bellow is a clock that shows the current time where the server is located. <br>
+                                </div>
+                                <div id="MyClockDisplay" class="clock"></div>
                             </div>
                             <div class='form-group col-lg-6 col-sm-12' id='shot_time'>
-                                <label> {{ __('Time of the shot') }} </label>
-                                <input type='time' name='shot_time' >
+                                <label> {{ __('Time of the shot') }}* </label>
+                                <input type='time' name='shot_time' required>
                             </div>
                             
-                            <div class='form-group col-lg-4 col-sm-12' id='day_of_week' style='display: none;'>
-                                <label> {{ __('Day of Week') }} </label>
-                                <select name='day_of_week' id='TimeConditionTypeSelect' >
+                            <div class='form-group col-lg-6 col-sm-12' id='day_of_week' style='display: none;'>
+                                <label> {{ __('Day of Week') }}* </label>
+                                <select name='day_of_week' id='TimeConditionTypeSelect' required>
                                     @foreach($daysOfWeek as $option)
                                         <option value='{{$option["value"]}}'> {{$option["label"]}} </option>
                                     @endforeach
                                 </select>
                             </div>
-                            <div class='form-group col-lg-4 col-sm-12' id='day_of_month' style='display: none;'>
-                                <label> {{ __('Day of the Month') }} </label>
-                                <input type='text' name='day_of_month' value='15' >
+                            <div class='form-group col-lg-6 col-sm-12' id='day_of_month' style='display: none;'>
+                                <label> {{ __('Day of the Month') }}* </label>
+                                <input type='text' name='day_of_month' value='15' required>
                             </div>
-                            <div class='form-group col-lg-4 col-sm-12' id='special_day' style='display: none;'>
-                                <label> {{ __('Day of the Year') }} </label>
+                            <div class='form-group col-lg-6 col-sm-12' id='special_day' style='display: none;'>
+                                <label> {{ __('Day of the Year') }}* </label>
                                 <small> The year value will be ignored but it still need to be inserted. Simply choose any year. </small>
-                                <input type='date' name='special_day' >
+                                <input type='date' name='special_day' required>
+                            </div>
+                            <div class='form-group col-lg-6 col-sm-12' id='once_day' style='display: none;'>
+                                <label> {{ __('Specific Date') }}* </label>
+                                <input type='date' name='special_day' required>
                             </div>
                         </div>
 
@@ -89,24 +115,24 @@
                                 <div class='separator'></div>
                             </div>
                             <div class='form-group col-md-12'>
-                                <label> {{ __('Target(s)') }} </label>
-                                <select name='target_type' id='Target_type_select' onchange='onChangeTargetType()'>
+                                <label> {{ __('Target Category') }}* </label>
+                                <select name='target_type' id='Target_type_select' onchange='onChangeTargetType()' required>
                                     @foreach($targets as $option)
                                         <option value='{{$option["value"]}}'> {{$option["label"]}} </option>
                                     @endforeach
                                 </select>
                             </div>
                             <div class='form-group col-lg-4 col-sm-12' id='single-mail-input' style='    display: none;'>
-                                <label> {{ __('Target`s Email') }} </label>
-                                <input type='text' name='target_mail' >
+                                <label> {{ __('Target`s Email') }}* </label>
+                                <input type='text' name='target_mail' required placeholder='name@mail.com'>
                             </div>
                             <div class='form-group col-lg-4 col-sm-12' id='single-mail-input-fname' style='    display: none;'>
-                                <label> {{ __('Target`s First Name') }} </label>
-                                <input type='text' name='first_name'>
+                                <label> {{ __('Target`s First Name') }}* </label>
+                                <input type='text' name='first_name' value='Testley' required>
                             </div>
                             <div class='form-group col-lg-4 col-sm-12' id='single-mail-input-lname' style='    display: none;'>
-                                <label> {{ __('Target`s Last Name') }} </label>
-                                <input type='text' name='last_name'>
+                                <label> {{ __('Target`s Last Name') }}* </label>
+                                <input type='text' name='last_name' value='Testingson' required>
                             </div>
                         </div>
 
@@ -127,8 +153,8 @@
                                 <div class='separator'></div>
                             </div>
                             <div class='form-group col-md-6'>
-                                <label> {{ __('Layouts') }} </label>
-                                <select name='template_name'>
+                                <label> {{ __('Layouts') }}* </label>
+                                <select name='template_name' required>
                                     @foreach($templates as $option)
                                         <option value='{{$option["value"]}}'> {{$option["label"]}} </option>
                                     @endforeach
@@ -203,10 +229,12 @@
             var day_of_week_input = document.getElementById("day_of_week");
             var day_of_month_input = document.getElementById("day_of_month");
             var special_day_input = document.getElementById("special_day");
+            var once_day_input = document.getElementById("once_day");
             
             day_of_week_input.style.display = "none";
             day_of_month_input.style.display = "none";
             special_day_input.style.display = "none";
+            once_day_input.style.display = "none";
 
             var TimeConditionTypeSelect = document.getElementById("TimeConditionTypeSelect");
             if(TimeConditionTypeSelect.value == 'Weekly') {
@@ -215,6 +243,8 @@
                 day_of_month_input.style.display = "flex";
             }else if(TimeConditionTypeSelect.value == 'Annualy') {
                 special_day_input.style.display = "flex";
+            }else if(TimeConditionTypeSelect.value == 'Once') {
+                once_day_input.style.display = "flex";
             }
             
         }
@@ -238,9 +268,55 @@
             }
         }
 
+        var h;
+        var m;
+        var s;
+        function setTime(){
+            h = <?php echo date("H"); ?>;
+            m = <?php echo date("i"); ?>;
+            s = <?php echo date("s"); ?>;
+            
+            tempH = (h < 10) ? "0" + h : h;
+            tempM = (m < 10) ? "0" + m : m;
+            tempS = (s < 10) ? "0" + s : s;
+            
+            var time = "<?= date('d/M/Y') ?>  at  " + tempH + ":" + tempM + ":" + tempS;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+
+            setTimeout(showTime, 1000);
+        }
+
+        function showTime(){
+            s++;
+            if(s >= 60){
+                s = 0;
+                m++;
+            }                
+            if(m >= 60)
+            {
+                m = 0;
+                h++;
+            }
+            if(h >= 24){
+                h = 0;
+            }
+            
+            tempH = (h < 10) ? "0" + h : h;
+            tempM = (m < 10) ? "0" + m : m;
+            tempS = (s < 10) ? "0" + s : s;
+            
+            var time = "<?= date('d/M/Y') ?>  at  " + tempH + ":" + tempM + ":" + tempS;
+            document.getElementById("MyClockDisplay").innerText = time;
+            document.getElementById("MyClockDisplay").textContent = time;
+            
+            setTimeout(showTime, 1000);
+        }
+
         $( document ).ready(function() {
             onChangeIntervalType();
             onChangeTargetType();
+            setTime();
         });
     </script>
 @endsection
