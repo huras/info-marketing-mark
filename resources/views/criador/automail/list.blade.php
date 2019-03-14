@@ -72,8 +72,8 @@
                                     @endswitch
                                  </td>     
                                 <td style='text-align: center;'>
-                                    {{!!$item->time_condition_type!!}}
-                                 </td>                                
+                                    {{$item->time_condition_type}}
+                                 </td>
                                 <td style='text-align: center;'>
                                     @switch($item->time_condition_type)
                                         @case('Daily')
@@ -104,7 +104,7 @@
                                 </td>
                                 <td style='text-align: center;'> {{$item->template_name}} </td>
                                 <td style='text-align: center;'> {{$item->topic}} </td>
-                                <td style='max-width: 250px; white-space: pre-line;'> {{substr($item->content, 0, 128)}} <?php if(strlen($item->content) > 255) echo '...'; ?> </td>
+                                <td style='max-width: 250px; white-space: pre-line;'> {!!substr($item->content, 0, 128)!!} <?php if(strlen($item->content) > 128) echo '...'; ?> </td>
                                 <td>
                                     <div class='actions'>
                                         @if(!$item->active)

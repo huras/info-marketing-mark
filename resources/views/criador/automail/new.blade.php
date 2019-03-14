@@ -124,15 +124,39 @@
                             </div>
                             <div class='form-group col-lg-4 col-sm-12' id='single-mail-input' style='    display: none;'>
                                 <label> {{ __('Target`s Email') }}* </label>
-                                <input type='text' name='target_mail' required placeholder='name@mail.com'>
+                                <input type='text' name='target_mail' placeholder='name@mail.com'>
                             </div>
                             <div class='form-group col-lg-4 col-sm-12' id='single-mail-input-fname' style='    display: none;'>
                                 <label> {{ __('Target`s First Name') }}* </label>
-                                <input type='text' name='first_name' value='Testley' required>
+                                <input type='text' name='first_name' value='Testley'>
                             </div>
                             <div class='form-group col-lg-4 col-sm-12' id='single-mail-input-lname' style='    display: none;'>
                                 <label> {{ __('Target`s Last Name') }}* </label>
-                                <input type='text' name='last_name' value='Testingson' required>
+                                <input type='text' name='last_name' value='Testingson'>
+                            </div>
+                            <div class='form-group col-sm-12' id='contact-handpick-list' style='/*display: none;*/'>
+                                <table class='w-100 criador-table hand'>
+                                    <thead>
+                                        <tr class='color-yes'>
+                                            <th></th>
+                                            <th>Email</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach($contacts as $item)
+                                            <tr>
+                                                <td style='text-align: center;'>
+                                                    <input type='checkbox' name='selected_targets[]'  value='{{$item->id}}'>
+                                                </td>
+                                                <td>{{$item->email}}</td>
+                                                <td>{{$item->first_name}}</td>
+                                                <td>{{$item->last_name}}</td>
+                                            </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
 
@@ -253,7 +277,12 @@
             var single_mail_input = document.getElementById("single-mail-input");
             var single_mail_input_lname = document.getElementById("single-mail-input-lname");
             var single_mail_input_fname = document.getElementById("single-mail-input-fname");
-            
+            var contact_handpick_list = document.getElementById("contact-handpick-list");            
+
+            single_mail_input.style.display = "none";
+            single_mail_input_lname.style.display = "none";
+            single_mail_input_fname.style.display = "none";
+            contact_handpick_list.style.display = "none";
 
             var TargetTypeSelect = document.getElementById("Target_type_select");
             if(TargetTypeSelect.value == 'single-email') {
@@ -261,10 +290,8 @@
                 single_mail_input_lname.style.display = "flex";
                 single_mail_input_fname.style.display = "flex";
             }
-            else{
-                single_mail_input.style.display = "none";
-                single_mail_input_lname.style.display = "none";
-                single_mail_input_fname.style.display = "none";
+            else if(TargetTypeSelect.value == 'hand-picked') {
+                contact_handpick_list.style.display = "flex";
             }
         }
 

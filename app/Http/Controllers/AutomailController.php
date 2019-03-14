@@ -16,7 +16,17 @@ class AutomailController extends Controller
     }
 
     function createAutomail(Request $request){
-        $automail = Automail::create($request->all());
+        $data = $request->all();
+
+        if($data['target_type'] == 'hand-picked'){
+            $targetIDs = '';
+            foreach($data['selected_targets'] as $targetID){
+                $targetIDs = $targetIDs.$targetID.';';
+            }
+            $data['target_mail'] = $targetIDs;
+        }
+
+        $automail = Automail::create($data);
 
         session()->flash('window_msg', 'Automail created with success!');
         session()->flash('msg_context', 'success');
@@ -29,6 +39,7 @@ class AutomailController extends Controller
             ['value' => 'has-name', 'label' => 'Only contacts with first and last names'],
             ['value' => 'has-first_name', 'label' => 'Only contacts with at least the first name'],
             ['value' => 'single-email', 'label' => 'Single Email (You write the email. The message will be sent to only 1 e-mail.)'],
+            ['value' => 'hand-picked', 'label' => 'Select the contacts I want from a list'],
         ];
 
         $timeCondition = [
@@ -53,7 +64,9 @@ class AutomailController extends Controller
             ['value' => 'template_1', 'label' => 'Template 1', 'thumb' => '/img/site/email_template_1.png'],
         ];
 
-        return view('criador/automail/new',compact('targets', 'timeCondition', 'daysOfWeek', 'templates'));
+        $contacts = NewsletterContact::where('receive_emails', 1)->get();
+
+        return view('criador/automail/new',compact('targets', 'timeCondition', 'daysOfWeek', 'templates', 'contacts'));
     }
 
     public function destroy (Request $request, $id) {        
@@ -223,7 +236,15 @@ class AutomailController extends Controller
                             'last_name' => $scheduled_email['last_name'],
                         ]
                     ];
+            } else if ($target_type == 'hand-picked'){
+                $target_ids = explode(';', $scheduled_email['target_mail']);                
+                $query = NewsletterContact::where('receive_emails', 1);
+                foreach($target_ids as $target_id){
+                    $query->orWhere('id', $target_id);
+                }
+                $email_targets = $query->get();
             }
+
             if($mdebug)
                 echo 'Found '.count($email_targets).' email targets<br>';
 

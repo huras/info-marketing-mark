@@ -47,8 +47,8 @@
                 </td>
             </tr>
             <tr>
-                <td class='a1 blue-td' style='font-size: 20px;'> 
-                    {!! $content !!}
+                <td class='a1 blue-td' style='font-size: 20px; white-space: pre-line!important;'>
+                    {!!$content!!}
                 </td>
             </tr>            
             <tr>
