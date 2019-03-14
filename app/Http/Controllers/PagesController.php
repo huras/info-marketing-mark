@@ -75,7 +75,15 @@ class PagesController extends Controller
     }
 
     function createNewsletterContact(NewsletterContactRequest $request){
-        $contact = NewsletterContact::create($request->all());
+        $request_data = $request->all();
+        $probable_duplicate = NewsletterContact::where('email', $request_data['email'])->get();
+        if(count($probable_duplicate) > 0){
+            session()->flash('window_msg', 'This email is already subscribed!');
+            session()->flash('msg_context', 'error');
+            return redirect()->action('PagesController@home');
+        }
+
+        $contact = NewsletterContact::create($request_data);
 
         $target_email = $request->all()['email'];
         Mail::send('emails.welcome', ['nick' => 'Niobio41'], function($message) use ($target_email){

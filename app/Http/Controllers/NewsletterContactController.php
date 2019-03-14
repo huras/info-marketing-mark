@@ -7,7 +7,7 @@ use App\Models\NewsletterContact;
 
 class NewsletterContactController extends Controller
 {
-    public function destroy (Request $request, $id) {        
+    public function destroy (Request $request, $id) {
         $item = NewsletterContact::find($id);
         $item->delete();
 
