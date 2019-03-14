@@ -101,11 +101,11 @@
                             <div class='form-group col-lg-6 col-sm-12' id='special_day' style='display: none;'>
                                 <label> {{ __('Day of the Year') }}* </label>
                                 <small> The year value will be ignored but it still need to be inserted. Simply choose any year. </small>
-                                <input type='date' name='special_day' required>
+                                <input type='date' name='special_day'>
                             </div>
                             <div class='form-group col-lg-6 col-sm-12' id='once_day' style='display: none;'>
                                 <label> {{ __('Specific Date') }}* </label>
-                                <input type='date' name='special_day' required>
+                                <input type='date' name='special_day'>
                             </div>
                         </div>
 
@@ -194,7 +194,7 @@
 
                             <div class='form-group col-md-12'>
                                 <label> {{ __('Active') }} </label>
-                                <input class="{{ $errors->has('active') ? ' is-invalid' : '' }}" type='checkbox' name='active' value="{{ old('active') }}" >
+                                <input class="{{ $errors->has('active') ? ' is-invalid' : '' }}" type='checkbox' name='active' value="1" >
                                 <small> When not active, the automatic email system will not even test if the time conditions for this email are being met </small>
                                 @include('partials/form-errors', ['errors' => $errors, 'fieldName' => 'active'])
                             </div>
