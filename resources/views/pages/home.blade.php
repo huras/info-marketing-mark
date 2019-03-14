@@ -111,7 +111,7 @@
                         NON SMETTERE DI SOGNARE E QUANDO LO FAI, FALLO IN GRANDE.
                     </div>
                     <div class='conteudo'>
-                        Siamo la prima e unica iniziativa focalizzata nei giovani studenti dei Nautici Italiani che vogliono intraprendere una carriera lavorativa a bordo delle navi. I nostri ragazzi meritano l'opportunità di dimostrare il loro valore, noi gli diamo la possibilità di dimostrarlo su panorami internazionali, dove non sistono racoomandazioni e preferenze, ma solo meritocrazia. Non lasciare che le circostanze ti abbattano, reagisci, rimettiti in piedi e sogna in grande.
+                        Siamo la prima e unica iniziativa focalizzata nei giovani studenti dei Nautici Italiani che vogliono intraprendere una carriera lavorativa a bordo delle navi. I nostri ragazzi meritano l'opportunità di dimostrare il loro valore, noi gli diamo la possibilità di dimostrarlo su panorami internazionali, dove non sistono raccomandazioni e preferenze, ma solo meritocrazia. Non lasciare che le circostanze ti abbattano, reagisci, rimettiti in piedi e sogna in grande.
                     </div>
                 </div>
             </div>
