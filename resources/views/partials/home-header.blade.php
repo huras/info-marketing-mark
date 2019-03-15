@@ -18,12 +18,25 @@
                 </div>
             </div>
             <div class='col-md-7 options'>
-                <a href='/' class='nlink'> Home </a>
-                <a href='/about' class='nlink'> {{ __('About Us') }} </a>
+                <a href='/' class='nlink'> <i class="fas fa-home"></i> </a>
+                <a href='/about' class='nlink'> {{ __('About') }} </a>
                 <a href='/social' class='nlink'> {{ __('Social') }} </a>
                 <a href='/contact' class='nlink'> {{ __('Contact') }} </a>
                 <a href='/blog' class='nlink'> {{ __('Blog') }} </a>
                 <a href='/videos' class='nlink'> {{ __('Video') }} </a>
+                <!-- <a href='/donazioni' class='nlink'> {{ __('Donazioni') }} </a> -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style='padding-top: 0;'>
+                            Donazioni
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.mimmomoricone.com/">Mimmo Moricone</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="https://projetocorabe.wixsite.com/corabe/copia-home">Progetto Corabe</a>
+                        </div>
+                    </li>
+                </ul>
                 <!-- <a href='/services' class='nlink'> {{ __('Services') }} </a> -->
 
                 <a href='/admin/dashboard' class='nlink access'> <i class="fas fa-lock"></i> </a>

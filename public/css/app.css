@@ -11140,7 +11140,7 @@ body {
   align-items: center;
 }
 
-.infomarketing-header .options a {
+.infomarketing-header .options .nlink {
   color: white;
   font-size: 16px;
   margin: 0px 8px;
@@ -11152,26 +11152,26 @@ body {
   border-bottom: 0px solid black;
 }
 
-.infomarketing-header .options a:hover {
+.infomarketing-header .options .nlink:hover {
   transition: all 0.5s ease-out;
   padding-bottom: 6px;
   color: #bcffff;
   border-bottom: 3.5px solid #4ec7f7;
 }
 
-.infomarketing-header .options a.access i {
+.infomarketing-header .options .nlink.access i {
   transition: all 0.5s;
   font-size: 18px;
   padding: 0px;
   color: #3b3b3b;
 }
 
-.infomarketing-header .options a.access:hover {
+.infomarketing-header .options .nlink.access:hover {
   border-bottom: 0px solid black;
   padding-bottom: 0px;
 }
 
-.infomarketing-header .options a.access:hover i {
+.infomarketing-header .options .nlink.access:hover i {
   transition: all 0.5s ease-out;
   color: #fa6a82;
 }
@@ -11611,6 +11611,10 @@ body {
 
 .window-msg.home .window-message.error {
   background-color: #8d1818;
+}
+
+.window-msg.home .window-message.warning {
+  background-color: #927906;
 }
 
 .dashboard .slot {
