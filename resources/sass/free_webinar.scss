@@ -1,0 +1,157 @@
+.free-webinar {
+    .depoiments-body{
+        .videos{
+            .video-slot{
+                margin-bottom: 16px;
+
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                // flex-direction: column;
+
+                .video-miniature{
+                    img{
+                        width: 100%;
+                        max-width: 280px;
+                        min-width: 180px;
+                    }
+                }
+                .paragraph{
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+
+    .video-body{
+        .topics{
+            .button{
+                font-size: 18px;
+                margin-top: 32px;
+                margin-bottom: 24px;
+            }
+            .ninja-small-letters{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .depoiments-body {
+        .paragraphs {
+            .paragraph {
+                margin: 24px 8px;
+                font-family: Roboto;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .m-head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .title{
+            font-size: 28px;
+            font-family: Lato, sans-serif;
+            font-weight: bold;
+
+            .special-word{
+                font-size: 28px;
+                font-weight: bold;
+                letter-spacing: 5px;
+            }
+        }
+
+        .quote{
+            margin-top: 24px;
+
+            font-size: 32px;
+            text-align: center;
+            line-height: 1.1;
+        }
+    }
+
+    .topics{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .title{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .topic{
+            margin: 8px 0px;
+
+            i{
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .big-button-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .needlessly-large-button {
+            font-size: 32px;
+        }
+        .small-letters {
+            margin-top: 16px;
+
+            font-size: 12px;
+            text-align: center;
+        }
+        .italic-small-letters {
+            margin-top: 56px;
+
+            font-size: 12px;
+            font-style: italic; 
+            text-align: center;
+        }
+    }
+
+    .sec1{
+        margin-top: 56px;
+    }
+    .sec2{
+        margin-top: 64px;
+    }
+    .sec3{
+        margin-top: 48px;
+    }
+    .sec4{
+        margin-top: 72px;
+    }
+    .sec5{
+        margin-top: 48px;
+    }
+
+    .btn-a01{
+        color: white;
+        background-color: #198dce;
+        border-radius: 1px;        
+        font-weight: bold;
+        cursor: pointer;
+
+        width: 80%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 7px #0d416b;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: #2981c9;
+            transition: all 0.5s ease;
+            box-shadow: 10px 10px #045699;
+        }
+    }
+}

@@ -62,6 +62,17 @@
     <div class='container content-2'>
         <div class='row'>
             <div class='col-lg-7'>
+                <div class='w-100'>
+                    <iframe width="100%"  height="100%" src="https://www.youtube.com/embed/NRwIslZXLZQ?autoplay=1" frameborder="0" allowfullscreen> </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content 2 -->
+    <div class='container content-2'>
+        <div class='row'>
+            <div class='col-lg-7'>
                 <div class='video-1'>
                     <div class='overlay' id='video-overlay' style="background-image: url('img/site/video-1-overlay.png'); cursor: pointer;" onclick="showVideo();">
                         <i class="fab fa-youtube"></i>

@@ -23,6 +23,7 @@ Route::get('/social', 'PagesController@social');
 Route::get('/blog', 'PagesController@blog');
 Route::get('/videos', 'PagesController@videos');
 Route::post('/blog', 'BlogController@blog');
+Route::get('/webinar-gratis', 'PagesController@WebinarGratis');
 
 Route::get('/facciamo-cv-vicente', 'PagesController@cvVicente');
 

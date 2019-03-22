@@ -108,4 +108,8 @@ class PagesController extends Controller
         session()->flash('msg_context', 'success');
         return redirect()->action('PagesController@home');
     }
+
+    function WebinarGratis(){
+        return view('pages/freeWebinar');
+    }
 }
