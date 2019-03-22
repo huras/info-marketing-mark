@@ -27,7 +27,7 @@
         <div class='col-lg-5 video-body'>
             <div class='topics'>
                 <div class='title'>
-                    CORSO GRATIS CON MIK COSENTINO:
+                    CORSO GRATIS CON MARCO POLITO:
                 </div>
                 <div class='topic'>
                     <i class="fas fa-check"></i> Il segreto #1 Per scovare una mercato, capire le tue unicità e farti pagare per le soluzioni che puoi offrire (qualsiasi sia la tua situazione, questo ti aiuterà)
