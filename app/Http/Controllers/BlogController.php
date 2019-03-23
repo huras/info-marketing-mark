@@ -72,25 +72,28 @@ class BlogController extends Controller
             $post = BlogPost::create($postData);
         }
         
-        if ($postData['sendToEmail'] == 'true' ){
-            $target_list = NewsletterContact::where('email', '<>', '')->where('email', '<>', null)->get();
-            // $target_list = [['email' => 'hurast@gmail.com']];
+        if(isset($postData['sendToEmail']))
+        {
+            if ($postData['sendToEmail'] == 'true' ){
+                $target_list = NewsletterContact::where('email', '<>', '')->where('email', '<>', null)->get();
+                // $target_list = [['email' => 'hurast@gmail.com']];
 
-            $email_cover_type = $post['cover_type_id'];
-            $email_cover = $post['cover'];
-            $email_content = $postData['content'];
-            $email_title = $postData['title'];
+                $email_cover_type = $post['cover_type_id'];
+                $email_cover = $post['cover'];
+                $email_content = $postData['content'];
+                $email_title = $postData['title'];
 
-            foreach($target_list as $target){
-                $target_email = $target['email'];
-                
-                Mail::send('emails.newBlogPost',
-                        ['id' => $post['id'], 'content' => $email_content, 'title' => $email_title, 'blogPostLink' => 'http://sogniamoingrande.it/post/'.$post['id'], 'cover' => $email_cover, 'cover_type' => $email_cover_type],
-                        function($message) use ($target_email, $postData){
-                            $message->from('fromtest@yahoo.com', 'Sogniamo In Grande');
-                            $message->to($target_email, 'sogniamoningrande.it')->subject($postData['title']);
-                        }
-                );
+                foreach($target_list as $target){
+                    $target_email = $target['email'];
+                    
+                    Mail::send('emails.newBlogPost',
+                            ['id' => $post['id'], 'content' => $email_content, 'title' => $email_title, 'blogPostLink' => 'http://sogniamoingrande.it/post/'.$post['id'], 'cover' => $email_cover, 'cover_type' => $email_cover_type],
+                            function($message) use ($target_email, $postData){
+                                $message->from('fromtest@yahoo.com', 'Sogniamo In Grande');
+                                $message->to($target_email, 'sogniamoningrande.it')->subject($postData['title']);
+                            }
+                    );
+                }
             }
         }
         
