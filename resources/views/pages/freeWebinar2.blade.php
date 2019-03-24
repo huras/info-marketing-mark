@@ -69,6 +69,8 @@
         }
     }
     </script>
+
+    <script> $( window ).load(function() { $( '.landing' ).get(0).play(); }); </script>
 @endsection
 
 @section('content')
@@ -154,7 +156,6 @@
                 </div>
                 <div class='video'>
                     <video autoplay src="{{asset('videos/preWebinarVideo.mp4')}}" style='width: 100%;' class='landing'></video>
-                    <script> $( window ).load(function() { $( '.landing' ).get(0).play(); }); </script>
                     <!-- <video src="{{asset('videos/preWebinarVideo.mp4')}}" style='width: 100%;' autoplay='true'></video> -->
                 </div>
                 <div class='texto5'>
