@@ -160,7 +160,9 @@
                     NON SMETTERE DI SOGNARE
                 </div>
                 <div class='video'>
-                    <video autoplay src="{{asset('videos/preWebinarVideo.mp4')}}" style='width: 100%;' class='landing'></video>
+                    <video style='width: 100%;' class='landing'>
+                        <source src="{{asset('videos/preWebinarVideo.mp4')}}" type="video/mp4">
+                    </video>
                     <!-- <video src="{{asset('videos/preWebinarVideo.mp4')}}" style='width: 100%;' autoplay='true'></video> -->
                 </div>
                 <div class='texto5'>
