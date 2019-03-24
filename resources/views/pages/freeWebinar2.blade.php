@@ -162,7 +162,7 @@
                 </div>
                 <div class='video'>
                     <video autoplay style='width: 100%;' class='landing'>
-                        <source src="{{asset('videos/preWebinarVideo.mp4')}}" type="video/mp4" autoplay>
+                        <source src="{{asset('videos/preWebinarVideo.mp4')}}" type="video/mp4" autoplay controls>
                     </video>
                     <!-- <video src="{{asset('videos/preWebinarVideo.mp4')}}" style='width: 100%;' autoplay='true'></video> -->
                 </div>
