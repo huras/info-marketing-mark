@@ -51,7 +51,7 @@
         </div>
         <div class='col-lg-7 video-body'>
             <div class='video'>
-                <video autoplay src="{{asset('videos/free_webinar.mp4')}}" style='width: 100%;'>
+                <video controls src="{{asset('videos/free_webinar.mp4')}}" style='width: 100%;'>
                 <!-- controls autoplay -->
             </div>
         </div>
@@ -119,15 +119,28 @@
             </div>            
         </div>
     </div>
+</div>
 
+<div class='container-fluid free-webinar'>
     <div class='row sec5'>
         <div class='col-lg-12'>
             <div class='ugly-and-full-of-letters-footer'>
-                <div class='logo'>
-                </div>
+                <a href='/' class='logo'>
+                    <img src="{{asset('img/site/Logo.jpg')}}">
+                </a>
                 <div class='navigation-links'>
+                    <a href='#' class='nav-link'> Disclaimer </a>
+                    <a href='/about' class='nav-link'> About </a>
+                    <a href='/blog' class='nav-link'> Blog </a>
+                    <a href='/contact' class='nav-link'> Contatti </a>
                 </div>
                 <div class='faded-letters'>
+                    DISCLAIMER
+
+                    Sottoscrivendo materiale dell’Editore, riconosci e accetti espressamente che non stiamo offrendo in alcun caso promesse, suggerimenti, 
+                    proiezioni, rappresentazioni o garanzie di alcun genere in merito a prospettive di lucro future o guadagni in relazione al tuo 
+                    acquisto di prodotti Mik Cosentino® e / o servizi, e che non abbiamo autorizzato alcuna proiezione, promessa o rappresentazione da parte 
+                    di soggetti terzi, interni o esterni all’azienda.
                 </div>
             </div>
         </div>

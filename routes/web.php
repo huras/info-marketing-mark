@@ -24,6 +24,7 @@ Route::get('/blog', 'PagesController@blog');
 Route::get('/videos', 'PagesController@videos');
 Route::post('/blog', 'BlogController@blog');
 Route::get('/webinar-gratis', 'PagesController@WebinarGratis');
+Route::get('/webinar-gratis-2', 'PagesController@WebinarGratis2');
 
 Route::get('/facciamo-cv-vicente', 'PagesController@cvVicente');
 

@@ -112,4 +112,11 @@ class PagesController extends Controller
     function WebinarGratis(){
         return view('pages/freeWebinar');
     }
+    function WebinarGratis2(){
+        return view('pages/freeWebinar2');
+    }
+
+    function SubscribeViaWebinarGratis(Request $request){
+        return view('pages/freeWebinar2');
+    }
 }
