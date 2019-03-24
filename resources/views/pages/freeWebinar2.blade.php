@@ -73,6 +73,7 @@
     <script> 
         $( document ).ready(function() { 
             var video = document.querySelector('.landing');
+            console.log(video);
             video.play();
         }); 
     </script>
@@ -161,7 +162,7 @@
                 </div>
                 <div class='video'>
                     <video style='width: 100%;' class='landing'>
-                        <source src="{{asset('videos/preWebinarVideo.mp4')}}" type="video/mp4">
+                        <source src="{{asset('videos/NON SMETTERE DI SOGNARE.mp4')}}" type="video/mp4">
                     </video>
                     <!-- <video src="{{asset('videos/preWebinarVideo.mp4')}}" style='width: 100%;' autoplay='true'></video> -->
                 </div>
