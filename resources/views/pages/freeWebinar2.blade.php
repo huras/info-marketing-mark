@@ -70,7 +70,12 @@
     }
     </script>
 
-    <script> $( window ).load(function() { $( '.landing' ).get(0).play(); }); </script>
+    <script> 
+        $( document ).ready(function() { 
+            var video = document.querySelector('.landing');
+            video.play();
+        }); 
+    </script>
 @endsection
 
 @section('content')
