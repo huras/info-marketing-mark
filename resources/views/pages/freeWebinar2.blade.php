@@ -153,7 +153,9 @@
                     NON SMETTERE DI SOGNARE
                 </div>
                 <div class='video'>
-                    <video src="{{asset('videos/preWebinarVideo.mp4')}}" style='width: 100%;' autoplay></video>
+                    <video autoplay src="{{asset('videos/preWebinarVideo.mp4')}}" style='width: 100%;' class='landing'></video>
+                    <script> $( window ).load(function() { $( '.landing' ).get(0).play(); }); </script>
+                    <!-- <video src="{{asset('videos/preWebinarVideo.mp4')}}" style='width: 100%;' autoplay='true'></video> -->
                 </div>
                 <div class='texto5'>
                     La durata di questo video è di circa un'ora, quindi mettiti comodo e buona visione!!!
