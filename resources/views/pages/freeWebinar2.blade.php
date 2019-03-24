@@ -71,7 +71,7 @@
     </script>
 
     <script> 
-        $( document ).ready(function() { 
+        $('document').ready(function() { 
             var video = document.querySelector('.landing');
             console.log(video);
             video.play();
