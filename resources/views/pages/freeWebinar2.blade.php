@@ -153,7 +153,7 @@
                     NON SMETTERE DI SOGNARE
                 </div>
                 <div class='video'>
-                    <video autoplay src="{{asset('videos/NON SMETTERE DI SOGNARE.mp4')}}" style='width: 100%;'>
+                    <video autoplay src="{{asset('videos/preWebinarVideo.mp4')}}" style='width: 100%;'>
                 </div>
                 <div class='texto5'>
                     La durata di questo video è di circa un'ora, quindi mettiti comodo e buona visione!!!
