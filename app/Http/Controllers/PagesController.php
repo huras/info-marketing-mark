@@ -74,7 +74,7 @@ class PagesController extends Controller
         return view('blog/view', compact('post', 'posts'));
     }
 
-    function createNewsletterContact(NewsletterContactRequest $request){
+    function createNewsletterContact(NewsletterContactRequest $request) {
         $request_data = $request->all();
         $probable_duplicate = NewsletterContact::where('email', $request_data['email'])->get();
         if(count($probable_duplicate) > 0){
@@ -109,14 +109,22 @@ class PagesController extends Controller
         return redirect()->action('PagesController@home');
     }
 
-    function WebinarGratis(){
+    function WebinarGratis() {
         return view('pages/freeWebinar');
     }
-    function WebinarGratis2(){
+    function WebinarGratis2() {
         return view('pages/freeWebinar2');
     }
 
-    function SubscribeViaWebinarGratis(Request $request){
+    function SubscribeViaWebinarGratis(Request $request) {
+        $request_data = $request->all();
+        $probable_duplicate = NewsletterContact::where('email', $request_data['email'])->get();
+        if(count($probable_duplicate) == 0){
+            session()->flash('window_msg', 'Sei stato registrato! Congratulazioni!');
+            session()->flash('msg_context', 'success');
+            $contact = NewsletterContact::create($request_data);
+        }
+
         return view('pages/freeWebinar2');
     }
 }

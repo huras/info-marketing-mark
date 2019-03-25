@@ -1,20 +1,20 @@
 .free-webinar2{
     &.pt-1{
         background: rgb(125,185,232);
-        background: -moz-linear-gradient(-45deg, rgba(125,185,232,1) 0%, rgba(119,174,221,1) 8%, rgba(115,160,214,1) 12%, rgba(41,137,216,1) 33%, rgba(22,59,112,1) 63%, rgba(22,59,112,1) 72%, rgba(22,59,112,1) 89%, rgba(53,255,201,1) 99%);
-        background: -webkit-linear-gradient(-45deg, rgba(125,185,232,1) 0%,rgba(119,174,221,1) 8%,rgba(115,160,214,1) 12%,rgba(41,137,216,1) 33%,rgba(22,59,112,1) 63%,rgba(22,59,112,1) 72%,rgba(22,59,112,1) 89%,rgba(53,255,201,1) 99%);
-        background: linear-gradient(135deg, rgba(125,185,232,1) 0%,rgba(119,174,221,1) 8%,rgba(115,160,214,1) 12%,rgba(41,137,216,1) 33%,rgba(22,59,112,1) 63%,rgba(22,59,112,1) 72%,rgba(22,59,112,1) 89%,rgba(53,255,201,1) 99%);
+        background: -moz-linear-gradient(-45deg, rgba(125,185,232,1) 0%, rgba(119,174,221,1) 8%, rgba(115,160,214,1) 12%, rgba(41,137,216,1) 33%, rgba(22,59,112,1) 63%, rgba(22,59,112,1) 72%, rgba(22,59,112,1) 95%, rgb(8, 28, 56) 99%);
+        background: -webkit-linear-gradient(-45deg, rgba(125,185,232,1) 0%,rgba(119,174,221,1) 8%,rgba(115,160,214,1) 12%,rgba(41,137,216,1) 33%,rgba(22,59,112,1) 63%,rgba(22,59,112,1) 72%,rgba(22,59,112,1) 95%,rgb(8, 28, 56) 99%);
+        background: linear-gradient(135deg, rgba(125,185,232,1) 0%,rgba(119,174,221,1) 8%,rgba(115,160,214,1) 12%,rgba(41,137,216,1) 33%,rgba(22,59,112,1) 63%,rgba(22,59,112,1) 72%,rgba(22,59,112,1) 95%,rgb(8, 28, 56) 99%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#35ffc9',GradientType=0 );
 
         padding: 56px 0px;
-        padding-bottom: 256px;
+        padding-bottom: 64px;
     }
 
     &.d-footer{
         background: rgb(53,255,201);
-        background: -moz-linear-gradient(top, rgba(53,255,201,1) 0%, rgba(93,191,189,1) 3%, rgba(0,0,0,1) 6%, rgba(0,0,0,1) 83%, rgba(21,63,71,1) 100%);
-        background: -webkit-linear-gradient(top, rgba(53,255,201,1) 0%,rgba(93,191,189,1) 3%,rgba(0,0,0,1) 6%,rgba(0,0,0,1) 83%,rgba(21,63,71,1) 100%);
-        background: linear-gradient(to bottom, rgba(53,255,201,1) 0%,rgba(93,191,189,1) 3%,rgba(0,0,0,1) 6%,rgba(0,0,0,1) 83%,rgba(21,63,71,1) 100%);
+        background: -moz-linear-gradient(top, rgba(0,0,0,1) 6%, rgba(0,0,0,1) 83%, rgb(12, 38, 43) 100%);
+        background: -webkit-linear-gradient(top, rgba(0,0,0,1) 6%,rgba(0,0,0,1) 83%,rgb(12, 38, 43)  100%);
+        background: linear-gradient(to bottom, rgba(0,0,0,1) 6%,rgba(0,0,0,1) 83%,rgb(12, 38, 43)  100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35ffc9', endColorstr='#153f47',GradientType=0 );
 
         .ugly-and-full-of-letters-footer{
@@ -23,10 +23,10 @@
             align-items: center;
 
             .logo{
-                margin-top: -154px;
+                margin-top: 50px;
 
                 img{
-                    width: 256px;
+                    width: 128px;
                 }
             }
 
@@ -96,6 +96,22 @@
         max-width: 550px;
         border-radius: 12px;
         position: relative;
+
+        .checking-avaliability{
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+
+            img{
+                width: 60px;
+                margin-bottom: 32px;
+            }
+            .text{
+                font-size: 18px;
+            }
+        }
 
         .topo{
             padding: 16px 0px;
@@ -268,6 +284,7 @@
                 font-weight: 600;
                 font-style: normal;
                 font-size: 32px;
+                text-align: center;
             }
             .texto4{
                 color: rgb(255, 255, 255);
@@ -302,10 +319,12 @@
             .text{
                 font-size: 24px;
                 color: rgb(255, 255, 255);
+                text-align: center;
             }
             .call{
                 font-size: 14px;
                 color: rgb(255, 255, 255);
+                text-align: center;
             }
         }
     }
@@ -319,9 +338,10 @@
             font-weight: 700;
             color: white;
             font-size: 32px;
-            text-align: center;
             margin: 72px 0px;
             margin-bottom: 48px;
+            text-align: center;
+            width: 100%;
         }
 
         .point{

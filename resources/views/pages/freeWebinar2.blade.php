@@ -61,19 +61,27 @@
 
     function checkDateSelect(){
         var dateSelect = document.getElementById('dateSelect');
-
-        console.log(dateSelect);
+        
         if(dateSelect.value != 'none'){
-            var hiddenInputs = document.getElementById('hidden-inputs');
-            hiddenInputs.style.display = 'block';
+            var avaliability_check = document.getElementById('avaliability-check');
+            avaliability_check.style.display = 'flex';
+
+            setTimeout(hideAvaliabilityCheck, 2000);
         }
+    }
+
+    function hideAvaliabilityCheck(){
+        var avaliability_check = document.getElementById('avaliability-check');
+        avaliability_check.style.display = 'none';
+
+        var hiddenInputs = document.getElementById('hidden-inputs');
+        hiddenInputs.style.display = 'block';
     }
     </script>
 
     <script> 
         $('document').ready(function() { 
             var video = document.querySelector('.landing');
-            console.log(video);
             video.play();
         }); 
     </script>
@@ -92,7 +100,7 @@
             <div class='text'> 75% </div>
         </div>
     </div>
-    <form class='subscribe w-100'>
+    <form class='subscribe w-100' action='/webinar-gratis-2' method='POST'>
         <div class='form-input w-100'>
             <select onchange='checkDateSelect()' id='dateSelect'>
                 <option disabled selected value='none'> Choose date </option>
@@ -102,6 +110,10 @@
             </select>
         </div>
         <div class=''></div>
+        <div class='w-100 checking-avaliability' id='avaliability-check'>
+            <img src="{{asset('img/site/loading.gif')}}">
+            <div class='text'> Verifico la disponibilità </div>
+        </div>
         <div class='w-100' style='display: none;' id='hidden-inputs'>
             <div class='form-input w-100'>
                 <input type='text' placeholder='Nome'>
@@ -110,7 +122,7 @@
                 <input type='text' placeholder='E-mail'>
             </div>
             <div class='form-input w-100'>
-                <input type='submit' value='Scoprili'>
+                <input type='submit' value='Completo'>
             </div>
         </div>
     </form>
@@ -150,7 +162,7 @@
                     
                         <div class='point'> <i class="far fa-file-alt"></i> <span> Come valorizzare il tuo profilo professionale </span> </div>
                         <div class='point'> <i class="fas fa-phone-slash"></i> <span> Perchè non ti chiamano mai </span> </div>
-                        <div class='point'> <i class="fas fa-passport"></i> <span> Come arriavare ai vertici di un'azienda internazionale </span> </div>
+                        <div class='point'> <i class="fas fa-passport"></i> <span> Come arrivare ai vertici di un'azienda internazionale </span> </div>
                         <div class='point'> <i class="fas fa-ship"></i> <span> Cosa si aspettano da te le compagnie marittime di valenza internazionale </span> </div>
                         <div class='point'> <i class="fas fa-compass"></i> <span> Come scegliere la tua compagnia ideale </span> </div>
                     </div>
@@ -179,7 +191,7 @@
                 <div class='textos'>
                     <span class='title'> SCRIVI IL TUO FUTURO OGGI </span>
 
-                    <span class='text'> Speto ty abbia assistito a tutto il WEBINAR in ogni sua fase, scopri i programmi di adesione </span>
+                    <span class='text'> Spero tu abbia assistito al webinar in tutte le sue fasi, adesso procedi cliccando qui in basso e visita il programma completo. Inoltre un piccolo regalo ti attende per aver ascoltato tutto il webinar. </span>
                     <span class='call'> CLICCA IN BASSO per scoprire i profili ed i programmi disponibili </span>
                 </div>
             </div>

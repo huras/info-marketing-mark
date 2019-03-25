@@ -12187,15 +12187,15 @@ body {
 
 .free-webinar2.pt-1 {
   background: #7db9e8;
-  background: linear-gradient(135deg, #7db9e8 0%, #77aedd 8%, #73a0d6 12%, #2989d8 33%, #163b70 63%, #163b70 72%, #163b70 89%, #35ffc9 99%);
+  background: linear-gradient(135deg, #7db9e8 0%, #77aedd 8%, #73a0d6 12%, #2989d8 33%, #163b70 63%, #163b70 72%, #163b70 95%, #081c38 99%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#7db9e8", endColorstr="#35ffc9",GradientType=0 );
   padding: 56px 0px;
-  padding-bottom: 256px;
+  padding-bottom: 64px;
 }
 
 .free-webinar2.d-footer {
   background: #35ffc9;
-  background: linear-gradient(to bottom, #35ffc9 0%, #5dbfbd 3%, black 6%, black 83%, #153f47 100%);
+  background: linear-gradient(to bottom, black 6%, black 83%, #0c262b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#35ffc9", endColorstr="#153f47",GradientType=0 );
 }
 
@@ -12206,11 +12206,11 @@ body {
 }
 
 .free-webinar2.d-footer .ugly-and-full-of-letters-footer .logo {
-  margin-top: -154px;
+  margin-top: 50px;
 }
 
 .free-webinar2.d-footer .ugly-and-full-of-letters-footer .logo img {
-  width: 256px;
+  width: 128px;
 }
 
 .free-webinar2.d-footer .ugly-and-full-of-letters-footer .navigation-links {
@@ -12268,6 +12268,23 @@ body {
   max-width: 550px;
   border-radius: 12px;
   position: relative;
+}
+
+.free-webinar2 .modal-75-bar .checking-avaliability {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.free-webinar2 .modal-75-bar .checking-avaliability img {
+  width: 60px;
+  margin-bottom: 32px;
+}
+
+.free-webinar2 .modal-75-bar .checking-avaliability .text {
+  font-size: 18px;
 }
 
 .free-webinar2 .modal-75-bar .topo {
@@ -12441,6 +12458,7 @@ body {
   font-weight: 600;
   font-style: normal;
   font-size: 32px;
+  text-align: center;
 }
 
 .free-webinar2 .bsec1 .textos .texto4 {
@@ -12477,11 +12495,13 @@ body {
 .free-webinar2 .bsec4 .textos .text {
   font-size: 24px;
   color: white;
+  text-align: center;
 }
 
 .free-webinar2 .bsec4 .textos .call {
   font-size: 14px;
   color: white;
+  text-align: center;
 }
 
 .free-webinar2 .bsec5 {
@@ -12494,9 +12514,10 @@ body {
   font-weight: 700;
   color: white;
   font-size: 32px;
-  text-align: center;
   margin: 72px 0px;
   margin-bottom: 48px;
+  text-align: center;
+  width: 100%;
 }
 
 .free-webinar2 .bsec5 .point {
