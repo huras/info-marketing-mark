@@ -101,8 +101,9 @@
         </div>
     </div>
     <form class='subscribe w-100' action='/webinar-gratis-2' method='POST'>
+        {{ csrf_field() }}
         <div class='form-input w-100'>
-            <select onchange='checkDateSelect()' id='dateSelect'>
+            <select onchange='checkDateSelect()' id='dateSelect' name='when'>
                 <option disabled selected value='none'> Choose date </option>
                 <option value='now'> Adesso </option>
                 <option value='after5Min' id='after5MinOption'> 5 min from now </option>
@@ -116,10 +117,10 @@
         </div>
         <div class='w-100' style='display: none;' id='hidden-inputs'>
             <div class='form-input w-100'>
-                <input type='text' placeholder='Nome'>
+                <input type='text' placeholder='Nome' name='first_name'>
             </div>
             <div class='form-input w-100'>
-                <input type='text' placeholder='E-mail'>
+                <input type='text' placeholder='E-mail' name='email'>
             </div>
             <div class='form-input w-100'>
                 <input type='submit' value='Completo'>
