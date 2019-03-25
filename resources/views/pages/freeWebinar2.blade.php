@@ -63,6 +63,9 @@
         var dateSelect = document.getElementById('dateSelect');
         
         if(dateSelect.value != 'none'){
+            var hiddenInputs = document.getElementById('hidden-inputs');
+            hiddenInputs.style.display = 'none';
+
             var avaliability_check = document.getElementById('avaliability-check');
             avaliability_check.style.display = 'flex';
 
