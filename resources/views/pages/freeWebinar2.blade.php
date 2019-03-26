@@ -212,10 +212,6 @@
                     <div class='t4' style='font-size: 18px; color: white; text-align: center; margin-top: 8px;'>
                         Ci sono tante strategie che possono aiutarti a trovare imbarco velocemente, ma esse sono solo la punta dell'iceberg della tua scalata al successo professionale. Se vuoi scoprire come creare un profilo professionale che si possa vendere a qualsiasi compagnia internazionale, iscriviti e guarda il seguente webinar.
                     </div>
-                    <div class='t5' style='font-size: 16px; color: white; text-align: center; margin-top: 16px; white-space: pre-line;'>
-                        Marco
-                        GUARDA GRATIS IL WEBINAR
-                    </div>
                 </div>
             </div>
         </div>
@@ -228,7 +224,7 @@
                     <span class='title'> SCRIVI IL TUO FUTURO OGGI </span>
 
                     <span class='text'> Spero tu abbia assistito al webinar in tutte le sue fasi, adesso procedi cliccando qui in basso e visita il programma completo. Inoltre un piccolo regalo ti attende per aver ascoltato tutto il webinar. </span>
-                    <span class='call'> CLICCA IN BASSO per scoprire i profili ed i programmi disponibili </span>
+                    <span class='text'> CLICCA IN BASSO per scoprire i profili ed i programmi disponibili </span>
                 </div>
             </div>
             <div class='col-sm-12 subscribe-call'>
