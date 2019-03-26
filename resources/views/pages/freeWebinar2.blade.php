@@ -178,10 +178,10 @@
                 </div>
                 <div class='video'>
                     <video autoplay controls style='width: 100%;' class='landing video-desktop'>
-                        <source src="{{asset('videos/webinarGratuito.mp4')}}" type="video/mp4">
+                        <source src="{{asset('videos/preWebinarVideo.mp4')}}" type="video/mp4">
                     </video>
                     <video controls style='width: 100%;' class='landing video-mobile'>
-                        <source src="{{asset('videos/webinarGratuito.mp4')}}" type="video/mp4">
+                        <source src="{{asset('videos/preWebinarVideo.mp4')}}" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -224,7 +224,7 @@
                     <span class='title'> SCRIVI IL TUO FUTURO OGGI </span>
 
                     <span class='text'> Spero tu abbia assistito al webinar in tutte le sue fasi, adesso procedi cliccando qui in basso e visita il programma completo. Inoltre un piccolo regalo ti attende per aver ascoltato tutto il webinar. </span>
-                    <span class='text'> CLICCA IN BASSO per scoprire i profili ed i programmi disponibili </span>
+                    <span class='text' style='margin-top: 8px;'> CLICCA IN BASSO per scoprire i profili ed i programmi disponibili </span>
                 </div>
             </div>
             <div class='col-sm-12 subscribe-call'>
