@@ -12429,6 +12429,20 @@ body {
   align-items: center;
 }
 
+.free-webinar2 .bsec1 .video .video-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .free-webinar2 .bsec1 .video .video-desktop {
+    display: none;
+  }
+
+  .free-webinar2 .bsec1 .video .video-mobile {
+    display: block;
+  }
+}
+
 .free-webinar2 .bsec1 .texto5 {
   color: white;
   font-size: 16px;

@@ -254,6 +254,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .video-mobile{
+                display: none;
+            }
+
+            @media(max-width: 768px){
+                .video-desktop{
+                    display: none;
+                }
+                .video-mobile{
+                    display: block;
+                }
+            }
         }
 
         .texto5{

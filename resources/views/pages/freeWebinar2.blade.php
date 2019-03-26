@@ -133,7 +133,6 @@
   </div>
 </div>
 
-
 <div class='container-fluid free-webinar2 pt-1'>
     <div class='container'>
         <div class='row bsec1' style='margin-bottom: 0px;'>
@@ -154,7 +153,7 @@
                     </div>
                     <div class='subscribe-call w-100'>
                         <div class='button' onclick="modal.style.display = 'block';">
-                            Scoprili
+                            GUARDA IL WEBINAR
                         </div>
                     </div>
                 </div>
@@ -172,18 +171,51 @@
                     </div>
                 </div>
             </div>
+
             <div class='col-sm-12' style='border-top: 1px solid white;'>
                 <div class='texto1' style='margin-top: 64px;'>
                     NON SMETTERE DI SOGNARE
                 </div>
                 <div class='video'>
-                    <video autoplay style='width: 100%;' class='landing'>
-                        <source src="{{asset('videos/preWebinarVideo.mp4')}}" type="video/mp4" autoplay controls>
+                    <video autoplay controls style='width: 100%;' class='landing video-desktop'>
+                        <source src="{{asset('videos/webinarGratuito.mp4')}}" type="video/mp4">
                     </video>
-                    <!-- <video src="{{asset('videos/preWebinarVideo.mp4')}}" style='width: 100%;' autoplay='true'></video> -->
+                    <video controls style='width: 100%;' class='landing video-mobile'>
+                        <source src="{{asset('videos/webinarGratuito.mp4')}}" type="video/mp4">
+                    </video>
                 </div>
-                <div class='texto5'>
-                    La durata di questo video è di circa un'ora, quindi mettiti comodo e buona visione!!!
+            </div>
+
+            <div class='col-sm-12' style='margin-top: 32px; padding-bottom: 48px; border-bottom: 1px solid white;'>
+                <div class='ebaixo-do-video'>
+                    <div class='t1' style='font-size: 24px; color: white; text-align: center; margin-top: 48px;'>
+                        Di cosa parla il webinar?
+                    </div>
+                    <div class='t2' style='font-size: 18px; color: white; margin-top: 8px; text-align: center; white-space: pre-line;'>
+                        Ci sono tantissime cose che devi sapere prima di inviare un curriculum ad una grande compagnia straniera altrimenti rischi solo di bruciarti una chance. Parleremo di perchè non riesci a imbarcare e con quali strategie puoi aspirare ad obbietivi molto più alti di quelli che credi.
+                    </div>
+                    <div class='t2' style='font-size: 24px; color: white; margin-top: 8px; text-align: center; white-space: pre-line;'>
+                        Perché vederlo?
+                    </div>
+                    <div class='t2' style='font-size: 18px; color: white; margin-top: 8px; text-align: center; white-space: pre-line;'>
+                        Se sei in attesa di un imbarco, se vuoi cambiare compagnia o lavoro, sappi che ci sono tantissime opportunità da cogliere, ma sono nascoste e tal volta fuori portata. Attraverso questo video puoi scoprire come cambiare il tuo futuro.
+                    </div>
+                    <div class='t2' style='font-size: 24px; color: white; margin-top: 8px; text-align: center; white-space: pre-line;'>
+                        Quanto dura?
+                    </div>
+                    <div class='t2' style='font-size: 18px; color: white; margin-top: 8px; text-align: center; white-space: pre-line;'>
+                        Poco più di un ora, ma la mole di conoscenze e la valenza delle informazioni che puoi acquisire in questo webinar ti ripaga in maniera abbondante del tuo tempo.
+                    </div>
+                    <div class='t3' style='font-size: 24px; color: white; text-align: center; margin-top: 48px;'>
+                        COME TROVARE IMBARCO
+                    </div>
+                    <div class='t4' style='font-size: 18px; color: white; text-align: center; margin-top: 8px;'>
+                        Ci sono tante strategie che possono aiutarti a trovare imbarco velocemente, ma esse sono solo la punta dell'iceberg della tua scalata al successo professionale. Se vuoi scoprire come creare un profilo professionale che si possa vendere a qualsiasi compagnia internazionale, iscriviti e guarda il seguente webinar.
+                    </div>
+                    <div class='t5' style='font-size: 16px; color: white; text-align: center; margin-top: 16px; white-space: pre-line;'>
+                        Marco
+                        GUARDA GRATIS IL WEBINAR
+                    </div>
                 </div>
             </div>
         </div>
@@ -226,6 +258,37 @@
                     <a href='/about' class='nav-link'> About </a>
                     <a href='/blog' class='nav-link'> Blog </a>
                     <a href='/contact' class='nav-link'> Contatti </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='w-100'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-lg-12'>
+                    <div class='disclaimer'>
+                        <div class='t1' style='font-size: 14px; color: white; text-align: center;'>
+                            © 2018 I marchi ed i Segni distintivi sono concessi in licenza
+                        </div>
+                        <div class='t2' style='font-size: 14px; color: white; text-align: center; padding-bottom: 8px;'>
+                            Tutti i Diritti sono riservati. E' vietata qualsiasi riproduzione, anche parziale
+                        </div>
+                        <div class='t3' style='font-size: 14px; color: white;'> *This Website is not a part of Facebook or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way.
+                            FACEBOOK is a trademark of FACEBOOK Inc.
+                        </div>
+                        <div class='t4' style='font-size: 14px; color: white; padding-bottom: 8px;'>
+                            Questo sito non fa parte del sito Facebook o Facebook Inc. Inoltre, questo sito NON è approvato da Facebook in alcun modo.
+                            FACEBOOK è un marchio registrato di FACEBOOK, Inc.
+                        </div>
+                        <div class='t5' style='font-size: 14px; color: white; text-align: center; padding-bottom: 8px;'>
+                            DISCLAIMER
+                        </div>
+                        <div class='t6' style='font-size: 14px; color: white; padding-bottom: 64px;'>
+                            Sottoscrivendo materiale dell’Editore, riconosci e accetti espressamente che non stiamo offrendo in alcun caso promesse, suggerimenti, 
+                            proiezioni, rappresentazioni o garanzie di alcun genere in merito a prospettive di lucro future o guadagni in relazione al tuo 
+                            acquisto di servizi Sogniamo in Grande® e / o servizi, e che non abbiamo autorizzato alcuna proiezione, promessa o rappresentazione da parte di soggetti terzi, interni o esterni all’azienda.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
