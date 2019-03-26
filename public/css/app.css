@@ -10652,17 +10652,25 @@ a.text-dark:focus {
 .content-3 {
   margin-top: 32px;
   margin-bottom: 32px;
+  height: 100%;
+}
+
+.content-3 .row {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .content-3 .background-image {
   background-size: cover;
   background-position: center;
+  align-items: center;
   display: flex;
   min-height: 400px;
 }
 
 .content-3 .texto {
-  padding: 32px 64px;
+  padding: 32px 32px;
 }
 
 .content-3 .texto .titulo {
@@ -10829,8 +10837,6 @@ body {
   height: 650px;
   background-position: center;
   background-position-y: -20px;
-  padding-top: 180px;
-  padding-left: calc(100% - 650px - -30px);
 }
 
 @media (max-width: 1024px) {

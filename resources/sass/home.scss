@@ -149,17 +149,25 @@
 .content-3 {    
     margin-top: 32px;
     margin-bottom: 32px;
+    height: 100%;
+
+    .row{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
 
     .background-image{
         background-size: cover;
         background-position: center;
+        align-items: center;
 
         display: flex;
         min-height: 400px;
     }
 
     .texto {
-        padding: 32px 64px;
+        padding: 32px 32px;
         .titulo {
             font-family: 'Poppins';
             font-size: 24px;
@@ -333,8 +341,8 @@ body{
         height: 650px;
         background-position: center;
         background-position-y: -20px;
-        padding-top: 180px;
-        padding-left: calc(100% - 650px - -30px);
+        //padding-top: 180px;
+        //padding-left: calc(100% - 650px - -30px);
         
         @media(max-width: 1024px){
             background-position-y: 0;

@@ -61,12 +61,12 @@
     <!-- Content 2 -->
     <div class='container content-2'>
         <div class='row'>
+            <div class='col-lg-12' style='margin: 32px 0px; font-family: "Poppins"; font-size: 20px; color: white; text-align: center;'>
+                Iscriviti per rimanere sempre aggiornato sulle opportunità lavorative e le novità del settore marittimo.
+            </div>
             <div class='col-lg-7'>
                 <div class='video-1'>
-                    <div class='overlay' id='video-overlay' style="background-image: url('img/site/video-1-overlay.png'); cursor: pointer;" onclick="showVideo();">
-                        <i class="fab fa-youtube"></i>
-                    </div>
-                    <div class='video' id='video'>
+                    <div class='video' id='video' style='display: block;'>
                         <iframe width="100%"  height="100%" src="https://www.youtube.com/embed/NRwIslZXLZQ?autoplay=1" frameborder="0" allowfullscreen> </iframe>
                     </div>
                 </div>
@@ -102,29 +102,29 @@
         </div>
     </div>
 
-    <!-- Content 3 -->
-    <div class='container content-3'>
-        <div class='row'>
-            <div class='col-lg-5'>
-                <div class='texto'>
-                    <div class='titulo'>
-                        NON SMETTERE DI SOGNARE E QUANDO LO FAI, FALLO IN GRANDE.
-                    </div>
-                    <div class='conteudo'>
-                        Siamo la prima e unica iniziativa focalizzata nei giovani studenti dei Nautici Italiani che vogliono intraprendere una carriera lavorativa a bordo delle navi. I nostri ragazzi meritano l'opportunità di dimostrare il loro valore, noi gli diamo la possibilità di dimostrarlo su panorami internazionali, dove non sistono raccomandazioni e preferenze, ma solo meritocrazia. Non lasciare che le circostanze ti abbattano, reagisci, rimettiti in piedi e sogna in grande.
+    <!-- Parallax 2 -->
+    <div class='paralax n2' style="background-image: url('img/site/Marco explain class 2.jpg'); margin-top: 64px;">
+        <!-- Content 3 -->
+        <div class='container content-3' style='margin: auto;'>
+            <div class='row'>
+                <div class='col-lg-5'>
+                    <div class='texto'>
+                        <div class='titulo' style='text-shadow: -3px 3px black;'>
+                            NON SMETTERE DI SOGNARE E QUANDO LO FAI, FALLO IN GRANDE.
+                        </div>
+                        <div class='conteudo' style='text-shadow: -2px 2px black;'>
+                            Siamo la prima e unica iniziativa focalizzata nei giovani studenti dei Nautici Italiani che vogliono intraprendere una carriera lavorativa a bordo delle navi. I nostri ragazzi meritano l'opportunità di dimostrare il loro valore, noi gli diamo la possibilità di dimostrarlo su panorami internazionali, dove non sistono raccomandazioni e preferenze, ma solo meritocrazia. Non lasciare che le circostanze ti abbattano, reagisci, rimettiti in piedi e sogna in grande.
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class='col-lg-7 background-image' style="background-image: url('img/site/06-0088-.jpg');">
-                <div class="btn-1" style="height: 100%; align-items: flex-end;">
-                    <a href="http://sogniamoingrande.wixsite.com/2019"> ENTRA A FAR PARTE DEL PROGETTO </a>
+                <div class='col-lg-7 background-image'>
+                <!-- <div class='col-lg-7 background-image' style="background-image: url('img/site/06-0088-.jpg');"> -->
+                    <div class="btn-1" style="height: 100%; align-items: flex-end;">
+                        <a href="http://sogniamoingrande.wixsite.com/2019"> ENTRA A FAR PARTE DEL PROGETTO </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Parallax 2 -->
-    <div class='paralax n2' style="background-image: url('img/site/Marco explain class 2.jpg');">
     </div>
 
     @include('partials/footer')
