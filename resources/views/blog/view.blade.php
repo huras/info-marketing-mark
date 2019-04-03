@@ -11,6 +11,9 @@
         @case(1)
             <meta property="og:image" content="{{asset('images/posts/'.$post->id.'/'.$post->cover)}}" />
         @break
+        @case(2)
+            <meta property="og:image" content="{{asset('img/site/video-bog-post-thumb.png')}}" />
+        @break
     @endswitch
 @endsection
 

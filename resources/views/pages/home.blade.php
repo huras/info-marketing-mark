@@ -61,9 +61,6 @@
     <!-- Content 2 -->
     <div class='container content-2'>
         <div class='row'>
-            <div class='col-lg-12' style='margin: 32px 0px; font-family: "Poppins"; font-size: 20px; color: white; text-align: center;'>
-                Iscriviti per rimanere sempre aggiornato sulle opportunità lavorative e le novità del settore marittimo.
-            </div>
             <div class='col-lg-7'>
                 <div class='video-1'>
                     <div class='video' id='video' style='display: block;'>
@@ -72,6 +69,9 @@
                 </div>
             </div>
             <div class='col-lg-5 mini-contact-form'>
+                <div class='w-100' style='margin: 32px 0px; font-family: cahoma; font-size: 17px; color: white; text-align: justify; color: white; line-height: 1.2; padding: 0px 5%;'>
+                    Iscriviti per rimanere sempre aggiornato sulle opportunità lavorative e le novità del settore marittimo.
+                </div>
                 <form action='/newsletter/subscribe' method='POST' class='w-100' style='display: flex; flex-wrap: wrap;'>
                     {{ csrf_field() }}
                     <div class='form-group col-lg-12'>
