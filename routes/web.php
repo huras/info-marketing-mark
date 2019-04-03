@@ -25,12 +25,14 @@ Route::get('/post/{id}', 'PagesController@post');
 Route::get('/about', 'PagesController@about');
 Route::get('/social', 'PagesController@social');
 Route::get('/blog', 'PagesController@blog');
-Route::get('/videos', 'PagesController@videos');
+Route::get('/video', 'PagesController@video');
 Route::post('/blog', 'BlogController@blog');
 
 Route::get('/webinar-gratis', 'PagesController@WebinarGratis');
 Route::get('/webinar-gratis-2', 'PagesController@WebinarGratis2');
 Route::post('/webinar-gratis-2', 'PagesController@SubscribeViaWebinarGratis');
+
+Route::get('/new-page', 'PagesController@everyNewPage');
 
 Route::get('/facciamo-cv-vicente', 'PagesController@cvVicente');
 

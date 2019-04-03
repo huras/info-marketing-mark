@@ -6,6 +6,8 @@
     @include('partials/home-header')
 
     <?php $videos = [
+        ['url' => 'https://www.youtube.com/watch?v=UoxXCWhZlOg', 'description' => 'INCONTRO SCUOLA /// ITN DUCA DEGLI ABRUZZI'],
+        ['url' => 'https://www.youtube.com/watch?v=gSXAb3079XM', 'description' => 'ITN DUCA DEGLI ABRUZZI /// SogniamoinGRANDE'],
         ['url' => 'https://www.youtube.com/watch?v=89JsUScrOec', 'description' => 'Sogniamo in Grande. Settore Marittimo.'],
         ['url' => 'https://www.youtube.com/watch?v=2xj_SZeQtI8', 'description' => 'Come fare un colloquio di lavoro. SOGNIAMO IN GRANDE'],
         ['url' => 'https://www.youtube.com/watch?v=q5tPsoSwrq4', 'description' => 'COME FARE UN CURRICULUM VINCENTE'],

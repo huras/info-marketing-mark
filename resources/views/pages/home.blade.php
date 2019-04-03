@@ -67,7 +67,7 @@
             <div class='col-lg-7'>
                 <div class='video-1'>
                     <div class='video' id='video' style='display: block;'>
-                        <iframe width="100%"  height="100%" src="https://www.youtube.com/embed/NRwIslZXLZQ?autoplay=1" frameborder="0" allowfullscreen> </iframe>
+                        <iframe width="100%"  height="100%" src="https://www.youtube.com/embed/gSXAb3079XM?autoplay=1" frameborder="0" allowfullscreen> </iframe>
                     </div>
                 </div>
             </div>
