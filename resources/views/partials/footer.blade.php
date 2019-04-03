@@ -18,7 +18,7 @@
             </div>
 
             <div class='col-lg-4 col-md-6 register'>
-                <form class='row' method='POST' id='footer-form' action='/newsletter/subscribe'>
+                <!-- <form class='row' method='POST' id='footer-form' action='/newsletter/subscribe'>
                     {{ csrf_field() }}
                     <div class='w-100 form-holder'>
                         <div class='form-group col-sm-12' style='color: white; font-size: 18px; text-align: center; border-bottom: 1px solid #5f77a2; padding: 8px 16px;'>
@@ -33,11 +33,14 @@
                             @include('partials/form-errors', ['errors' => $errors, 'fieldName' => 'email'])
                         </div>
                         <div class='form-group col-md-12'>
-                            <!-- <div class='submit-button' onclick='document.getElementById("footer-form").submit();'> <span> Subscribe </span> </div> -->
+                            //<div class='submit-button' onclick='document.getElementById("footer-form").submit();'> <span> Subscribe </span> </div>
                             <input type='submit' class='submit-button' style='color: white;' value='Subscribe'>
                         </div>
                     </div>
-                </form>
+                </form> -->
+                <div class="btn-1" style="margin-top: 24px; align-items: flex-end;">
+                    <a href="http://sogniamoingrande.wixsite.com/2019"> ENTRA A FAR PARTE DEL PROGETTO </a>
+                </div>
             </div>
 
             <div class='col-lg-4 col-md-12 contacts'>
