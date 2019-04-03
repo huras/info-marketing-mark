@@ -1,5 +1,13 @@
 @extends('layouts/themed')
 
+@section('meta')
+    <meta property="og:url" content="http://www.sogniamoingrande.it" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sogniamo in Grande" />
+    <meta property="og:description" content="Maritime training and orientation" />
+    <meta property="og:image" content="{{asset('img/site/video-bog-post-thumb.png')}}" />
+@endsection
+
 @section('content')
     <?php $links = [
         ['url' => '#o-que-vou-aprender', 'title' => __('O que vou aprender')]
