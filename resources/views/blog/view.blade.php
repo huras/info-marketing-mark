@@ -47,7 +47,7 @@
                         <div class='call'> {{$post->call}} </div>
                         <div class='line-separator'>  </div>
                         <div class='content'> {!!$post->content!!} </div>
-                        <div class='social-nets'> 
+                        <div class='social-nets'>
                             <a href='/post/{{$post->id}}'></a>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                         <div class='miniposts w-100'>
                             @foreach($posts as $post)
                                 <div class='slot'>
-                                    <a  href='/post/{{$post->id}}'>
+                                    <a href='/post/{{$post->id}}'>
                                         <div class='cover'>
                                             @switch($post->cover_type_id)
                                                 @case(1)

@@ -68,36 +68,15 @@
                     </div>
                 </div>
             </div>
-            <div class='col-lg-5 mini-contact-form'>
-                <div class='w-100' style='margin: 32px 0px; font-family: cahoma; font-size: 17px; color: white; text-align: justify; color: white; line-height: 1.2; padding: 0px 5%;'>
-                    Iscriviti per rimanere sempre aggiornato sulle opportunità lavorative e le novità del settore marittimo.
+            <div class='col-lg-5 background-image'>
+                <div class='w-100 h-100' style='display: flex; flex-direction: column; text-align: center; justify-content: center; align-items: center;'>
+                    <div class='texto-a15'>
+                        Sei in cerca di un imbarco? Vuoi cambiare compagnia? iscriviti gratuitamente e scopri come creare il tuo profilo professionale per candidature di successo su compagnie di valenza internazionale.
+                    </div>
+                    <div class="btn-1" style="margin-top: 24px; align-items: flex-end;">
+                        <a href="http://sogniamoingrande.wixsite.com/2019"> ENTRA A FAR PARTE DEL PROGETTO </a>
+                    </div>
                 </div>
-                <form action='/newsletter/subscribe' method='POST' class='w-100' style='display: flex; flex-wrap: wrap;'>
-                    {{ csrf_field() }}
-                    <div class='form-group col-lg-12'>
-                        <label> {{ __('first name') }} </label>
-                        <input type='text' name='first_name' required placeholder="{{ __('Type your first name here') }}">
-                    </div>
-
-                    <div class='form-group  col-lg-12'>
-                        <label> {{ __('last name') }} </label>
-                        <input type='text' name='last_name' placeholder="{{ __('Type your last name here') }}">
-                    </div>
-
-                    <div class='form-group col-lg-12'>
-                        <label> E-mail </label>
-                        <input type='text' name='email' required placeholder="{{ __('Type your email here') }}">
-                    </div>
-
-                    <div class='form-group col-lg-12'>
-                        <label> {{ __('phone') }} </label>
-                        <input type='text' name='phone' placeholder="{{ __('Type your phone number here') }}">
-                    </div>
-
-                    <div class='form-group'>
-                        <input type='submit' value='Subscribe' class='cadastrar'>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
@@ -117,11 +96,36 @@
                         </div>
                     </div>
                 </div>
-                <div class='col-lg-7 background-image'>
-                <!-- <div class='col-lg-7 background-image' style="background-image: url('img/site/06-0088-.jpg');"> -->
-                    <div class="btn-1" style="height: 100%; align-items: flex-end;">
-                        <a href="http://sogniamoingrande.wixsite.com/2019"> ENTRA A FAR PARTE DEL PROGETTO </a>
+                <div class='col-lg-7 mini-contact-form' style='background-color: #003d888a;'>
+                    <div class='w-100' style='margin: 32px 0px; font-family: cahoma; font-size: 17px; color: white; text-align: justify; color: white; line-height: 1.2; padding: 0px 5%;'>
+                        Iscriviti per rimanere sempre aggiornato sulle opportunità lavorative e le novità del settore marittimo.
                     </div>
+                    <form action='/newsletter/subscribe' method='POST' class='w-100' style='display: flex; flex-wrap: wrap;'>
+                        {{ csrf_field() }}
+                        <div class='form-group col-lg-12'>
+                            <label> {{ __('first name') }} </label>
+                            <input type='text' name='first_name' required placeholder="{{ __('Type your first name here') }}">
+                        </div>
+
+                        <div class='form-group  col-lg-12'>
+                            <label> {{ __('last name') }} </label>
+                            <input type='text' name='last_name' placeholder="{{ __('Type your last name here') }}">
+                        </div>
+
+                        <div class='form-group col-lg-12'>
+                            <label> E-mail </label>
+                            <input type='text' name='email' required placeholder="{{ __('Type your email here') }}">
+                        </div>
+
+                        <div class='form-group col-lg-12'>
+                            <label> {{ __('phone') }} </label>
+                            <input type='text' name='phone' placeholder="{{ __('Type your phone number here') }}">
+                        </div>
+
+                        <div class='form-group'>
+                            <input type='submit' value='Subscribe' class='cadastrar'>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
