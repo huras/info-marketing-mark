@@ -94,16 +94,6 @@
         <!-- Content 3 -->
         <div class='container content-3' style='margin: auto;'>
             <div class='row'>
-                <div class='col-lg-5'>
-                    <div class='texto'>
-                        <div class='titulo' style='text-shadow: -3px 3px black;'>
-                            NON SMETTERE DI SOGNARE E QUANDO LO FAI, FALLO IN GRANDE.
-                        </div>
-                        <div class='conteudo' style='text-shadow: -2px 2px black;'>
-                            Siamo la prima e unica iniziativa focalizzata nei giovani studenti dei Nautici Italiani che vogliono intraprendere una carriera lavorativa a bordo delle navi. I nostri ragazzi meritano l'opportunità di dimostrare il loro valore, noi gli diamo la possibilità di dimostrarlo su panorami internazionali, dove non sistono raccomandazioni e preferenze, ma solo meritocrazia. Non lasciare che le circostanze ti abbattano, reagisci, rimettiti in piedi e sogna in grande.
-                        </div>
-                    </div>
-                </div>
                 <div class='col-lg-7 mini-contact-form' style='background-color: #003d888a;'>
                     <div class='w-100' style='margin: 32px 0px; font-family: cahoma; font-size: 17px; color: white; text-align: justify; color: white; line-height: 1.2; padding: 0px 5%;'>
                         Iscriviti per rimanere sempre aggiornato sulle opportunità lavorative e le novità del settore marittimo.
@@ -134,6 +124,16 @@
                             <input type='submit' value='Subscribe' class='cadastrar'>
                         </div>
                     </form>
+                </div>
+                <div class='col-lg-5'>
+                    <div class='texto'>
+                        <div class='titulo' style='text-shadow: -3px 3px black;'>
+                            NON SMETTERE DI SOGNARE E QUANDO LO FAI, FALLO IN GRANDE.
+                        </div>
+                        <div class='conteudo' style='text-shadow: -2px 2px black;'>
+                            Siamo la prima e unica iniziativa focalizzata nei giovani studenti dei Nautici Italiani che vogliono intraprendere una carriera lavorativa a bordo delle navi. I nostri ragazzi meritano l'opportunità di dimostrare il loro valore, noi gli diamo la possibilità di dimostrarlo su panorami internazionali, dove non sistono raccomandazioni e preferenze, ma solo meritocrazia. Non lasciare che le circostanze ti abbattano, reagisci, rimettiti in piedi e sogna in grande.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
