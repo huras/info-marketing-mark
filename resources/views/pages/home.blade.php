@@ -45,13 +45,11 @@
         <div class='row'>
             <div class='col-lg-6 col-sm-12'>
                 <div class='texto'>
-                    Con la globalizzazione, la crisi economica odierna  e la presenza di molti marittimi di altre nazioni sulle navi italiane, emergono non poche difficoltà nell’ambito marittimo nazionale, e iniziare una carriera a bordo di una nave diventa ogni anno più difficile e quasi impossibile senza le giuste conoscenze. Tuttavia ci sono ancora tantissime compagnie straniere che cercano personale marittimo, ma gli standard di valutazione ed i criteri di selezione di quest’ultime sono talvolta fuori portata dai giovani italiani. 
+                    Con la globalizzazione, la crisi economica odierna e la presenza di molti marittimi di altre nazioni sulle navi italiane, emergono non poche difficoltà nell’ambito marittimo nazionale, e iniziare una carriera a bordo di una nave diventa ogni anno più difficile e quasi impossibile senza le giuste conoscenze. Tuttavia ci sono ancora tantissime compagnie straniere che cercano personale marittimo, ma gli standard di valutazione ed i criteri di selezione di quest’ultime sono talvolta fuori portata dai giovani italiani. 
 
-                    Proprio per questo i nostri programmi di formazione prevedono l'insegnamento di tutto quello che serve ad una persona per diventare un ufficiale in grado non solo di proporsi a qualsiasi compagnia di navigazione al mondo, ma anche all’acquisizione delle giuste conoscenze per brillare in maniera professionale anche una volta a bordo. 
+                    Il nostro programma di formazione prevede l'insegnamento di tutto quelle tecniche e strategie fondamentali ad un Allievo Ufficiale per candidarsi alle compagnie di navigazione più attive del mercato estero. Per garantire l’efficacia dell’applicazione e acquisizione del processo formativo, un Tutor si dedicherà in maniera individuale alla situazione, analizzando e studiando il piano di apprendimento e inserimento a bordo. Il programma di formazione è completamente online e ti consente di seguirlo anche da casa, ma la mole di informazioni e la valenza dei contenuti richiederanno la tua attenzione per una cambiamento di mentalità proiettato ai nuovi mercati con piani di apprendimento e tecniche di applicazione.
 
-                    Ed ecco perché chi abbraccia il progetto Sogniamo in Grande, tende a fare carriera in maniera molto più veloce.  
-
-                    Perché quello che conta per noi veramente, non è solo aiutare i giovani italiani ad inserirsi del mondo del lavoro internazionale, ma anche riproporre un nuova generazione di Ufficiali Italiani che possano farsi valere a bordo come già in nostri antenati fecero in passato.
+                    Lo scopo del progetto Sogniamo in Grande è quello di ridare il mare agli Italiani, così come i nostri antenati fecero in passato scrivendo libri di storia e di navigazione. Se sei un Allievo Ufficiale in cerca di imbarco o di una compagnia di valenza Internazionale, allora abbraccia il progetto e scopri come creare il tuo profilo professionale per cominciare una carriera a bordo di successo.
                 </div>
                 <div class='btn-1' style='min-height: 300px;'>
                     <a href='http://sogniamoingrande.wixsite.com/2019' class='btn-1'> Entra nel progetto Sogniamo in Grande </a>
