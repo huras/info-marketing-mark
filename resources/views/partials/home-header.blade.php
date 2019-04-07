@@ -23,7 +23,7 @@
                 <a href='/social' class='nlink'> {{ __('Social') }} </a>
                 <a href='/contact' class='nlink'> {{ __('Contact') }} </a>
                 <a href='/blog' class='nlink'> {{ __('Blog') }} </a>
-                <a href='/videos' class='nlink'> {{ __('Video') }} </a>
+                <a href='/video' class='nlink'> {{ __('Video') }} </a>
                 <!-- <a href='/donazioni' class='nlink'> {{ __('Donazioni') }} </a> -->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
