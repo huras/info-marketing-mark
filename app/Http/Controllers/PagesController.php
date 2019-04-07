@@ -20,7 +20,11 @@ class PagesController extends Controller
         return view('pages/home');
     }
 
-    public function videos(){
+    public function everyNewPage(){
+        return view('pages/newpage');
+    }
+
+    public function video(){
         return view('pages/videos');
     }
 
