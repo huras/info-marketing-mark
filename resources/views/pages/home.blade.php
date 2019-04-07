@@ -31,9 +31,10 @@
         <div class='row'>
             <div class='paralax n1' style="background-image: url('img/site/marco-ship.jpg');">
                 <div class='texto-1'>
-                    <div class='title'> SOGNIAMO IN GRANDE </div>
-                    <div class='conteudo'>
-                        Ogni singolo giorno aiutiamo tantissimi ragazzi a formarsi in maniera professionale per proporsi al mondo lavorativo del settore marittimo internazionale.
+                    <div class='title' style='text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px; color: white; font-size: 42px; font-family: Arial; text-transform: uppercase;'> formazione marittima </div>
+                    <div class='sub-title' style='text-shadow: rgba(0, 0, 0, 0.4); font-size: 17px; color: white;'> orientamento alle compagnie di navigazione </div>
+                    <div class='conteudo' style='font-family: Barlow; font-size: 30px; color: white; text-shadow: rgba(0, 0, 0, 0.4);'>
+                        Il progetto Sogniamo In Grande è una programma di formazione marittima e orientamento ai panorami internazionali per consentirti di trovare imbarco in maniera efficace e professionale.
                     </div>
                 </div>
             </div>
