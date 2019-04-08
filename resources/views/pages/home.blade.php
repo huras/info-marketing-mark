@@ -32,9 +32,9 @@
             <div class='paralax n1' style="background-image: url('img/site/marco-ship.jpg');">
                 <div class='texto-1'>
                     <div class='title' style='text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px; color: white; font-size: 42px; font-family: Arial; text-transform: uppercase;'> formazione marittima </div>
-                    <div class='sub-title' style='text-shadow: rgba(0, 0, 0, 0.4); font-size: 17px; color: white;'> orientamento alle compagnie di navigazione </div>
+                    <div class='sub-title' style='text-shadow: rgba(0, 0, 0, 0.4); font-size: 20px; color: white;'>  ORIENTAMENTO ALLE COMPAGNIE DI NAVIGAZIONE </div>
                     <div class='conteudo' style='font-family: Barlow; font-size: 30px; color: white; text-shadow: rgba(0, 0, 0, 0.4);'>
-                        Il progetto Sogniamo In Grande è una programma di formazione marittima e orientamento ai panorami internazionali per consentirti di trovare imbarco in maniera efficace e professionale.
+                        Il progetto Sogniamo In Grande è un programma di formazione marittima e orientamento ai panorami internazionali per consentirti di trovare imbarco in maniera efficace e professionale.
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@
             </div>
             <div class='col-lg-6 col-sm-12'>
                 <div class='images'>
-                    <img src='img/site/29683259_10214626803651336_2521987673297999818_n.jpg'>
+                    <img src='img/site/captaes-v.jpg'>
                     <img src='img/site/NIK_5288.JPG'>
                 </div>
             </div>
