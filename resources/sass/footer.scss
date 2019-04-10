@@ -134,6 +134,10 @@
                 
                 &.fa-whatsapp{
                     color: #76d871;
+
+                    &:hover{
+                        color: #49ec41;
+                    }
                 }
                 &.fa-envelope{
                     color: #71c9d8;

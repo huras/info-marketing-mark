@@ -11372,6 +11372,10 @@ body {
   color: #76d871;
 }
 
+.footer .contacts .contact-info i.fa-whatsapp:hover {
+  color: #49ec41;
+}
+
 .footer .contacts .contact-info i.fa-envelope {
   color: #71c9d8;
 }

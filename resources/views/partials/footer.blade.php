@@ -48,9 +48,9 @@
                     <i class="far fa-envelope"></i> 
                     <div class='value'> sogniamoingrande@yahoo.com </div>
                 </div>
-                <div class='contact-info'> 
-                    <i class="fab fa-whatsapp"></i> 
-                    <div class='value'> +39 328 973 3662 </div>
+                <div class='contact-info'>
+                    <a href='https://api.whatsapp.com/send?phone=393926532574&text=Salve,%20vorrei%20maggiori%20informazioni%20a%20riguardo!%20A%20presto.'> <i class="fab fa-whatsapp"></i> </a>
+                    <!-- <div class='value'> +39 328 973 3662 </div> -->
                 </div>
             </div>
 
