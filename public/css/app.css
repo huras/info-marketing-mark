@@ -11341,12 +11341,24 @@ body {
   color: #d378fd;
 }
 
+.footer .social-net-icon i.fa-instagram:hover {
+  color: #e7b4ff;
+}
+
 .footer .social-net-icon i.fa-facebook {
   color: #787afd;
 }
 
+.footer .social-net-icon i.fa-facebook:hover {
+  color: #a2a4fa;
+}
+
 .footer .social-net-icon i.fa-youtube {
   color: #ff8b8b;
+}
+
+.footer .social-net-icon i.fa-youtube:hover {
+  color: #fdc5c5;
 }
 
 .footer .contacts {

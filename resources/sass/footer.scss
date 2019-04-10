@@ -106,12 +106,21 @@
 
             &.fa-instagram{
                 color: #d378fd;
+                &:hover{
+                    color: #e7b4ff;
+                }
             }
             &.fa-facebook{
                 color: #787afd;
+                &:hover{
+                    color: #a2a4fa;
+                }
             }
             &.fa-youtube{
                 color: #ff8b8b;
+                &:hover{
+                    color: #fdc5c5;
+                }
             }
         }
     }
