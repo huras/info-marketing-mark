@@ -5,7 +5,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Sogniamo in Grande" />
     <meta property="og:description" content="Maritime training and orientation" />
-    <meta property="og:image" content="{{asset('img/site/video-bog-post-thumb.png')}}" />
+    <meta property="og:image" content="{{asset('img/site/fb-sharer.png')}}" />
 @endsection
 
 @section('content')
