@@ -4,7 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  @yield('meta')
+  @if(View::hasSection('meta'))
+      @yield('title')
+  @else
+    <meta property="og:url" content="http://www.sogniamoingrande.it" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sogniamo in Grande" />
+    <meta property="og:description" content="Maritime training and orientation" />
+    <meta property="og:image" content="{{asset('img/site/fb-sharer.png')}}" />
+  @endif
   
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,900" rel="stylesheet">

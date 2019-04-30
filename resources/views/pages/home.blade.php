@@ -1,13 +1,5 @@
 @extends('layouts/themed')
 
-@section('meta')
-    <meta property="og:url" content="http://www.sogniamoingrande.it" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Sogniamo in Grande" />
-    <meta property="og:description" content="Maritime training and orientation" />
-    <meta property="og:image" content="{{asset('img/site/fb-sharer.png')}}" />
-@endsection
-
 @section('content')
     <?php $links = [
         ['url' => '#o-que-vou-aprender', 'title' => __('O que vou aprender')]
@@ -33,7 +25,7 @@
                 <div class='texto-1'>
                     <div class='title' style='text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px; color: white; font-size: 42px; font-family: Arial; text-transform: uppercase;'> formazione marittima </div>
                     <div class='sub-title' style='text-shadow: rgba(0, 0, 0, 0.4); font-size: 20px; color: white;'>  ORIENTAMENTO ALLE COMPAGNIE DI NAVIGAZIONE </div>
-                    <div class='conteudo' style='font-family: Barlow; font-size: 30px; color: white; text-shadow: rgba(0, 0, 0, 0.4);'>
+                    <div class='conteudo' style='font-family: Barlow; color: white; text-shadow: rgba(0, 0, 0, 0.4);'>
                         Il progetto Sogniamo In Grande è un programma di formazione marittima e orientamento ai panorami internazionali per consentirti di trovare imbarco in maniera efficace e professionale.
                     </div>
                 </div>
@@ -94,7 +86,7 @@
         <div class='container content-3' style='margin: auto;'>
             <div class='row'>
                 <div class='col-lg-7 mini-contact-form' style='background-color: #003d888a;'>
-                    <div class='w-100' style='margin: 32px 0px; font-family: cahoma; font-size: 17px; color: white; text-align: justify; color: white; line-height: 1.2; padding: 0px 5%;'>
+                    <div class='w-100' style='margin: 32px 0px;font-family: cahoma;font-size: 20px;color: white;text-align: center;color: white;line-height: 1.2;padding: 0px 5%;'>
                         Iscriviti per rimanere sempre aggiornato sulle opportunità lavorative e le novità del settore marittimo.
                     </div>
                     <form action='/newsletter/subscribe' method='POST' class='w-100' style='display: flex; flex-wrap: wrap;'>
