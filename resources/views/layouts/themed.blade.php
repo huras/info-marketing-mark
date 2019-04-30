@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @if(View::hasSection('meta'))
-      @yield('title')
+      @yield('meta')
   @else
     <meta property="og:url" content="http://www.sogniamoingrande.it" />
     <meta property="og:type" content="website" />
