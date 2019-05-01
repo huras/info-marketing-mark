@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- @if(View::hasSection('meta'))
       @yield('meta')
   @else
@@ -11,11 +11,8 @@
     <meta property="og:image" content="http://www.sogniamoingrande.it/img/site/fb-sharer.png" />
     <meta property="og:url" content="http://www.sogniamoingrande.it" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Sogniamo in Grandes" />
+    <meta property="og:title" content="Sogniamo in Grande" />
     <meta property="og:description" content="Maritime training and orientation" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="200" />
-    <meta property="og:image:height" content="200" />
     @yield('meta')
   
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,900" rel="stylesheet">
