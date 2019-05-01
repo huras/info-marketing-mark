@@ -8,7 +8,7 @@
       @yield('meta')
   @else
   @endif -->
-    <meta property="og:image" content="http://www.sogniamoingrande.it/img/site/fb-sharer.png">
+  <meta property="og:image" content="https://davidwalsh.name/wp-content/themes/klass/img/facebooklogo.png"/>
     <meta property="og:url" content="http://www.sogniamoingrande.it">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sogniamo in Grande">
