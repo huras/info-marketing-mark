@@ -15,9 +15,9 @@
         background-position-x: -274px;
     }
     @media(max-width:425px){
-        background-position-y: 166px;
+        background-position-y: 249px;
         height: 800px;
-        background-position-x: -274px;
+        background-position-x: -243px;
     }
 
     .texto-1{
@@ -384,15 +384,15 @@ body{
             }
         }
         @media(max-width: 425px){
-            background-position-y: 45px;
-            height: 1450px;
+            height: 1300px;
             width: 100%;
             padding-top: 20px;
             padding-left: 5px;
             background-size: cover;
-            background-position-x: -287px;
+            background-position: center;
+            background-position-y: 88px;
 
-            .who{
+            .who {
                 max-width: 98%;
                 padding: 20px;
 
