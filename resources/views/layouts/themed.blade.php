@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- @if(View::hasSection('meta'))
       @yield('meta')
   @else
   @endif -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta property="og:image" content="http://www.sogniamoingrande.it/img/site/recorte-fb.jpg">    
     <meta property="og:image:type" content="image/jpg">
     <meta property="og:image:width" content="788">
