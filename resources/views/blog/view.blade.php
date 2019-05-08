@@ -9,10 +9,10 @@
     @endif
     @switch($post->cover_type_id)
         @case(1)
-            <meta property="og:image" content="{{asset('images/posts/'.$post->id.'/'.$post->cover)}}" />
+            <meta property="og:image" content="http://www.sogniamoingrande.it/images/posts/{{$post->id}}/{{$post->cover}}">
         @break
         @case(2)
-            <meta property="og:image" content="{{asset('img/site/video-bog-post-thumb.png')}}" />
+        <meta property="og:image" content="http://www.sogniamoingrande.it/img/site/recorte-fb.jpg">
         @break
     @endswitch
 @endsection

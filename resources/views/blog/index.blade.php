@@ -47,7 +47,7 @@
                                 @if(!empty($post->cover))
                                     @switch($post->cover_type_id)
                                         @case(1)
-                                            <a href='/post/{{$post->id}}'> <img src="{{asset('images/posts/'.$post->id.'/'.$post->cover)}}"> </a>
+                                            <a href='/post/{{$post->id}}'> <img style='width: 100%; height: auto;' src="{{asset('images/posts/'.$post->id.'/'.$post->cover)}}"> </a>
                                         @break
                                         @case(2)
                                             <iframe width="380" height="250" src="https://www.youtube.com/embed/{{$post->cover}}"> </iframe>
