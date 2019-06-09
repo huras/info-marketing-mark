@@ -16,12 +16,12 @@
         $slots = [
             ['name' => 'Home Page', 'count' => null, 'icon' => 'fas fa-home', 'href' => '/admin/home-dashboard', 'use' => false, 'hidden' => false],            
             ['name' => 'Blog', 'count' => $totalPosts, 'icon' => 'fas fa-align-left', 'href' => '/admin/blog', 'use' => true, 'hidden' => false],
-            ['name' => 'Subscriptions', 'count' => $totalNewsletter, 'icon' => 'fas fa-newspaper', 'href' => '/admin/subscriptions', 'use' => true, 'hidden' => true],
-            ['name' => 'Contacts', 'count' => $totalContacts, 'icon' => 'far fa-envelope', 'href' => '/admin/contacts', 'use' => true, 'hidden' => true],
+            ['name' => 'Subscriptions', 'count' => $totalNewsletter, 'icon' => 'fas fa-newspaper', 'href' => '/admin/subscriptions', 'use' => true, 'hidden' => false],
+            ['name' => 'Contacts', 'count' => $totalContacts, 'icon' => 'far fa-envelope', 'href' => '/admin/contacts', 'use' => true, 'hidden' => false],
             ['name' => 'TV Sogniamoingrande', 'count' => 93, 'icon' => 'fab fa-youtube', 'href' => '#', 'use' => false, 'hidden' => false],
             ['name' => 'Configs', 'count' => null, 'icon' => 'fas fa-cog', 'href' => '#', 'use' => false, 'hidden' => false],
             ['name' => 'Users', 'count' => 9, 'icon' => 'fas fa-users', 'href' => '#', 'use' => false, 'hidden' => false],
-            ['name' => 'Email System', 'count' => null, 'icon' => 'far fa-envelope', 'href' => '/mail/dashboard', 'use' => true, 'hidden' => true]
+            ['name' => 'Email System', 'count' => null, 'icon' => 'far fa-envelope', 'href' => '/mail/dashboard', 'use' => true, 'hidden' => false]
         ];
     ?>
 
