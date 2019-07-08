@@ -20,7 +20,6 @@
             <div class='col-md-7 options'>
                 <a href='/' class='nlink'> <i class="fas fa-home"></i> </a>
                 <a href='/about' class='nlink'> {{ __('About') }} </a>
-                <a href='/social' class='nlink'> {{ __('Social') }} </a>
                 <a href='/contact' class='nlink'> {{ __('Contact') }} </a>
                 <a href='/blog' class='nlink'> {{ __('Blog') }} </a>
                 <a href='/video' class='nlink'> {{ __('Video') }} </a>
