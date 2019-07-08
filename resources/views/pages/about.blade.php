@@ -16,46 +16,46 @@
                 </div>
                 <br>
             </div>
-        </div>
+        </div>    
 
-        <!-- Claudia Pirozzi -->
-        <div class='col-md-12 cover' style="background-image: url('{{asset('img/site/about/Foto-Claudia-Pirozzi.jpg')}}'); height: 580px;    background-position: center;    background-size: contain;    background-repeat: no-repeat;">
-        </div>
-        <div class='col-md-12 texts'>
-            <div class='text-content'> 
-                Docente e Traduttrice freelance di Inglese tecnico, laureata a pieni voti in Mediazione Linguistica e Culturale inglese/spagnolo presso la Facoltà per Interpreti e Traduttori dell’attuale Università degli Studi Internazionali di Roma, con esperienza decennale nell’insegnamento dell’Inglese marittimo presso i maggiori centri di addestramento e formazione marittima in Napoli e provincia.
-            </div>
-            <br>
-        </div>
+        <div class='row mini-list'>
+            <?php
+                $items = [
+                    ['img' => '', 'text' => ''],
+                    ['style' => 'background-size: cover;', 'img' => 'img/site/about/The Captain.jpg', 'text' => 'Comandante di lungo corso. Diplomato col massimo dei voti presso ITN Nino Bixio di Piano di Sorrento. Impiegato per 18 anni presso la MSC, attualmente impiegato presso la Grimaldi Napoli.'],
+                    ['img' => 'img/site/about/Foto-Claudia-Pirozzi.jpg', 'text' => 'Docente e Traduttrice freelance di Inglese tecnico, laureata a pieni voti in Mediazione Linguistica e Culturale inglese/spagnolo presso la Facoltà per Interpreti e Traduttori dell’attuale Università degli Studi Internazionali di Roma, con esperienza decennale nell’insegnamento dell’Inglese marittimo presso i maggiori centri di addestramento e formazione marittima in Napoli e provincia.'],
+                    
+                    ['img' => 'img/site/about/salvatore.jpg', 'text' => 'Salvatore Smelzo. Diplomato in Ragioneria 96/100. Amministratore e Contabile della gestione clienti del progetto SOGNIAMO IN GRANDE. Impegnato da anni in progetti umanitari senza scopo di lucro. Il suo entusiasmo e la sua competenza nella gestione e organizzazione di nuovi  progetti è stata fondamentale per il progetto SOGNIAMO IN GRANDE.'],
+                    ['img' => 'img/site/about/Emanuele.jpg', 'text' => "Allievo Ufficiale di Coperta diplomato con 100/100 presso ITN Giorgio La Pira di Pozzallo. Lavoro con Grimaldi Lines di Napoli, prossimo all'abilitazione del titolo professionale Ufficiale di Navigazione."],
+                    ['style' => 'background-size: cover;', 'img' => 'img/site/about/Huras.jpg', 'text' => "Sviluppatore web e capo dipartimento IT di SOGNIAMO IN GRANDE, laureato in informatica nell'università brasiliana UFSJ. Sviluppatore Full Stack dal Brasile con esperienza in Machine Learning e Web Marketing."],
+                    
+                    ['img' => '', 'text' => '', 'isModel' => true],
+                    ['img' => '', 'text' => '', 'isModel' => true]
+                ];
+            ?>
 
-        <!-- Claudia Pirozzi -->
-        <div class='col-md-12 cover' style="background-image: url('{{asset('img/site/about/Nino.jpg')}}'); height: 580px;    background-position: center;    background-size: contain;    background-repeat: no-repeat;">
-        </div>
-        <div class='col-md-12 texts'>
-            <div class='text-content'> 
-                Comandante di lungo corso. Diplomato col massimo dei voti presso ITN Nino Bixio di Piano di Sorrento. Impiegato per 18 anni presso la MSC, attualmente impiegato presso la Grimaldi Napoli.
-            </div>
-            <br>
-        </div>
+            <!-- Claudia Pirozzi -->
+            <!-- Salvatore -->
+            <!-- Emanuele.jpg -->
 
-        <!-- Salvatore -->
-        <div class='col-md-12 cover' style="background-image: url('{{asset('img/site/about/salvatore.jpg')}}'); height: 690px;    background-position: 0% 18%;">">
-        </div>
-        <div class='col-md-12 texts'>
-            <div class='text-content'> 
-                Salvatore Smelzo. Diplomato in Ragioneria 96/100. Amministratore e Contabile della gestione clienti del progetto SOGNIAMO IN GRANDE. Impegnato da anni in progetti umanitari senza scopo di lucro. Il suo entusiasmo e la sua competenza nella gestione e organizzazione di nuovi  progetti è stata fondamentale per il progetto SOGNIAMO IN GRANDE.
-            </div>
-            <br>
-        </div>
-
-        <!-- Giorgio -->
-        <div class='col-md-12 cover' style="background-image: url('{{asset('img/site/about/Huras.jpg')}}'); height: 580px;    background-position: center;    background-size: contain;    background-repeat: no-repeat;">
-        </div>
-        <div class='col-md-12 texts'>
-            <div class='text-content'> 
-                Im a web developer and head o the TI department of SOGNIAMO IN GRANDE. I got a degree on computer science in a Brazilian university called UFSJ. I currently study machine learning and web marketing. Currently I also work as a full stack developer from Brasil.
-            </div>
-            <br>
+            <?php
+                foreach($items as $item) { 
+                    if(isset($item['isModel']))
+                        continue;
+            ?>
+                                
+                    <div class='item col-md-4 col-sm-12'>
+                        <div class='w-100 cover' style="background-image: url('{{asset($item['img'])}}'); height: 310px;    background-position: center;    background-size: contain;    background-repeat: no-repeat; <?php if(isset($item['style'])) echo $item['style']; ?>">
+                        </div>
+                        <div class='w-100 texts'>
+                            <div class='text-content' style='padding: 0px 4px; text-align: justify; font-size: 18px;'> 
+                                {{$item['text']}}
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+            <?php 
+                } ?>
         </div>
     </div>
     @include('partials/footer')
