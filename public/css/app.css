@@ -11249,6 +11249,12 @@ body {
   }
 }
 
+@media (max-width: 425px) {
+  .infomarketing-header .options {
+    justify-content: center;
+  }
+}
+
 .sticky {
   position: fixed;
   top: 0;

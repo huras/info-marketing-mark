@@ -1,7 +1,7 @@
 <div class='infomarketing-header' id='navbar'>
     <div class='container'>
         <div class='row'>
-            <div class='col-md-5' style='justify-content: center;    align-items: center;'>
+            <div class='col-md-5 col-sm-12' style='justify-content: center;    align-items: center;'>
                 <div class='row'>
                     <div class='col-sm-6' style='    display: flex;    justify-content: center;    align-items: center;'>
                         <img src='/img/site/Logo top.jpg' style='max-width: 135px;    height: auto;'>
@@ -17,7 +17,7 @@
                     </div>
                 </div>
             </div>
-            <div class='col-md-7 options'>
+            <div class='col-md-7 col-sm-12 options'>
                 <a href='/' class='nlink'> <i class="fas fa-home"></i> </a>
                 <a href='/about' class='nlink'> {{ __('About') }} </a>
                 <a href='/contact' class='nlink'> {{ __('Contact') }} </a>

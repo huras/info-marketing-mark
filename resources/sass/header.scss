@@ -85,6 +85,10 @@
             flex-wrap: wrap;
             margin-top: 16px;
         }
+
+        @media(max-width: 425px){
+            justify-content: center;
+        }
     }
 }
 
@@ -104,3 +108,4 @@
         padding-top: 139px;
     }
 }
+
