@@ -5,15 +5,27 @@
 @section('content')
     @include('partials/home-header')
 
-    <?php $videos = [
-        ['url' => 'https://www.youtube.com/watch?v=UoxXCWhZlOg', 'description' => 'INCONTRO SCUOLA /// ITN DUCA DEGLI ABRUZZI'],
-        ['url' => 'https://www.youtube.com/watch?v=gSXAb3079XM', 'description' => 'ITN DUCA DEGLI ABRUZZI /// SogniamoinGRANDE'],
-        ['url' => 'https://www.youtube.com/watch?v=89JsUScrOec', 'description' => 'Sogniamo in Grande. Settore Marittimo.'],
-        ['url' => 'https://www.youtube.com/watch?v=2xj_SZeQtI8', 'description' => 'Come fare un colloquio di lavoro. SOGNIAMO IN GRANDE'],
-        ['url' => 'https://www.youtube.com/watch?v=q5tPsoSwrq4', 'description' => 'COME FARE UN CURRICULUM VINCENTE'],
-        ['url' => 'https://www.youtube.com/watch?v=vAs2O0cNegY', 'description' => 'COME I SOCIAL POSSONO AIUTARTI A TROVARE LAVORO. Linkedin'],
-        ['url' => 'https://www.youtube.com/watch?v=rwcXmNvdZRY', 'description' => 'QUANDO SI CERCA LAVORO'],
-    ]; ?>
+    <?php
+        $videos = [];
+
+        $videosByHand = [
+            ['url' => 'https://www.youtube.com/watch?v=UoxXCWhZlOg', 'description' => 'INCONTRO SCUOLA /// ITN DUCA DEGLI ABRUZZI'],
+            ['url' => 'https://www.youtube.com/watch?v=gSXAb3079XM', 'description' => 'ITN DUCA DEGLI ABRUZZI /// SogniamoinGRANDE'],
+            ['url' => 'https://www.youtube.com/watch?v=89JsUScrOec', 'description' => 'Sogniamo in Grande. Settore Marittimo.'],
+            ['url' => 'https://www.youtube.com/watch?v=2xj_SZeQtI8', 'description' => 'Come fare un colloquio di lavoro. SOGNIAMO IN GRANDE'],
+            ['url' => 'https://www.youtube.com/watch?v=q5tPsoSwrq4', 'description' => 'COME FARE UN CURRICULUM VINCENTE'],
+            ['url' => 'https://www.youtube.com/watch?v=vAs2O0cNegY', 'description' => 'COME I SOCIAL POSSONO AIUTARTI A TROVARE LAVORO. Linkedin'],
+            ['url' => 'https://www.youtube.com/watch?v=rwcXmNvdZRY', 'description' => 'QUANDO SI CERCA LAVORO'],
+        ]; 
+
+        
+        foreach($postVideos as $video){
+            $videos[] = ['url' => 'https://www.youtube.com/watch?v='.$video['cover'], 'description' => strtoupper($video['title']) ];
+        }
+        foreach($videosByHand as $video){
+            $videos[] = $video;
+        }
+    ?>
 
     <div class='container-fluid' style=' background-image: url( {{ asset("img/site/network-bg.png") }} ) '>
         <div class='container home-videos' style='background-color: transparent;'>

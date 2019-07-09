@@ -7,7 +7,7 @@
                         <img src='/img/site/Logo top.jpg' style='max-width: 135px;    height: auto;'>
                     </div>
                     <div class='col-sm-6' style='display: flex;    flex-direction: column;    justify-content: center;    align-items: center;'>
-                        <a href='/' class='main-title nlink'> 
+                        <a href='/' class='main-title nlink'>
                             Sogniamo 
                             in Grande 
                         </a>
@@ -21,9 +21,17 @@
                 <a href='/' class='nlink'> <i class="fas fa-home"></i> </a>
                 <a href='/about' class='nlink'> {{ __('About') }} </a>
                 <a href='/contact' class='nlink'> {{ __('Contact') }} </a>
-                <a href='/blog' class='nlink'> {{ __('Blog') }} </a>
-                <a href='/video' class='nlink'> {{ __('Video') }} </a>
-                <!-- <a href='/donazioni' class='nlink'> {{ __('Donazioni') }} </a> -->
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style='padding-top: 0;'>
+                            Blog
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/blog">News</a>
+                            <a class="dropdown-item" href="/video">Videos</a>
+                        </div>
+                    </li>
+                </ul>
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle nlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style='padding-top: 0;'>
@@ -31,12 +39,10 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="https://www.mimmomoricone.com/">Mimmo Moricone</a>
-                            <!-- <div class="dropdown-divider"></div> -->
                             <a class="dropdown-item" href="https://projetocorabe.wixsite.com/corabe/copia-home">Progetto Corabe</a>
                         </div>
                     </li>
                 </ul>
-                <!-- <a href='/services' class='nlink'> {{ __('Services') }} </a> -->
 
                 <a href='/admin/dashboard' class='nlink access'> <i class="fas fa-lock"></i> </a>
 

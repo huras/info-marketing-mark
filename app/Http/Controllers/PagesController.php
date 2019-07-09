@@ -25,7 +25,8 @@ class PagesController extends Controller
     }
 
     public function video(){
-        return view('pages/videos');
+        $postVideos = BlogPost::where('status', 1)->where('cover_type_id', 2)->orderBy('created_at', 'desc')->get();
+        return view('pages/videos', compact('postVideos'));
     }
 
     public function social(){
