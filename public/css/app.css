@@ -12246,9 +12246,15 @@ body {
   width: calc(100px - 4px);
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 425px) {
   .video-list iframe {
-    height: calc(680px + 16px);
+    height: calc(168px + 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .video-list iframe {
+    height: calc(460px + 16px);
   }
 }
 
@@ -12258,9 +12264,9 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   .video-list iframe {
-    height: calc(460px + 16px);
+    height: calc(680px + 16px);
   }
 }
 

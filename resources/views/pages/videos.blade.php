@@ -30,24 +30,29 @@
     <div class='container-fluid' style=' background-image: url( {{ asset("img/site/network-bg.png") }} ) '>
         <div class='container home-videos' style='background-color: transparent;'>
             <div class='row'>
-                <div class='col-lg-9'>
+                <div class='col-lg-12'>
                     <div class='video-list w-100'>
                         <div class='row'>
+                            <?php $counter = 0; ?>
                             @foreach($videos as $video)
-                                <div class='col-lg-12 video-slot' style='margin-bottom: 64px;'>
-                                    <div class='title w-100'> 
+                                <?php $counter++; ?>
+                                <div class='col-lg-6 col-sm-12 video-slot' style='margin-bottom: 64px;'>
+                                    <div class='title w-100' style='min-height: 90px; font-size: 20px; display: flex;    justify-content: center;    align-items: flex-end;'> 
                                         <?= $video['description'] ?> 
                                     </div>
                                     <?php 
                                         preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $video['url'], $matches);
                                         $youtubeID = $matches[1];
                                     ?>
-                                    <iframe width="100%" height="460" src="https://www.youtube.com/embed/<?= $youtubeID ?>" allowfullscreen> </iframe>
+                                    <iframe width="100%" height="184" src="https://www.youtube.com/embed/<?= $youtubeID ?>" allowfullscreen> </iframe>
                                 </div>
-                                <div class='col-lg-12' style='justify-content: center; display: flex;'>
-                                    <div class='video-slot-separator'>
+                                @if($counter == 2)                                
+                                    <div class='col-lg-12' style='justify-content: center; display: flex;'>
+                                        <div class='video-slot-separator'>
+                                        </div>
                                     </div>
-                                </div>
+                                    <?php $counter = 0; ?>
+                                @endif
                             @endforeach
                         </div>
                     </div>
