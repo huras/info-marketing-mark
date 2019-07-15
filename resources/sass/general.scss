@@ -17,6 +17,20 @@
     @media (max-width: 425px) {
         margin: 8px 0px;
         border-radius: 4px;
+
+        .field{
+            .form-group {
+                padding-top: 0px;
+                margin-bottom: 0px;
+            }
+        }
+        .buttons{
+            .form-group {
+                padding-top: 0px;
+                margin-bottom: 0px;
+            }
+            
+        }
     }
 
     .form-group {

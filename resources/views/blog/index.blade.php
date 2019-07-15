@@ -13,13 +13,12 @@
                         {{ csrf_field() }}
 
                         <div class='row'>
-                            <div class='col-md-5'>
+                            <div class='col-md-5 field'>
                                 <div class='form-group'>
-                                    <label> Title </label>
-                                    <input type='text' name='title' value='@if(isset($oldQuery["title"])) {{$oldQuery["title"]}} @endif'>
+                                    <input type='text' style='padding-left: 4px;' name='title' placeholder="per cercare..." value='@if(isset($oldQuery["title"])) {{$oldQuery["title"]}} @endif'>
                                 </div>
                             </div>
-                            <div class='col-md-3'>
+                            <div class='col-md-3 buttons'>
                                 <div class='form-group wrap' style=' align-items: center; display: flex; height: 100%; padding-top: 15px;'>
                                     <div class='f-btn std-themed-search' onclick="document.getElementById('post-search').submit();" > <i class='fa fa-search'></i> </div>
                                     <a href='/blog' class='f-btn std-themed-clear nlink'> Clear </a>
