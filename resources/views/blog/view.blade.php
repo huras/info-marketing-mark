@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-                <div class='col-md-3' style='padding-right: 0;'>
+                <div class='col-md-3 merchan-col' style='padding-right: 0;'>
                     <div class='merchan w-100'>
                         <div class='miniposts w-100'>
                             @foreach($posts as $post)
