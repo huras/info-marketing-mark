@@ -85,14 +85,17 @@
                 }
             }
             .cover{
+                padding-left: 0px;
+                margin-top: 16px;
+                width: 100%;
+
                 iframe{
                     width: 307px;
                     height: 227px;
                 }
-            }
-            .cover{
-                padding-left: 0px;
-                margin-top: 16px;
+                img{
+                    min-width: 100%;
+                }
             }
             .readable{
                 margin-top: 8px;

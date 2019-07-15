@@ -11564,14 +11564,19 @@ body {
     margin-left: 8px;
   }
 
+  .blog-posts .slot .cover {
+    padding-left: 0px;
+    margin-top: 16px;
+    width: 100%;
+  }
+
   .blog-posts .slot .cover iframe {
     width: 307px;
     height: 227px;
   }
 
-  .blog-posts .slot .cover {
-    padding-left: 0px;
-    margin-top: 16px;
+  .blog-posts .slot .cover img {
+    min-width: 100%;
   }
 
   .blog-posts .slot .readable {
