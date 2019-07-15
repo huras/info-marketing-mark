@@ -11668,6 +11668,12 @@ body {
   color: white;
 }
 
+@media (max-width: 425px) {
+  .merchan-col {
+    padding-left: 0;
+  }
+}
+
 .nlink:hover {
   text-decoration: none;
 }
