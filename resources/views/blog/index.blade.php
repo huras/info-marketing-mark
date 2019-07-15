@@ -63,7 +63,7 @@
                             </div>
                         </div>
                     @endforeach
-                    {{ $posts->onEachSide(4)->links() }}
+                    {{ $posts->onEachSide(2)->links() }}
                 </div>
                 <div class='extra-content col-md-0'>
                 </div>
