@@ -11571,8 +11571,8 @@ body {
   }
 
   .blog-posts .slot .cover iframe {
-    width: 307px;
-    height: 227px;
+    width: 100%;
+    height: 264px;
   }
 
   .blog-posts .slot .cover img {
@@ -11679,6 +11679,13 @@ body {
   border-radius: 12px;
   border: 1px solid white;
   margin-bottom: 24px;
+}
+
+@media (max-width: 425px) {
+  .search-box {
+    margin: 8px 0px;
+    border-radius: 4px;
+  }
 }
 
 .search-box .form-group {

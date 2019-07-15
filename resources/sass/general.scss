@@ -1,10 +1,10 @@
-.nlink{
-    &:hover{
+.nlink {
+    &:hover {
         text-decoration: none;
     }
 }
 
-.search-box{
+.search-box {
     padding: 16px;
     margin: 16px 8px;
     width: 100%;
@@ -14,7 +14,12 @@
 
     margin-bottom: 24px;
 
-    .form-group{
+    @media (max-width: 425px) {
+        margin: 8px 0px;
+        border-radius: 4px;
+    }
+
+    .form-group {
         width: 100%;
 
         &.wrap{
@@ -35,7 +40,7 @@
     }
 }
 
-.f-btn{
+.f-btn {
     cursor: pointer;
 
     &.std-themed-search{
@@ -44,18 +49,18 @@
         padding: 3px 8px;
         padding-top: 7px;
 
-        i{
+        i {
             color: white;
             font-size: 24px;
         }
 
-        &:hover{
+        &:hover {
             background-color: #0d8ca0;
             transition: background-color 0.7s ease-out;
         }
     }
 
-    &.std-themed-clear{
+    &.std-themed-clear {
         background-color: #1c5a63;
         border-radius: 12px;
         padding: 5px 8px;
@@ -71,16 +76,16 @@
     }
 }
 
-.window-msg{
-    &.home{
-        .window-message{
-            &.success{
+.window-msg {
+    &.home {
+        .window-message {
+            &.success {
                 background-color: #188d22;
             }
-            &.error{
+            &.error {
                 background-color: #8d1818;
             }
-            &.warning{
+            &.warning {
                 background-color: #927906;
             }
 
