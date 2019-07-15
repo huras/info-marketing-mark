@@ -11484,6 +11484,13 @@ body {
   background-color: #040010;
 }
 
+@media (max-width: 320px) {
+  .blog-posts {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
 .blog-posts .slot {
   padding: 25px 15px;
   display: flex;
@@ -11538,6 +11545,29 @@ body {
 
 .blog-posts .slot .cover {
   padding-left: 32px;
+}
+
+@media (max-width: 320px) {
+  .blog-posts .slot {
+    flex-direction: column;
+    padding: 25px 0px;
+  }
+
+  .blog-posts .slot .date {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog-posts .slot .date .year {
+    margin-left: 8px;
+  }
+
+  .blog-posts .slot .cover iframe {
+    width: 238px;
+    height: 155px;
+  }
 }
 
 .blog-posts .pagination {

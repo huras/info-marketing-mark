@@ -33,6 +33,7 @@
                         Your search returned <?= count($posts); ?> result<?php if(count($posts)>1) echo 's'; ?>
                     </div>
                 @endif
+
                 <div class='blog-posts col-md-12' style='background-color: #040010;'>
                     @foreach($posts as $post)
                         <?php $data = date_parse($post['created_at']); ?>
@@ -60,17 +61,6 @@
                                 <a href='/post/{{$post->id}}' class='title'> {{$post->title}} </a>
                                 <a href='/post/{{$post->id}}' class='call'> {{$post->call}} </a>
                             </div>
-
-                            <!-- <div class='interactions'>
-                                <a href='/post/{{$post->id}}' class='read-more-btn'> 
-                                    <i class="fas fa-book-open"></i> 
-                                    <div class='btn-label'> Read </div> 
-                                </a>
-                                <a href='#' class='read-more-btn' title='bookmark'> 
-                                    <i class="fas fa-bookmark"></i> 
-                                    <div class='btn-label'> Bookmark </div> 
-                                </a>
-                            </div> -->
                         </div>
                     @endforeach
                     {{ $posts->links() }}

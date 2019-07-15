@@ -10,6 +10,11 @@
 }
 
 .blog-posts{
+    @media(max-width: 320px){
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
     .slot{
         padding: 25px 15px;
         display: flex;
@@ -63,6 +68,28 @@
         }
         .cover{
             padding-left: 32px;
+        }
+
+        @media(max-width: 320px){
+            flex-direction: column;
+            padding: 25px 0px;
+
+            .date{
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                .year{
+                    margin-left: 8px;
+                }
+            }
+            .cover{
+                iframe{
+                    width: 238px;
+                    height: 155px;
+                }
+            }
         }
     }
 
