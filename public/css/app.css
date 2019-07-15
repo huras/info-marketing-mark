@@ -11484,7 +11484,7 @@ body {
   background-color: #040010;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .blog-posts {
     padding-right: 5px;
     padding-left: 5px;
@@ -11547,7 +11547,7 @@ body {
   padding-left: 32px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .blog-posts .slot {
     flex-direction: column;
     padding: 25px 0px;
@@ -11565,8 +11565,28 @@ body {
   }
 
   .blog-posts .slot .cover iframe {
-    width: 238px;
-    height: 155px;
+    width: 307px;
+    height: 227px;
+  }
+
+  .blog-posts .slot .cover {
+    padding-left: 0px;
+    margin-top: 16px;
+  }
+
+  .blog-posts .slot .readable {
+    margin-top: 8px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .blog-posts .slot .readable .title {
+    font-size: 22px;
+  }
+
+  .blog-posts .slot .call {
+    text-align: justify;
+    font-size: 17px;
   }
 }
 

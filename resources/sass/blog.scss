@@ -10,7 +10,7 @@
 }
 
 .blog-posts{
-    @media(max-width: 320px){
+    @media(max-width: 425px){
         padding-right: 5px;
         padding-left: 5px;
     }
@@ -70,7 +70,7 @@
             padding-left: 32px;
         }
 
-        @media(max-width: 320px){
+        @media(max-width: 425px){
             flex-direction: column;
             padding: 25px 0px;
 
@@ -86,9 +86,26 @@
             }
             .cover{
                 iframe{
-                    width: 238px;
-                    height: 155px;
+                    width: 307px;
+                    height: 227px;
                 }
+            }
+            .cover{
+                padding-left: 0px;
+                margin-top: 16px;
+            }
+            .readable{
+                margin-top: 8px;
+                padding-left: 0;
+                text-align: center;
+                
+                .title{
+                    font-size: 22px;
+                }
+            }
+            .call{
+                text-align: justify;
+                font-size: 17px;
             }
         }
     }
