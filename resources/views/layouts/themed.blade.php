@@ -25,6 +25,10 @@
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow:100,300,400,500,600,700,900" rel="stylesheet">
 
+  <link rel="icon"
+      type="image/png"
+      href="/img/site/Logo.ico">
+
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   @yield('styles')
   <link rel="stylesheet" href="{{ asset('css/slick.css') }}">

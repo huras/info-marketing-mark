@@ -21,7 +21,7 @@
         <div class='row mini-list'>
             <?php
                 $items = [
-                    ['img' => '', 'text' => ''],
+                    ['img' => 'img/site/about/fabio.jpg', 'text' => 'Fabio Polito, diplomato al Nautico di Bagnoli Duca degli Abruzzi ha cominciato la sua carriera con la compagnia Grimaldi, per poi abbracciare anche lui i mercati internazionali con il gruppo Royal Caribbean con la compagnia Pullmantur. Insieme a Marco ha collaborato per la realizzazione del progetto SOGNIAMO IN GRANDE ed è uno dei Tutor assegnati del progetto.'],
                     ['style' => 'background-size: cover;', 'img' => 'img/site/about/The Captain.jpg', 'text' => 'Comandante di lungo corso. Diplomato col massimo dei voti presso ITN Nino Bixio di Piano di Sorrento. Impiegato per 18 anni presso la MSC, attualmente impiegato presso la Grimaldi Napoli.'],
                     ['img' => 'img/site/about/Foto-Claudia-Pirozzi.jpg', 'text' => 'Docente e Traduttrice freelance di Inglese tecnico, laureata a pieni voti in Mediazione Linguistica e Culturale inglese/spagnolo presso la Facoltà per Interpreti e Traduttori dell’attuale Università degli Studi Internazionali di Roma, con esperienza decennale nell’insegnamento dell’Inglese marittimo presso i maggiori centri di addestramento e formazione marittima in Napoli e provincia.'],
                     
