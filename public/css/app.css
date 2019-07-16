@@ -10517,7 +10517,7 @@ a.text-dark:focus {
   .paralax.n1 {
     height: 800px;
     background-position-x: -243px;
-    background-position-y: 213px;
+    background-position-y: 0px;
   }
 }
 
@@ -11225,6 +11225,12 @@ body {
   border-bottom: 3.5px solid #4ec7f7;
 }
 
+@media (max-width: 425px) {
+  .infomarketing-header .options .nlink.access {
+    display: none;
+  }
+}
+
 .infomarketing-header .options .nlink.access i {
   transition: all 0.5s;
   font-size: 18px;
@@ -11255,13 +11261,15 @@ body {
   }
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 13;
-  padding: 2px 0px;
-  transition: padding 1s ease;
+@media (min-width: 768px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 13;
+    padding: 2px 0px;
+    transition: padding 1s ease;
+  }
 }
 
 .sticky + .enchendo-linguica {
@@ -11272,6 +11280,42 @@ body {
   .sticky + .enchendo-linguica {
     padding-top: 139px;
   }
+}
+
+@media (max-width: 425px) {
+  .sticky + .enchendo-linguica {
+    display: none;
+  }
+}
+
+.mobile-access {
+  z-index: 13;
+  position: absolute;
+  right: 16px;
+  top: 0px;
+}
+
+@media (min-width: 426px) {
+  .mobile-access {
+    display: none;
+  }
+}
+
+.mobile-access i {
+  transition: all 0.5s;
+  font-size: 24px;
+  padding: 0px;
+  color: #3b3b3b;
+}
+
+.mobile-access:hover {
+  border-bottom: 0px solid black;
+  padding-bottom: 0px;
+}
+
+.mobile-access:hover i {
+  transition: all 0.5s ease-out;
+  color: #fa6a82;
 }
 
 .footer {

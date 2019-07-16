@@ -1,6 +1,7 @@
-<div class='infomarketing-header' id='navbar'>
+<div class='infomarketing-header sticky' id='navbar'>
     <div class='container'>
-        <div class='row'>
+        <div class='row' style='position: relative;'>
+            <a href='/admin/dashboard' class='nlink mobile-access'> <i class="fas fa-lock"></i> </a>
             <div class='col-md-5 col-sm-12' style='justify-content: center;    align-items: center;'>
                 <div class='row'>
                     <div class='col-sm-6' style='    display: flex;    justify-content: center;    align-items: center;'>
@@ -32,7 +33,8 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="navbar-nav mr-auto">
+                <a href='www.sogniamoingrande.info/webinar-gratuito' class='nlink'> WEBINAR </a>
+                <!-- <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle nlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style='padding-top: 0;'>
                             Donazioni
@@ -42,7 +44,7 @@
                             <a class="dropdown-item" href="https://projetocorabe.wixsite.com/corabe/copia-home">Progetto Corabe</a>
                         </div>
                     </li>
-                </ul>
+                </ul> -->
 
                 <a href='/admin/dashboard' class='nlink access'> <i class="fas fa-lock"></i> </a>
 
@@ -58,7 +60,7 @@
 <div class='enchendo-linguica'></div>
 
 <script>
-    window.onscroll = function() {myFunction()};
+    //window.onscroll = function() {myFunction()};
 
     var navbar = document.getElementById("navbar");
     var sticky = navbar.offsetTop;
