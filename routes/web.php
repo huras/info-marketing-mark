@@ -16,6 +16,22 @@ Route::get('/fonts', function(){
 */
 
 Auth::routes();
+
+//Automail
+Route::get('/automail-routine', 'AutomailController@autosend');
+Route::group(['prefix' => 'automail'], function () {    
+    Route::get('/list', 'AutomailController@listAutomail')->name('automail.list');
+    Route::get('/new', 'AutomailController@newAutomail')->name('automail.new');
+    Route::get('/activate/{id}', 'AutomailController@activate')->name('automail.activate');
+    Route::get('/deactivate/{id}', 'AutomailController@deactivate')->name('automail.deactivate');
+    Route::post('/new', 'AutomailController@createAutomail')->name('automail.store');
+    Route::get('/destroy/{id}', 'AutomailController@destroy')->name('automail.destroy');
+});
+
+Route::group(['prefix' => 'newlayout'], function () { 
+    Route::get('home', 'PagesController2@index')->name('newlayout.index');
+});
+
 Route::get('/', 'PagesController@home');
 Route::get('/home', 'PagesController@home')->name('home');
 Route::get('/contact', 'ContactsController@contact');
@@ -36,15 +52,6 @@ Route::get('/new-page', 'PagesController@everyNewPage');
 
 Route::get('/facciamo-cv-vicente', 'PagesController@cvVicente');
 
-//Automail
-Route::get('/automail/list', 'AutomailController@listAutomail')->name('automail.list');
-Route::get('/automail/new', 'AutomailController@newAutomail')->name('automail.new');
-Route::get('/automail/activate/{id}', 'AutomailController@activate')->name('automail.activate');
-Route::get('/automail/deactivate/{id}', 'AutomailController@deactivate')->name('automail.deactivate');
-Route::post('/automail/new', 'AutomailController@createAutomail')->name('automail.store');
-Route::get('/automail/destroy/{id}', 'AutomailController@destroy')->name('automail.destroy');
-Route::get('/automail-routine', 'AutomailController@autosend');
-
 //Mail
 Route::get('/mail/dashboard', 'EmailsController@dashboard')->name('mail.dashboard');
 Route::get('/mail/new-group-mail', 'EmailsController@newGroupMail')->name('mail.newGroupMail');
@@ -60,25 +67,28 @@ Route::get('/admin/subscriber/destroy/{id}', 'NewsletterContactController@destro
 
 //Route::post('/newsletter', 'PagesController@newsletter');
 
-Route::get('/admin', 'CriadorController@dashboard');
+//Admin
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('', 'CriadorController@dashboard');
+    Route::get('/dashboard', 'CriadorController@dashboard');
+    Route::get('/home-dashboard', 'CriadorController@home_dashboard');
+    Route::get('/home-dashboard/bigMosaic', 'CriadorController@bigMosaic');
+    
+    Route::get('/contacts', 'ContactsController@list');
+    Route::get('/contact/view/{id}', 'ContactsController@view');
+    Route::get('/contact/destroy/{id}', 'ContactsController@destroy');
+    
+    Route::get('/subscriptions', 'CriadorController@subscriptions');
+    
+    Route::get('/blog', 'BlogController@list');
+    Route::get('/blog/new', 'BlogController@new');
+    Route::post('/blog/create', 'BlogController@create');
+    Route::get('/blog/publish/{id}', 'BlogController@publish');
+    Route::get('/blog/hide/{id}', 'BlogController@hide');
+    Route::get('/blog/destroy/{id}', 'BlogController@destroy');
+    Route::get('/blog/{id}/edit', 'BlogController@edit')->name('blogpost.edit');
+    Route::post('/blog/{id}/update', 'BlogController@update')->name('blogpost.update');
+});
 
-Route::get('/admin/dashboard', 'CriadorController@dashboard');
-Route::get('/admin/home-dashboard', 'CriadorController@home_dashboard');
-Route::get('/admin/home-dashboard/bigMosaic', 'CriadorController@bigMosaic');
-
-Route::get('/admin/contacts', 'ContactsController@list');
-Route::get('/admin/contact/view/{id}', 'ContactsController@view');
-Route::get('/admin/contact/destroy/{id}', 'ContactsController@destroy');
-
-Route::get('/admin/subscriptions', 'CriadorController@subscriptions');
-
-Route::get('/admin/blog', 'BlogController@list');
-Route::get('/admin/blog/new', 'BlogController@new');
-Route::post('/admin/blog/create', 'BlogController@create');
-Route::get('/admin/blog/publish/{id}', 'BlogController@publish');
-Route::get('/admin/blog/hide/{id}', 'BlogController@hide');
-Route::get('/admin/blog/destroy/{id}', 'BlogController@destroy');
-Route::get('/admin/blog/{id}/edit', 'BlogController@edit')->name('blogpost.edit');
-Route::post('/admin/blog/{id}/update', 'BlogController@update')->name('blogpost.update');
 
 Route::get('/homa', 'HomeController@index');
