@@ -61,6 +61,7 @@
   <!-- <script src="{{ asset('js/main.js') }}"></script> -->
   <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
   <script src='{{asset("js/masks.js")}}' ></script>
+  <script src='{{asset("js/custom.js")}}' ></script>
   @yield('scripts')
 </body>
 </html>

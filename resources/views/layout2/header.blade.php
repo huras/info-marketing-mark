@@ -1,6 +1,18 @@
+<script>
+  function open_mobile_menu(menuCount) {
+    for(var i = 0; i < menuCount; i++){
+      var menu = document.getElementById('menu-item-'+i);
+      if(menu.style.display == 'none')
+        menu.style.display = 'flex';
+      else
+        menu.style.display = 'none';
+    }
+  }
+</script>
+
 <div class='container-fluid layout2 header'>
   <div class='row w-100'>
-    <div class='logo col-6'>
+    <div class='logo col-xl-6 col-lg-12'>
       <img src='/img/site/Logo top.jpg'>
       <div class='dflex'>
         <a href='/' class='nome-grande naked-link'>
@@ -11,7 +23,7 @@
         </a>
       </div>
     </div>
-    <div class='site-navbar col-6'>
+    <div class='site-navbar col-xl-6 col-lg-12'>
       <?php
         $menus = [
           [
@@ -37,11 +49,22 @@
         ];
       ?>
 
-      @foreach($menus as $menu)
-        <a class='menu-item' href='{{$menu["link"]}}'>
+      <div class='menu-opener mobile-only' onclick='open_mobile_menu({{count($menus)}})'>
+        <i class='fa fa-bars'></i>
+      </div>
+
+      @foreach($menus as $key => $menu)
+        <a class='menu-item desktop-only' href='{{$menu["link"]}}'>
+          {{$menu["label"]}}
+        </a>
+      @endforeach
+
+      @foreach($menus as $key => $menu)
+        <a class='menu-item mobile-only' style='display: none;' id='menu-item-{{$key}}' href='{{$menu["link"]}}'>
           {{$menu["label"]}}
         </a>
       @endforeach
     </div>
   </div>
 </div>
+

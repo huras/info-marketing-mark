@@ -17,7 +17,7 @@ class PagesController extends Controller
     }
 
     public function home(Request $request){
-        return view('pages/home');
+        return view('layout2.index');
     }
 
     public function everyNewPage(){

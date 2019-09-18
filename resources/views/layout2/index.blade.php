@@ -4,7 +4,25 @@
     @include('layout2.header')
     <div class='container-fluid layout2-home'>    
         <div class='top-section row'>
-            <img src='/img/themes/layout2/DSC_5783-31.jpg' style='filter: sepia(0.3);'>
+            <section class='w-100'>
+                <div class='caroussel desktop-only'>
+                    <img src='/img/themes/layout2/DSC_5783-31.jpg' style='filter: sepia(0.3);'>
+                    <img src='/img/themes/layout2/DSC_5731-19.jpg' style='filter: sepia(0.3);'>
+                    <img src='/img/themes/layout2/DSC_5725-16.jpg' style='filter: sepia(0.3);'>
+                </div>
+
+                <div class='caroussel mobile-only'>
+                    <div class='slide' style='background-image: url("/img/themes/layout2/DSC_5725-16.jpg"); '>
+                        <img src='/img/themes/layout2/DSC_5725-16.jpg' style='opacity: 0;'>
+                    </div>
+                    <div class='slide' style='background-image: url("/img/themes/layout2/DSC_5731-19.jpg"); '>
+                        <img src='/img/themes/layout2/DSC_5731-19.jpg' style='opacity: 0;'>
+                    </div>
+                    <div class='slide' style='background-image: url("/img/themes/layout2/DSC_5783-31.jpg"); '>
+                        <img src='/img/themes/layout2/DSC_5783-31.jpg' style='opacity: 0;'>
+                    </div>
+                </div>
+            </section>
             
             <div class='w-100 de-cima'>
                 <div class='laranja-texto'>
@@ -19,12 +37,18 @@
             </div>
             
             <div class='w-100 faixa-transparente de-baixo'>
-                <div class='branco-pequeno-texto'>
+                <!-- Desktop -->
+                <div class='branco-pequeno-texto desktop-only'>
                     Se il tuo sogno e` quello di viaggiare il mondo e lavorare a
                 </div>                    
-                <div class='branco-pequeno-texto'>
+                <div class='branco-pequeno-texto desktop-only'>
                     bordo delle navi da crociera o mercantili, sei nel posto giusto.
                 </div>
+
+                <!-- Mobile -->
+                <div class='branco-pequeno-texto mobile-only'>
+                    Se il tuo sogno e` quello di viaggiare il mondo e lavorare a bordo delle navi da crociera o mercantili, sei nel posto giusto.                    
+                </div>                    
                 <a class='botao-amarelo' href='https://www.sogniamoingrande.info/' target='_blank'>
                     Sali a Bordo
                 </a>
@@ -93,7 +117,7 @@
         <div class='row options'>
             @foreach($items as $key => $item)
                 <?php $modalID = 'topic-modal-'.$key ?>
-                <div class='col-3'>
+                <div class='col-lg-3 col-sm-6 col-12'>
                     <div class='w-100 topic-slot' onclick='showModalWindow("{{$modalID}}")'>
                         <div class='icone'>
                             <i class="{{$item['icon']}}"></i>
