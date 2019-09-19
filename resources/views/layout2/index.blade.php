@@ -11,16 +11,31 @@
                     <img src='/img/themes/layout2/DSC_5725-16.jpg' style='filter: sepia(0.3);'>
                 </div>
 
+                <?php
+                    $pictures = [
+                        [
+                            'location' => '/img/themes/layout2/DSC_5725-16.jpg',                            
+                        ],
+                        [
+                            'location' => '/img/themes/layout2/DSC_5731-19.jpg',                            
+                        ],
+                        [
+                            'location' => '/img/themes/layout2/DSC_5783-31.jpg',
+                            'background-position-x' => '-458px'
+                        ],
+                    ];
+                ?>
+
                 <div class='caroussel mobile-only'>
-                    <div class='slide' style='background-image: url("/img/themes/layout2/DSC_5725-16.jpg"); '>
-                        <img src='/img/themes/layout2/DSC_5725-16.jpg' style='opacity: 0;'>
-                    </div>
-                    <div class='slide' style='background-image: url("/img/themes/layout2/DSC_5731-19.jpg"); '>
-                        <img src='/img/themes/layout2/DSC_5731-19.jpg' style='opacity: 0;'>
-                    </div>
-                    <div class='slide' style='background-image: url("/img/themes/layout2/DSC_5783-31.jpg"); '>
-                        <img src='/img/themes/layout2/DSC_5783-31.jpg' style='opacity: 0;'>
-                    </div>
+                    @foreach($pictures as $picture)
+                        <div class='slide' 
+                            style='
+                                    background-image: url("{{$picture["location"]}}"); 
+                                    @if(isset($picture["background-position-x"])) background-position-x: {{$picture["background-position-x"]}}; @endif
+                        '>
+                            <img src='{{$picture["location"]}}' style='opacity: 0;'>
+                        </div>
+                    @endforeach
                 </div>
             </section>
             
