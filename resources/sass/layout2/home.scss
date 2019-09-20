@@ -4,6 +4,38 @@
   }
 }
 
+.animate-on-scroll{
+  transition: all ease-out 1s;
+
+  &.tempo-2{
+    transition-duration: 2s;
+  }
+
+  &.tempo-1-2{
+    transition-duration: 0.5s;
+  }
+
+  &.tempo-2-3{
+    transition-duration:  calc(2/3)s;
+  }
+
+  &.fadeOut{
+    opacity: 0;
+  }
+
+  &.fadeIn{
+    opacity: 1;
+  }
+
+  &.encolhidoNoX{
+    transform: scaleY(0) translateY(100%);
+  }
+
+  &.esticadoNoX{
+    transform: scaleY(1) translateY(0%)!important;
+  }
+}
+
 .layout2.header {
   display: flex;
   justify-content: space-between;
