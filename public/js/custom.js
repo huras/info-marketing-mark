@@ -12,9 +12,12 @@ $('.layout2-home .top-section .caroussel').slick({
   pauseOnHover: false,
 });
 
-window.addEventListener('scroll', function () {
-  loop();
-});
+// window.addEventListener('scroll', function () {
+//   loop();
+// });
+
+var scroll = window.requestAnimationFrame ||
+  function (callback) { window.setTimeout(callback, 1000 / 60) };
 
 var elementsToShow = document.querySelectorAll('.animate-on-scroll');
 console.log(elementsToShow);
@@ -49,7 +52,7 @@ function loop() {
     }
   });
 
-  //scroll(loop);
+  scroll(loop);
 }
 
 $(document).ready(function () {
