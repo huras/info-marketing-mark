@@ -8,6 +8,7 @@ use App\Http\Requests\NewsletterContactRequest;
 use App\Models\BlogPost;
 use App\Models\NewsletterContact;
 use App;
+use Validator;
 use Illuminate\Support\Facades\Mail;
 
 class PagesController extends Controller
@@ -79,7 +80,17 @@ class PagesController extends Controller
         return view('blog/view', compact('post', 'posts'));
     }
 
-    function createNewsletterContact(NewsletterContactRequest $request) {
+    function createNewsletterContact(Request $request) {
+        $val = $this->validateContactRequest($request->all());
+
+        if ($val->fails()) {
+            return redirect()->action('PagesController@home')
+                ->withErrors($val)
+                ->withInput()
+                ->with([
+                    'yellow_btn_modal_form' => false]);
+        }
+
         $request_data = $request->all();
         $probable_duplicate = NewsletterContact::where('email', $request_data['email'])->get();
         if(count($probable_duplicate) > 0){
@@ -109,10 +120,31 @@ class PagesController extends Controller
             $message->to($notification_target)->subject('New subscriber! email : '.$target_email);
         });
         
-        session()->flash('window_msg', 'Subscribed with success!');
-        session()->flash('msg_context', 'success');
-        return redirect()->action('PagesController@home');
+        // session()->flash('window_msg', 'Subscribed with success!');
+        // session()->flash('msg_context', 'success');
+        return redirect()->action('PagesController@home')
+                        ->withErrors($val)
+                        ->withInput()
+                        ->with([
+                            'yellow_btn_modal_form' => true]);
     }
+
+    private function validateContactRequest($request)
+    {
+        $rules = [
+            'first_name' => 'required',
+            'email' => 'required|email',            
+        ];
+
+        $messages = [
+            'required' => 'Campo obrigatório',
+            'email' => 'Email inválido',
+        ];
+
+        return Validator::make($request, $rules, $messages);
+    }
+
+    //validate
 
     function WebinarGratis() {
         return view('pages/freeWebinar');

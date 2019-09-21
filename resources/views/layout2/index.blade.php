@@ -2,7 +2,59 @@
 
 @section('content')
     @include('layout2.header')
-    <div class='container-fluid layout2-home'>    
+
+    <script>
+        function showYellowButtonModal(){
+            let modal = document.getElementById('yellow_btn_modal');
+            modal.classList.add('show-modal');
+        }
+
+        function closeYellowButtonModal(){
+            let modal = document.getElementById('yellow_btn_modal');
+            modal.classList.remove('show-modal');
+        }
+
+        // Redireciona pra próxima pagina caso não haja erros
+        @if(session('yellow_btn_modal_form')!==null)
+            @if(session('yellow_btn_modal_form'))
+                window.location = "https://www.sogniamoingrande.info/";
+            @else
+                <?php
+                    $yellow_modal_auto_open = true;
+                ?>
+            @endif
+        @endif
+    </script>
+
+    <div class='container-fluid layout2-home'>
+        <div class='yellow_btn_modal modal-setup @if(isset($yellow_modal_auto_open)) show-modal @endif' id='yellow_btn_modal'>
+            <form class='modal-window' method='POST' action='/newsletter/subscribe'>
+                @csrf
+                <div class='textao'>SOGNIAMO IN GRANDE</div>
+                <div class='texto-azul'> Inscriviti per assistere al WBINAR Gratuito dove comprenderai come applicare candidature vincenti per compagnie internazionali. </div>
+                <div class='texto-branco'> Inoltre, SEMPRE GRATIS, potrai scaricare il tuo <b> Ebook </b> con la lista di tutte le compagnie di Crociera presenti sul mercato.</div>
+                <input type='text' name='first_name'  placeholder='Nome e Cognome' value='{{old("first_name")}}'>
+                @if($errors->has('first_name'))
+                    <div class="mensagem-de-erro">
+                        <div>{{$errors->first('first_name') }}</div>
+                    </div>
+                @endif
+                <input type='text' name='email'  placeholder='E-mail' value='{{old("email")}}'>
+                @if($errors->has('email'))
+                    <div class="mensagem-de-erro">
+                        <div>{{$errors->first('email') }}</div>
+                    </div>
+                @endif
+                <input type='text' name='phone' placeholder='N. Telefono' value='{{old("phone")}}'>
+                @if($errors->has('phone'))
+                    <div class="mensagem-de-erro">
+                        <div>{{$errors->first('phone') }}</div>
+                    </div>
+                @endif
+                <input type='submit' value='Registrati'>
+            </form>
+        </div>
+
         <div class='top-section row'>
             <section class='w-100'>
                 <div class='caroussel desktop-only'>
@@ -61,9 +113,9 @@
                 <div class='branco-pequeno-texto mobile-only'>
                     Se il tuo sogno e` quello di viaggiare il mondo e lavorare a bordo delle navi da crociera o mercantili, sei nel posto giusto.                    
                 </div>                    
-                <a class='botao-amarelo' href='https://www.sogniamoingrande.info/' target='_blank'>
+                <div onclick="showYellowButtonModal();" class='botao-amarelo animate-on-scroll fadeOut' my-animation='fadeIn' >
                     Sali a Bordo
-                </a>
+                </div>
             </div>
         </div>
 
