@@ -10,6 +10,7 @@ use App\Models\NewsletterContact;
 use App;
 use Validator;
 use Illuminate\Support\Facades\Mail;
+use App\Mail\BievenutoNelProjeto;
 
 class PagesController extends Controller
 {
@@ -76,8 +77,12 @@ class PagesController extends Controller
         $post = BlogPost::find($id);
         $post->clicks = $post->clicks + 1;
         $post->save();
-        $posts = BlogPost::where('id', '<>', $id)->limit(5)->get();        
+        $posts = BlogPost::where('id', '<>', $id)->limit(5)->get();
         return view('blog/view', compact('post', 'posts'));
+    }
+
+    function testMail(){
+        // Mail::to('hurast@gmail.com')->send(new BievenutoNelProjeto());
     }
 
     function createNewsletterContact(Request $request) {
@@ -91,21 +96,27 @@ class PagesController extends Controller
                     'yellow_btn_modal_form' => false]);
         }
 
+        Mail::to($request->email)->send(new BievenutoNelProjeto());
+
         $request_data = $request->all();
         $probable_duplicate = NewsletterContact::where('email', $request_data['email'])->get();
         if(count($probable_duplicate) > 0){
             session()->flash('window_msg', 'This email is already subscribed!');
             session()->flash('msg_context', 'error');
-            return redirect()->action('PagesController@home');
+            return redirect()->action('PagesController@home')
+                    ->withErrors($val)
+                    ->withInput()
+                    ->with([
+                        'yellow_btn_modal_form' => false]);
         }
 
         $contact = NewsletterContact::create($request_data);
 
-        $target_email = $request->all()['email'];
-        Mail::send('emails.welcome', ['nick' => 'Niobio41'], function($message) use ($target_email){
-            $message->from('sogniamoingrande@yahoo.com', 'sogniamoingrande.it');
-            $message->to($target_email, 'NiobioXLI')->subject('Welcome!');
-        });
+        // $target_email = $request->all()['email'];
+        // Mail::send('emails.welcome', ['nick' => 'Niobio41'], function($message) use ($target_email){
+        //     $message->from('sogniamoingrande@yahoo.com', 'sogniamoingrande.it');
+        //     $message->to($target_email, 'NiobioXLI')->subject('Welcome!');
+        // });
 
         $notification_target = 'sogniamoingrande@yahoo.com';
         $req_all = $request->all();
@@ -119,7 +130,7 @@ class PagesController extends Controller
         Mail::send('emails.new_subscriber', array('email' => $target_email, 'name' => $subscribers_name), function($message) use ($notification_target, $target_email){
             $message->to($notification_target)->subject('New subscriber! email : '.$target_email);
         });
-        
+
         // session()->flash('window_msg', 'Subscribed with success!');
         // session()->flash('msg_context', 'success');
         return redirect()->action('PagesController@home')
@@ -133,7 +144,7 @@ class PagesController extends Controller
     {
         $rules = [
             'first_name' => 'required',
-            'email' => 'required|email',            
+            'email' => 'required|email',
         ];
 
         $messages = [
