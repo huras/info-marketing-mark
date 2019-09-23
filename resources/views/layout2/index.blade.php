@@ -31,7 +31,7 @@
             <form class='modal-window' method='POST' action='/newsletter/subscribe'>
                 @csrf
                 <div class='textao'>SOGNIAMO IN GRANDE</div>
-                <div class='texto-azul'> Iscriviti per assistere al WBINAR Gratuito dove comprenderai come applicare candidature vincenti per compagnie internazionali. </div>
+                <div class='texto-azul'> Iscriviti per assistere al WEBINAR Gratuito dove comprenderai come applicare candidature vincenti per compagnie internazionali. </div>
                 <div class='texto-branco'> Inoltre, SEMPRE GRATIS, potrai scaricare il tuo <b> Ebook </b> con la lista di tutte le compagnie di Crociera presenti sul mercato.</div>
                 <input type='text' name='first_name'  placeholder='Nome e Cognome' value='{{old("first_name")}}'>
                 @if($errors->has('first_name'))
