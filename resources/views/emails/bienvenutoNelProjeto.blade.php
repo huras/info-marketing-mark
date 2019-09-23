@@ -134,7 +134,7 @@
             </tr>
             <tr>
                 <td class='a3' style='padding: 16px 32px; padding-top: 32px;'>
-                    Sei el posto giusto
+                    Sei nel posto giusto
                 </td>
             </tr>
             <tr>
@@ -149,12 +149,12 @@
             </tr>
             <tr>
                 <td class='a6'>
-                    La sua durata e` di circa un’ora, ma credo che il tuo futuro vale molto piu` di questo.
+                    Ci vediamo dall' altra parte.
                 </td>
             </tr>
             <tr>
                 <td class='a7'>
-                    Vento in poppa!!!
+                    Ciao
                 </td>
             </tr>
         </table>
