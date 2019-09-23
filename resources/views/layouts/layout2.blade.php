@@ -26,7 +26,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700" rel="stylesheet">
@@ -56,7 +56,7 @@
   <!-- <script src="{{ asset('js/themed-slicks.js') }}"></script> -->
   <!-- <script src="{{ asset('js/select2.min.js') }}"></script> -->
   <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
-  
+
 </head>
 <body>
 <!-- <body class='themed-body' style=' background-image: url( {{ asset("img/site/home-bg-dark.jpg") }} ) '> -->
@@ -71,6 +71,7 @@
   <!-- <script src="{{ asset('js/clndr.js') }}"></script> -->
   <!-- <script src="{{ asset('js/main.js') }}"></script> -->
   <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
+  <script src='{{asset("js/jquery.mask.js")}}' ></script>
   <script src='{{asset("js/masks.js")}}' ></script>
   <script src='{{asset("js/custom.js")}}' ></script>
   @yield('scripts')

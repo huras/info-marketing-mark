@@ -45,7 +45,7 @@
                         <div>{{$errors->first('email') }}</div>
                     </div>
                 @endif
-                <input type='text' name='phone' placeholder='N. Telefono' value='{{old("phone")}}'>
+                <input type='text' name='phone' placeholder='N. Telefono' value='{{old("phone")}}' class='it-phone-mask'>
                 @if($errors->has('phone'))
                     <div class="mensagem-de-erro">
                         <div>{{$errors->first('phone') }}</div>
@@ -94,9 +94,6 @@
             <div class='w-100 de-cima'>
                 <div class='laranja-texto'>
                     WELCOME TO OUR PROJECT
-                </div>
-                <div class='branco-grande-texto'>
-                    SETTORE MARITTIMO
                 </div>
             </div>
 
