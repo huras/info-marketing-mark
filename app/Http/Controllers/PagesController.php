@@ -112,7 +112,7 @@ class PagesController extends Controller
 
         $contact = NewsletterContact::create($request_data);
 
-        // $target_email = $request->all()['email'];
+         $target_email = $request->all()['email'];
         // Mail::send('emails.welcome', ['nick' => 'Niobio41'], function($message) use ($target_email){
         //     $message->from('sogniamoingrande@yahoo.com', 'sogniamoingrande.it');
         //     $message->to($target_email, 'NiobioXLI')->subject('Welcome!');
@@ -133,11 +133,12 @@ class PagesController extends Controller
 
         // session()->flash('window_msg', 'Subscribed with success!');
         // session()->flash('msg_context', 'success');
-        return redirect()->action('PagesController@home')
-                        ->withErrors($val)
-                        ->withInput()
-                        ->with([
-                            'yellow_btn_modal_form' => true]);
+        // return redirect()->action('PagesController@home')
+        //                 ->withErrors($val)
+        //                 ->withInput()
+        //                 ->with([
+        //                     'yellow_btn_modal_form' => true]);
+        return redirect()->away('https://www.sogniamoingrande.info/');
     }
 
     private function validateContactRequest($request)
