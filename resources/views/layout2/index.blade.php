@@ -31,7 +31,7 @@
             <form class='modal-window' method='POST' action='/newsletter/subscribe'>
                 @csrf
                 <div class='textao'>SOGNIAMO IN GRANDE</div>
-                <div class='texto-azul'> Inscriviti per assistere al WBINAR Gratuito dove comprenderai come applicare candidature vincenti per compagnie internazionali. </div>
+                <div class='texto-azul'> Iscriviti per assistere al WBINAR Gratuito dove comprenderai come applicare candidature vincenti per compagnie internazionali. </div>
                 <div class='texto-branco'> Inoltre, SEMPRE GRATIS, potrai scaricare il tuo <b> Ebook </b> con la lista di tutte le compagnie di Crociera presenti sul mercato.</div>
                 <input type='text' name='first_name'  placeholder='Nome e Cognome' value='{{old("first_name")}}'>
                 @if($errors->has('first_name'))
@@ -66,10 +66,10 @@
                 <?php
                     $pictures = [
                         [
-                            'location' => '/img/themes/layout2/DSC_5725-16.jpg',                            
+                            'location' => '/img/themes/layout2/DSC_5725-16.jpg',
                         ],
                         [
-                            'location' => '/img/themes/layout2/DSC_5731-19.jpg',                            
+                            'location' => '/img/themes/layout2/DSC_5731-19.jpg',
                         ],
                         [
                             'location' => '/img/themes/layout2/DSC_5783-31.jpg',
@@ -80,9 +80,9 @@
 
                 <div class='caroussel mobile-only'>
                     @foreach($pictures as $picture)
-                        <div class='slide' 
+                        <div class='slide'
                             style='
-                                    background-image: url("{{$picture["location"]}}"); 
+                                    background-image: url("{{$picture["location"]}}");
                                     @if(isset($picture["background-position-x"])) background-position-x: {{$picture["background-position-x"]}}; @endif
                         '>
                             <img src='{{$picture["location"]}}' style='opacity: 0;'>
@@ -90,7 +90,7 @@
                     @endforeach
                 </div>
             </section>
-            
+
             <div class='w-100 de-cima'>
                 <div class='laranja-texto'>
                     WELCOME TO OUR PROJECT
@@ -99,20 +99,20 @@
                     SETTORE MARITTIMO
                 </div>
             </div>
-            
+
             <div class='w-100 faixa-transparente de-baixo'>
                 <!-- Desktop -->
                 <div class='branco-pequeno-texto desktop-only'>
                     Se il tuo sogno e` quello di viaggiare il mondo e lavorare a
-                </div>                    
+                </div>
                 <div class='branco-pequeno-texto desktop-only'>
                     bordo delle navi da crociera o mercantili, sei nel posto giusto.
                 </div>
 
                 <!-- Mobile -->
                 <div class='branco-pequeno-texto mobile-only'>
-                    Se il tuo sogno e` quello di viaggiare il mondo e lavorare a bordo delle navi da crociera o mercantili, sei nel posto giusto.                    
-                </div>                    
+                    Se il tuo sogno e` quello di viaggiare il mondo e lavorare a bordo delle navi da crociera o mercantili, sei nel posto giusto.
+                </div>
                 <div onclick="showYellowButtonModal();" class='botao-amarelo animate-on-scroll fadeOut' my-animation='fadeIn' >
                     Sali a Bordo
                 </div>
@@ -175,7 +175,7 @@
                 let modal = document.getElementById(id);
                 modal.classList.remove('show-modal');
             }
-            
+
             function showModalWindow(id) {
                 for(let i = 0; i < {{$modalCount}}; i++){
                     closeModalWindow('topic-modal-'+i);
@@ -208,7 +208,7 @@
 
                 <div class='topic-modal' id='{{$modalID}}'>
                     <div class='modal-bg' onclick='closeModalWindow("{{$modalID}}")'>
-                    </div>  
+                    </div>
                     <div class='modal-window'>
                         <div class='close-wrapper w-100' onclick='closeModalWindow("{{$modalID}}")'>
                             <span class='close'> X </span>

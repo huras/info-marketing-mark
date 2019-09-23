@@ -25,7 +25,7 @@ class NewsletterContactRequest extends FormRequest
     {
         return [
             'first_name' => 'required',
-            'email' => 'required'
+            'email' => 'required|email',
         ];
     }
 }
