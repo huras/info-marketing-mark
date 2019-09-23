@@ -28,6 +28,6 @@ class BievenutoNelProjeto extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.bienvenutoNelProjeto')->from('contact@sogniamoingrande.com');
+        return $this->view('emails.bienvenutoNelProjeto')->from('contact@sogniamoingrande.com')->subject('[ SOGNIAMO IN GRANDE ] Benvenuto !');
     }
 }
