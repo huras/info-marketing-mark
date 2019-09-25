@@ -100,7 +100,7 @@
             <div class='w-100 faixa-transparente de-baixo'>
                 <!-- Desktop -->
                 <div class='branco-pequeno-texto desktop-only'>
-                    Se il tuo sogno e` quello di viaggiare il mondo e lavorare a
+                    Se il tuo sogno e` quello di viaggiare per il mondo e lavorare a
                 </div>
                 <div class='branco-pequeno-texto desktop-only'>
                     bordo delle navi da crociera o mercantili, sei nel posto giusto.
@@ -121,11 +121,11 @@
                 [
                     'icon' => 'fas fa-ship',
                     'title' => 'Profilo prefessionale',
-                    'content' => 'Costruiamo insieme le colonne del tuo nuovo inizio, curriculum, documenti e social-activities',
+                    'content' => 'Costruiamo insieme le colonne del tuo nuovo inizio, curriculum, documenti e social activities',
                     'link' => '#',
                     'modal-title' => 'Profilo prefessionale',
-                    'modal-text' => 'Costruiamo insieme le colonne del tuo nuovo inizio, curriculum vitae professionale, lettera di accompagnamento, profilo Linkedin, documentazione italiana e orientamento tasse e agevolazioni. Ti seguiamo in tutti gli steps con l`assistenza di un tutor 24h.',
-                    'modal-ex-text' => 'Un curriculum vincente e` il tuo biglietto da visita per una candidature di successo, imparando le tecniche di valorizzazione e comunicazione internazionale.',
+                    'modal-text' => 'Costruiamo insieme le colonne del tuo nuovo inizio, curriculum vitae professionale, lettera di accompagnamento, profilo Linkedin, documentazione italiana e orientamento tasse e agevolazioni. Ti seguiamo in tutti gli step con l`assistenza di un tutor 24h.',
+                    'modal-ex-text' => 'Un curriculum vincente e` il tuo biglietto da visita per una candidatura di successo, imparando le tecniche di valorizzazione e comunicazione internazionale.',
                     'base-animation-class' => 'animate-on-scroll encolhidoNoX tempo-2-3 ',
                     'my-animation' => 'esticadoNoX',
                 ],
@@ -136,17 +136,17 @@
                     'link' => '#',
                     'modal-title' => 'English Time',
                     'modal-text' => 'Un corso live di inglese tecnico marittimo per consentirti di aprire le tue porte al mercato internazionale.',
-                    'modal-ex-text' => 'La nostra professoressa di Inglese ti seguira` durante il corso con incontri live, video, esercizi e simulazioni di colloquio studiate per farti brillare in una candidatura con qualsiasi comapagnia al mondo. In solo 8 settimane sarai in grado di sostenere il tuo primo colloquio in ionglese.',
+                    'modal-ex-text' => 'La nostra professoressa di Inglese ti seguira` durante il corso con incontri live, video, esercizi e simulazioni di colloquio studiate per farti brillare in una candidatura con qualsiasi comapagnia al mondo. In solo 8 settimane sarai in grado di sostenere il tuo primo colloquio in inglese.',
                     'base-animation-class' => 'animate-on-scroll encolhidoNoX tempo-2-3 delay-1-2',
                     'my-animation' => 'esticadoNoX',
                 ],
                 [
                     'icon' => 'fas fa-globe',
                     'title' => 'Socials boost',
-                    'content' => 'Ti mostriamo come utilizzare I social e Internet per scovare i recruiters di tutto il mondo e attirarli alla tua rete ',
+                    'content' => 'Ti mostriamo come utilizzare i social e Internet per scovare i recruiter di tutto il mondo e attirarli nella tua rete ',
                     'link' => '#',
                     'modal-title' => 'Social Boost',
-                    'modal-text' => 'Ti mostriamo come utilizzare I social e Internet per scovare i recruiters di tutto il mondo e attirarli alla tua rete.',
+                    'modal-text' => 'Ti mostriamo come utilizzare i social e Internet per scovare i recruiter di tutto il mondo e attirarli nella tua rete.',
                     'modal-ex-text' => 'Impariamo insieme come valorizzare il tuo profilo professionale attraverso un uso funzionale della tua rete Linkedin, campagne Email, iniziative strategiche, tecniche di contatto, corretto uso dell`inglese per email professionale e molto altro ancora.',
                     'base-animation-class' => 'animate-on-scroll encolhidoNoX tempo-2-3 delay-1',
                     'my-animation' => 'esticadoNoX',
