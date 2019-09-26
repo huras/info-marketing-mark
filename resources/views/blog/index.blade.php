@@ -1,7 +1,7 @@
 @extends('layouts/themed')
 
 @section('content')
-    @include('partials/home-header')
+    @include('layout2.header')
     <div>
         <div class='container container-blog' style='background-color: transparent;'>
             <div class='row'>

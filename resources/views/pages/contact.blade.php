@@ -1,7 +1,7 @@
 @extends('layouts/themed')
 
 @section('content')
-    @include('partials/home-header')
+    @include('layout2.header')
         <div class='container'>
             <div class='row contact-form'>
                     @if(isset($params['window_msg']))
@@ -66,7 +66,7 @@
             </div>
         </div>
 
-        <?php 
+        <?php
         $images = [
             ['image' => 'Social Card Instagram.png', 'url' => 'https://www.instagram.com/sogniamoingrande/'],
             ['image' => 'Social Card Youtube.png', 'url' => 'https://www.youtube.com/channel/UCL6PL_3UhIO-VqFJ_IJWu3g'],

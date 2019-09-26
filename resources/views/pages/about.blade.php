@@ -1,7 +1,7 @@
 @extends('layouts/themed')
 
 @section('content')
-    @include('partials/home-header')
+    @include('layout2.header')
     <div class='container about-us'>
         <div class='row'>
             <div class='col-md-12 cover' style="background-image: url('{{asset('img/site/marco-draw-map.jpg')}}');">

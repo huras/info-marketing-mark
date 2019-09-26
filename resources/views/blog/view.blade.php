@@ -18,8 +18,8 @@
 @endsection
 
 @section('content')
-    @include('partials/home-header')
-    
+    @include('layout2.header')
+
         <div class='container blog-view'>
             <div class='row'>
                 <div class='col-mb-12 header'>

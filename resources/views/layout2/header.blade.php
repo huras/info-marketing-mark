@@ -13,15 +13,17 @@
 <div class='container-fluid layout2 header'>
   <div class='row w-100'>
     <div class='logo col-xl-6 col-lg-12'>
-      <img src='/img/site/Logo top.jpg'>
-      <div class='dflex'>
-        <a href='/' class='nome-grande naked-link'>
-          SOGNIAMO IN GRANDE
+        <a href='/' class='naked-link'>
+            <img src='/img/site/Logo top.jpg'>
         </a>
-        <a href='/' class='nome-pequeno naked-link'>
-          Formazione e orientamento al settore Marittimo 
-        </a>
-      </div>
+        <div class='dflex'>
+            <a href='/' class='nome-grande naked-link'>
+                SOGNIAMO IN GRANDE
+            </a>
+            <a href='/' class='nome-pequeno naked-link'>
+                Formazione e orientamento al settore Marittimo
+            </a>
+        </div>
     </div>
     <div class='site-navbar col-xl-6 col-lg-12'>
       <?php
