@@ -136,7 +136,7 @@
                     'link' => '#',
                     'modal-title' => 'English Time',
                     'modal-text' => 'Un corso live di inglese tecnico marittimo per consentirti di aprire le tue porte al mercato internazionale.',
-                    'modal-ex-text' => 'La nostra professoressa di Inglese ti seguira` durante il corso con incontri live, video, esercizi e simulazioni di colloquio studiate per farti brillare in una candidatura con qualsiasi comapagnia al mondo. In solo 8 settimane sarai in grado di sostenere il tuo primo colloquio in inglese.',
+                    'modal-ex-text' => 'La nostra professoressa di Inglese ti seguira` durante il corso con incontri live, video, esercizi e simulazioni di colloquio studiate per farti brillare in una candidatura con qualsiasi compagnia al mondo. In solo 8 settimane sarai in grado di sostenere il tuo primo colloquio in inglese.',
                     'base-animation-class' => 'animate-on-scroll encolhidoNoX tempo-2-3 delay-1-2',
                     'my-animation' => 'esticadoNoX',
                 ],
