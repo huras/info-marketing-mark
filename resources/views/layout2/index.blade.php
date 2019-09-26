@@ -92,7 +92,7 @@
             </section>
 
             <div class='w-100 de-cima'>
-                <div class='laranja-texto'>
+                <div class='laranja-texto animate-on-scroll fadeOut tempo-3-4 delay-1-2' my-animation='fadeIn'>
                     WELCOME TO OUR PROJECT
                 </div>
             </div>
@@ -110,7 +110,7 @@
                 <div class='branco-pequeno-texto mobile-only'>
                     Se il tuo sogno e` quello di viaggiare il mondo e lavorare a bordo delle navi da crociera o mercantili, sei nel posto giusto.
                 </div>
-                <div onclick="showYellowButtonModal();" class='botao-amarelo animate-on-scroll fadeOut' my-animation='fadeIn' >
+                <div onclick="showYellowButtonModal();" class='botao-amarelo animate-on-scroll fadeOut tempo-3-4 delay-2' my-animation='fadeIn' >
                     Sali a Bordo
                 </div>
             </div>
