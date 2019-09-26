@@ -410,6 +410,10 @@
                 top: calc(128px + 64px);
 
                 @media (max-width: 1440px) {
+                    top: 200px;
+                }
+
+                @media (max-width: 768px) {
                     top: 64px;
                 }
             }
@@ -431,9 +435,15 @@
             font-size: 72px;
             font-weight: bold;
             text-transform: uppercase;
-            color: #ed7d31;
+            //color: #ed7d31;
+
+            font-size: 72px;
+            background: -webkit-linear-gradient(rgba(255,226,110,1) 0%, rgba(252,205,77,1) 50%, rgba(248,181,0,1) 51%, rgba(255,234,0,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
             font-family: sans-serif;
-            text-shadow: -3px 3px #ce641d;
+            //text-shadow: -3px 3px ;
 
             @media (max-width: 1024px) {
                 font-size: 60px;
@@ -441,9 +451,15 @@
             }
 
             @media (max-width: 425px) {
+                font-size: 36px;
+                text-align: center;
+                line-height: 1.2;
+                margin-bottom: 32px;
+            }
+
+            @media (max-width: 320px) {
                 font-size: 28px;
                 text-align: center;
-                text-shadow: -3px 3px black;
                 line-height: 1.2;
                 margin-bottom: 32px;
             }
