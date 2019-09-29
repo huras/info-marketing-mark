@@ -2,6 +2,7 @@
 
 @section('content')
     @include('layout2.header')
+    @include('layout2.partials.goldenButtonModal', ['delay' => 12])
     <div>
         <div class='container container-blog' style='background-color: transparent;'>
             <div class='row'>

@@ -19,6 +19,7 @@
 
 @section('content')
     @include('layout2.header')
+    @include('layout2.partials.goldenButtonModal')
 
         <div class='container blog-view'>
             <div class='row'>
