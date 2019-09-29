@@ -4,26 +4,52 @@
     @include('layout2.header')
 
     <script>
+
+
         function showYellowButtonModal(){
-            let modal = document.getElementById('yellow_btn_modal');
+            var modal = document.getElementById('yellow_btn_modal');
             modal.classList.add('show-modal');
         }
 
         function closeYellowButtonModal(){
-            let modal = document.getElementById('yellow_btn_modal');
+            var modal = document.getElementById('yellow_btn_modal');
             modal.classList.remove('show-modal');
         }
 
+
+        function getCookie(name) {
+            var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+            return v ? v[2] : null;
+        }
+        function setCookie(name, value, days = 0) {
+            var d = new Date;
+            d.setTime(d.getTime() + 24*60*60*1000*days);
+            document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
+        }
+
+
+        function autoYellowButtonModalRoutine(){
+            console.log("O cookie");
+            console.log(getCookie("showYellowButtonModal"));
+            if (!getCookie("showYellowButtonModal")){
+                setCookie("showYellowButtonModal",true,1/3);
+                setTimeout(showYellowButtonModal, 8000);
+            }
+        }
+        autoYellowButtonModalRoutine();
+
+
+
         // Redireciona pra próxima pagina caso não haja erros
-        @if(session('yellow_btn_modal_form')!==null)
-            @if(session('yellow_btn_modal_form'))
-                window.location = "https://www.sogniamoingrande.info/";
-            @else
-                <?php
-                    $yellow_modal_auto_open = true;
-                ?>
-            @endif
-        @endif
+        // @if(session('yellow_btn_modal_form')!==null)
+        //     @if(session('yellow_btn_modal_form'))
+        //         window.location = "https://www.sogniamoingrande.info/";
+        //     @else
+        //         <?php
+        //             $yellow_modal_auto_open = true;
+        //         ?>
+        //     @endif
+        // @endif
     </script>
 
     <div class='container-fluid layout2-home'>
