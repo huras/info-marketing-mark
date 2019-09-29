@@ -6,7 +6,7 @@
     ]; ?>
 
     @include('partials/home-header',compact('links'))
-    
+
     @if(session()->has('window_msg'))
         <div class='container-fluid window-msg home'>
             <div class='row'>
@@ -38,7 +38,7 @@
         <div class='row'>
             <div class='col-lg-6 col-sm-12'>
                 <div class='texto'>
-                    Con la globalizzazione, la crisi economica odierna e la presenza di molti marittimi di altre nazioni sulle navi italiane, emergono non poche difficoltà nell’ambito marittimo nazionale, e iniziare una carriera a bordo di una nave diventa ogni anno più difficile e quasi impossibile senza le giuste conoscenze. Tuttavia ci sono ancora tantissime compagnie straniere che cercano personale marittimo, ma gli standard di valutazione ed i criteri di selezione di quest’ultime sono talvolta fuori portata dai giovani italiani. 
+                    Con la globalizzazione, la crisi economica odierna e la presenza di molti marittimi di altre nazioni sulle navi italiane, emergono non poche difficoltà nell’ambito marittimo nazionale, e iniziare una carriera a bordo di una nave diventa ogni anno più difficile e quasi impossibile senza le giuste conoscenze. Tuttavia ci sono ancora tantissime compagnie straniere che cercano personale marittimo, ma gli standard di valutazione ed i criteri di selezione di quest’ultime sono talvolta fuori portata dai giovani italiani.
 
                     Il nostro programma di formazione prevede l'insegnamento di tutto quelle tecniche e strategie fondamentali ad un Allievo Ufficiale per candidarsi alle compagnie di navigazione più attive del mercato estero. Per garantire l’efficacia dell’applicazione e acquisizione del processo formativo, un Tutor si dedicherà in maniera individuale alla situazione, analizzando e studiando il piano di apprendimento e inserimento a bordo. Il programma di formazione è completamente online e ti consente di seguirlo anche da casa, ma la mole di informazioni e la valenza dei contenuti richiederanno la tua attenzione per una cambiamento di mentalità proiettato ai nuovi mercati con piani di apprendimento e tecniche di applicazione.
 
@@ -73,7 +73,7 @@
                         Sei in cerca di un imbarco? Vuoi cambiare compagnia? iscriviti gratuitamente e scopri come creare il tuo profilo professionale per candidature di successo su compagnie di valenza internazionale.
                     </div>
                     <div class="btn-1" style="margin-top: 24px; align-items: flex-end;">
-                        <a href="http://sogniamoingrande.wixsite.com/2019"> ENTRA A FAR PARTE DEL PROGETTO </a>
+                        <a href="https://www.sogniamoingrande.info/"> ENTRA A FAR PARTE DEL PROGETTO </a>
                     </div>
                 </div>
             </div>

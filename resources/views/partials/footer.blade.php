@@ -39,13 +39,13 @@
                     </div>
                 </form> -->
                 <div class="btn-1" style="margin-top: 24px; align-items: flex-end;">
-                    <a href="http://sogniamoingrande.wixsite.com/2019"> ENTRA A FAR PARTE DEL PROGETTO </a>
+                    <a href="https://www.sogniamoingrande.info/"> ENTRA A FAR PARTE DEL PROGETTO </a>
                 </div>
             </div>
 
             <div class='col-lg-4 col-md-12 contacts'>
-                <div class='contact-info'> 
-                    <i class="far fa-envelope"></i> 
+                <div class='contact-info'>
+                    <i class="far fa-envelope"></i>
                     <div class='value'> sogniamoingrande@yahoo.com </div>
                 </div>
                 <div class='contact-info'>
