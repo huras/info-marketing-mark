@@ -58,6 +58,9 @@
 
             .blog-post-content big{
                 font-size: 18px!important;
+                font-style: initial!important;
+                font-weight: 400;
+                font-family: serif;
             }
 
             li {
