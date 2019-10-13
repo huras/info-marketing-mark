@@ -32,10 +32,12 @@
 
             .blog-post-title{
                 text-align: center;
-                font-size: 24px;
-                padding: 16px;
+
                 font-family: Lato, sans-serif;
                 color: white;
+
+                font-size: 28px;
+                padding: 32px 32px;
             }
 
             .blog-post-cover{
@@ -44,58 +46,83 @@
             }
 
             table{
-                max-width: 800px;
+                max-width: 100%!important;
             }
+
+            .blog-post-content img, .blog-post-cover img{
+                width: 100%!important;
+                height: auto!important;
+                max-width: 100%!important;
+                height: auto!important;
+            }
+
+            .blog-post-content big{
+                font-size: 18px!important;
+            }
+
+            li {
+                text-align: justify!important;
+            }
+
+
+            ul{
+                list-style-type: none;
+                padding-left: 8px;
+            }
+
+            /* f0da5e */
         </style>
     </head>
-    <body>
-        <table style="width:100%; border-collapse: collapse; padding: 32px;">
-            <tr style='background-color: #2f4a82;'>
-                <td class='blog-post-title'> 
-                    {!! $title !!}
-                </td>
-            </tr>
-            @if($cover_type == 1)
-                <tr>
-                    <td class='blog-post-cover'>
-                        <img src='http://sogniamoingrande.it/images/posts/{{$id}}/{!! $cover !!}' style='width: 100%;'>
-                    </td>
-                </tr>
-            @elseif($cover_type == 2)
-                <tr>
-                    <td class='blog-post-cover'>
-                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/{{$cover}}"> </iframe>
-                    </td>
-                </tr>
-            @endif
-            <tr style='background-color: #b1e3ff;'>
-                <td class='blog-post-content' style='padding-bottom: 16px; white-space: pre-line;'> 
-                    {!! $content !!}
-                </td>
-            </tr>
-            <tr>
-                <td class='a1 blue-td'>
-                </td>
-            </tr>
-            <tr class='bottom-logo'>
-                <td style='background-color: #05406c; text-align: center; border: 0; padding-bottom: 16px;'>
-                    <a target='_blank' href='http://www.sogniamoingrande.it/'>
-                        <img src='http://www.sogniamoingrande.it/img/site/logo.jpg' style='max-height: 150px;'>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td class='a1 blue-td' style='text-align: center; padding-bottom: 16px; font-size: 18px;'>     
-                    <a target='_blank' class='site-link' href='http://www.sogniamoingrande.it/'> sogniamoingrande.it </a>
-                </td>
-            </tr>
-            <tr class='sharings'>
-                    <td style='background-color: #05406c; text-align: center; border: 0; padding-bottom: 24px;'>
+    <body >
+        <div style="max-width: 980px; margin: 0; width: 100vw;">
+            <div style="border-collapse: collapse;">
+                <div style='background-color: #2f4a82;'>
+                    <div class='blog-post-title'>
+                        {!! $title !!}
+                    </div>
+                </div>
+                @if($cover_type == 1)
+                    <div>
+                        <div class='blog-post-cover'>
+                            <img src='http://sogniamoingrande.it/images/posts/{{$id}}/{!! $cover !!}' style='width: 100%;'>
+                        </div>
+                    </div>
+                @elseif($cover_type == 2)
+                    <div>
+                        <div class='blog-post-cover'>
+                            <iframe width="100%" height="450" src="https://www.youtube.com/embed/{{$cover}}"> </iframe>
+                        </div>
+                    </div>
+                @endif
+                <div style='background-color: #fafafa;'>
+                    <div class='blog-post-content' style='padding-bottom: 16px; white-space: pre-line;'>
+                        {!! $content !!}
+                    </div>
+                </div>
+                <div>
+                    <div class='a1 blue-td'>
+                    </div>
+                </div>
+                <div class='bottom-logo'>
+                    <div style='background-color: #05406c; text-align: center; border: 0; padding-bottom: 16px;'>
+                        <a target='_blank' href='http://www.sogniamoingrande.it/'>
+                            <img src='http://www.sogniamoingrande.it/img/site/logo.jpg' style='max-height: 150px;'>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class='a1 blue-td' style='text-align: center; padding-bottom: 16px; font-size: 18px;'>
+                        <a target='_blank' class='site-link' href='http://www.sogniamoingrande.it/'> sogniamoingrande.it </a>
+                    </div>
+                </div>
+                <div class='sharings'>
+                    <div style='background-color: #05406c; text-align: center; border: 0; padding-bottom: 24px;'>
                         <a target='_blank' href='https://www.facebook.com/share.php?u={!!$blogPostLink!!}'>
                             <img src='http://www.sogniamoingrande.it/img/site/icone-circular-facebook.png' style='max-height: 25px;'>
                         </a>
-                    </td>
-                </tr>
-        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

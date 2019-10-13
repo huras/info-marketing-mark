@@ -17,6 +17,8 @@ Route::get('/fonts', function(){
 
 Auth::routes();
 
+Route::get('/test-email-layout', 'TestsController@emailLayout');
+Route::get('/test-email-sending', 'TestsController@emailSend');
 //Automail
 Route::get('/automail-routine', 'AutomailController@autosend');
 Route::group(['prefix' => 'automail'], function () {    
