@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rubik:100,300,400,500,600,700,900" rel="stylesheet">
@@ -32,7 +32,7 @@
   <!-- <script src="{{ asset('js/clndr.js') }}"></script> -->
   <!-- <script src="{{ asset('js/main.js') }}"></script> -->
   @yield('scripts')
-  <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+  <script src="/vendor/ckeditor_4.13.0_aa5ac413394a/ckeditor.js"></script> -->
   <script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
   <script>
       $('#blog-ckeditor').ckeditor();
