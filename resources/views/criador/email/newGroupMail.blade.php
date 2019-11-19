@@ -11,14 +11,14 @@
 @section('content')
     <div class='container dashboard'>
         <div class='row criador-breadcrumb'>
-            <h1 style='color: black;'> 
+            <h1 style='color: black;'>
                 <a href='/'> <i class="fas fa-home"></i> </a> <i class="fas fa-caret-right"></i>
                 <a href='/admin/dashboard'> Dashboard </a> <i class="fas fa-caret-right"></i>
                 <a href='{{route("mail.dashboard")}}'> Email System </a> <i class="fas fa-caret-right"></i>
                 <span> Send email(s) </span>
             </h1>
         </div>
-        
+
         <div class='w-100 criador-form'>
             <form class='w-100' method="POST" action="{{route('sendMailToGroup')}}" enctype="multipart/form-data">
                 {{ csrf_field() }}
@@ -57,7 +57,7 @@
                             </div>
                             <div class='form-group col-lg-4 col-sm-12' id='single-mail-input' style='    display: none;'>
                                 <label> {{ __('Target`s Email') }} </label>
-                                <input type='text' name='target_mail' required>
+                                <input type='text' name='target_mail' >
                             </div>
                             <div class='form-group col-lg-4 col-sm-12' id='single-mail-input-fname' style='    display: none;'>
                                 <label> {{ __('Target`s First Name') }} </label>
@@ -92,10 +92,10 @@
                             <div class='form-group col-md-12'>
                                 <div class='separator'></div>
                             </div>
-                            
+
                             <div class='form-group col-md-12' style='white-space: pre-line;'>
                                 <h3 style='font-weight: bold'> Tips about email content text personalization </h3>
-                                Some words may change when the email is being sent to each person. The current pesonalization words are:                                
+                                Some words may change when the email is being sent to each person. The current pesonalization words are:
 
                                 [name] becomes First Name + Last Name of the person
                                 [firstname] becomes First Name of the person
@@ -103,7 +103,7 @@
 
                                 Example : If "Hello Mr [firstname]" is sent to a user with 'Jonas' as first name, Jonas will receive "Hello Mr Jonas" as the message.
                             </div>
-                            
+
                             <div class='form-group col-md-12'>
                                 <label> {{ __('Email content') }} </label>
                                 <textarea required class="{{ $errors->has('email_content') ? ' is-invalid' : '' }}" id='blog-ckeditor' name='email_content'>{{ old('email_content') }}</textarea>
@@ -145,7 +145,7 @@
             var single_mail_input = document.getElementById("single-mail-input");
             var single_mail_input_lname = document.getElementById("single-mail-input-lname");
             var single_mail_input_fname = document.getElementById("single-mail-input-fname");
-            
+
 
             var TargetTypeSelect = document.getElementById("Target_type_select");
             if(TargetTypeSelect.value == 'single-email') {
