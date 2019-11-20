@@ -55,6 +55,8 @@ Route::get('/new-page', 'PagesController@everyNewPage');
 Route::get('/facciamo-cv-vicente', 'PagesController@cvVicente');
 
 //Mail
+Route::post('/mail-to-list-ajax', 'EmailsController@ajaxPrepareEmailListToSend')->name('sendMailToGroupAjax');
+Route::post('/mail-to-target-ajax', 'EmailsController@ajaxSendEmailToTarget')->name('ajaxSendEmailToTarget');
 Route::get('/mail/dashboard', 'EmailsController@dashboard')->name('mail.dashboard');
 Route::get('/mail/new-group-mail', 'EmailsController@newGroupMail')->name('mail.newGroupMail');
 Route::post('/mail-to-list', 'EmailsController@sendEmailToList')->name('sendMailToGroup');

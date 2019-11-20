@@ -9,6 +9,96 @@
 @endsection
 
 @section('content')
+    <script>
+        async function sendForm(disparo, form){
+            var _token = $("meta[name='csrf-token']").attr('content');
+
+            $.ajax({
+                type: 'POST',
+                url: '/mail-to-target-ajax',
+                data: { _token:_token , disparo:disparo, form:form },
+            }).done(function(resposta) {
+                console.log(resposta);
+                let res = JSON.parse(resposta);
+                if(res){
+                    window.enviosComSucesso++;
+                } else {
+                    window.enviosComErro++;
+                }
+                return res;
+            }).fail(function() {
+                window.enviosComErro++;
+                return false;
+            }).always(function() {
+                updateEnviosProgressBar();
+            });
+        }
+
+        function updateEnviosProgressBar(){
+            let sucessos = window.enviosComSucesso;
+            let erros = window.enviosComErro;
+            let total = window.enviosTotais;
+
+            if(sucessos + erros == total){
+                let spinner = document.getElementById('enviando');
+                spinner.style.display = 'none';
+                document.getElementById('send-btn').value = 'Send again';
+            }
+
+            let statusLabelSuc = document.getElementById('status-label-success');
+            let statusLabelErr = document.getElementById('status-label-error');
+            let bar = document.getElementById('progress-bar');
+            let barPercent = document.getElementById('progress-percentage');
+
+            statusLabelSuc.innerHTML = '';
+            statusLabelErr.innerHTML = '';
+            statusLabelSuc.innerHTML = '<div>'+sucessos+' of '+(total)+' emails were succesfuly sent'+'</div>';
+            statusLabelErr.innerHTML = '<div>'+erros+' of '+(total)+' emails resulted in error when being sent'+'</div>';
+            let percent = Math.floor(((sucessos+erros)/(total))*100);
+
+            bar.style.width = percent+'%';
+            barPercent.innerHTML = percent+'% sent';
+        }
+
+        $(document).ready(function() {
+            $("form").submit(function(e) {
+                e.preventDefault();
+                var form = $(this);
+                var action = form.attr('action');
+                // console.log(form.serialize());
+
+                let spinner = document.getElementById('enviando');
+                spinner.style.display = 'flex';
+                let statusLabel = document.getElementById('status-label-error');
+                let bar = document.getElementById('progress-bar');
+                let barPercent = document.getElementById('progress-percentage');
+                window.enviosComSucesso = 0;
+                window.enviosComErro = 0;
+
+                $.ajax({
+                    type: 'POST',
+                    url: action,
+                    data : form.serialize()
+                }).done(async function(resposta) {
+                    let res = JSON.parse(resposta);
+                    let sucessos = 0, erros = 0;
+                    window.enviosTotais = res.length;
+                    document.getElementById('sending-status').style.display = 'block';
+                    document.getElementById('send-btn').value = 'Sending...';
+
+                    for(let i = 0; i < res.length; i++){
+                        disparo = res[i];
+                        await sendForm(disparo, form.serialize());
+                    }
+                }).fail(function() {
+                    statusLabel.innerHTML = 'Houve um erro ao tentar obter a lista de contatos.'
+                }).always(function() {
+
+                });
+            });
+        });
+    </script>
+
     <div class='container dashboard'>
         <div class='row criador-breadcrumb'>
             <h1 style='color: black;'>
@@ -20,7 +110,7 @@
         </div>
 
         <div class='w-100 criador-form'>
-            <form class='w-100' method="POST" action="{{route('sendMailToGroup')}}" enctype="multipart/form-data">
+            <form class='w-100' method="POST" id='email-form' action="{{route('sendMailToGroupAjax')}}" enctype="multipart/form-data">
                 {{ csrf_field() }}
 
                 <div class="bd-example bd-example-tabs w-100">
@@ -128,7 +218,26 @@
                             </div>
 
                             <div class='form-group w-100'>
-                                <input type='submit' class='my-btn save' value='Send'>
+                                <input type='submit' class='my-btn save' id='send-btn' value='Send'>
+
+                                <div class='progress-bar-container w-100' id='sending-status' style='display: none;'>
+
+                                    <div class='progress-bar-bg' style='margin-top: 32px;'>
+                                        <div id='progress-percentage'> 0% </div>
+                                        <div class="progress" style='height: 100%'>
+                                            <div id='progress-bar' class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                                        </div>
+                                    </div>
+                                    <div id='status-label'  style='margin-top: 8px;'>
+                                        <button type="button" class="btn btn-success" id='status-label-success'></button>
+                                        <button type="button" class="btn btn-danger" id='status-label-error'></button>
+                                    </div>
+                                    <div class='w-100' style='display: flex; justify-content: center; margin-top: 16px;'>
+                                        <div class="spinner-border text-primary" role="status" id='enviando' style='display: none;'>
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
