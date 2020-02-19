@@ -27,9 +27,33 @@
                     ['img' => 'img/site/about/Foto-Claudia-Pirozzi.jpg', 'text' => 'Docente e Traduttrice freelance di Inglese tecnico, laureata a pieni voti in Mediazione Linguistica e Culturale inglese/spagnolo presso la Facoltà per Interpreti e Traduttori dell’attuale Università degli Studi Internazionali di Roma, con esperienza decennale nell’insegnamento dell’Inglese marittimo presso i maggiori centri di addestramento e formazione marittima in Napoli e provincia.'],
 
                     ['style' => 'background-size: cover; background-position-y: 0;','img' => 'img/site/about/salvatore.jpg', 'text' => 'Salvatore Smelzo. Diplomato in Ragioneria 96/100. Amministratore e Contabile della gestione clienti del progetto SOGNIAMO IN GRANDE. Impegnato da anni in progetti umanitari senza scopo di lucro. Il suo entusiasmo e la sua competenza nella gestione e organizzazione di nuovi  progetti è stata fondamentale per il progetto SOGNIAMO IN GRANDE.'],
+
                     //Emanuele
-                    ['img' => 'img/site/about/Emanuele.jpg', 'text' => "Allievo Ufficiale di Coperta diplomato con 100/100 presso ITN Giorgio La Pira di Pozzallo. Prossimo all'abilitazione del titolo professionale Ufficiale di Navigazione. Responsabile della sessione Comunicazione e Marketing del progetto SOGNIAMO IN GRANDE, nonché promotore di iniziative, rubriche e social network."],
-                    ['style' => 'background-size: cover;', 'img' => 'img/site/about/Huras.jpg', 'text' => "Sviluppatore web e capo dipartimento IT di SOGNIAMO IN GRANDE, laureato in informatica nell'università brasiliana UFSJ. Sviluppatore Full Stack dal Brasile con esperienza in Machine Learning e Web Marketing."],
+                    [
+                        'img' => 'img/site/about/Emanuele.jpg',
+                        'text' => "Terzo Ufficiale di Coperta, diplomato al Nautico G. La Pira di Pozzallo con 100/100. Con il suo carisma e la sua energia dirige e gestisce tutta la sessione Marketing, iniziative e rubriche di SOGNIAMO IN GRANDE."
+                    ],
+
+                    // [
+                    //     'style' => 'background-size: cover;',
+                    //     'img' => 'img/site/about/Huras.jpg',
+                    //     'text' => "Sviluppatore web e capo dipartimento IT di SOGNIAMO IN GRANDE, laureato in informatica nell'università brasiliana UFSJ. Sviluppatore Full Stack dal Brasile con esperienza in Machine Learning e Web Marketing."
+                    // ],
+
+                    // Eu
+                    [
+                        'style' => 'background-size: cover;',
+                        'img' => 'img/site/about/Huras.jpg',
+                        'text' => "Sviluppatore web e capo dipartimento IT di SOGNIAMO IN GRANDE, laureato in informatica nell'università brasiliana UFSJ. Sviluppatore Full Stack dal Brasile con esperienza in Machine Learning e Web Marketing."
+                    ],
+
+                    // Serena Giannone
+                    [
+                        'style' => 'background-size: cover;',
+                        'img' => 'img/site/about/Serena Giannone.jpg',
+                        'text' => "Serena Giannone. Diplomata come Perito Informatico nel 2016, da anni si occupa della contabilità e gestione aziendale. Entra a far parte nel progetto SOGNIAMO IN GRANDE come social media manager grazie alla sua collaborazione ed esperienza aziendale."
+                    ],
+
 
                     ['img' => '', 'text' => '', 'isModel' => true],
                     ['img' => '', 'text' => '', 'isModel' => true]
