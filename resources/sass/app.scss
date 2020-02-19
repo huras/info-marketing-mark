@@ -1,26 +1,26 @@
-
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
 //Imports
-@import 'home';
-@import 'header';
-@import 'footer';
-@import 'blog';
-@import 'general';
-@import 'criador';
-@import 'about-us';
-@import 'videos';
-@import 'free_webinar';
-@import 'layout2/home';
+@import "home";
+@import "header";
+@import "footer";
+@import "blog";
+@import "general";
+@import "criador";
+@import "about-us";
+@import "videos";
+@import "free_webinar";
+@import "layout2/home";
+@import "app/main.scss";
 
 .navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }

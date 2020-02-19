@@ -95,4 +95,4 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 
-Route::get('/homa', 'HomeController@index');
+Route::get('/homa', 'HomeController@index');Route::get('/app', 'AplicativoController@login');
