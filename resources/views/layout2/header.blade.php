@@ -29,23 +29,23 @@
       <?php
         $menus = [
           [
-            'label' => 'HOME',
+            'label' => 'Home',
             'link' => '/'
           ],
           [
-            'label' => 'ABOUT US',
+            'label' => 'Chi siamo',
             'link' => '/about'
           ],
           [
-            'label' => 'WEBINAR',
+            'label' => 'Corso',
             'link' => 'https://www.sogniamoingrande.info/webinar-gratuito'
           ],
           [
-            'label' => 'BLOG',
+            'label' => 'Blog',
             'link' => '/blog'
           ],
           [
-            'label' => 'CONTACT US',
+            'label' => 'Contatti',
             'link' => '/contact'
           ]
         ];
