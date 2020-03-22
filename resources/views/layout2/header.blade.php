@@ -14,7 +14,7 @@
   <div class='row w-100'>
     <div class='logo col-xl-6 col-lg-12'>
         <a href='/' class='naked-link'>
-            <img src='/img/site/Logo top.jpg'>
+            <img src='/img/site/Logo top trans.png'>
         </a>
         <div class='dflex'>
             <a href='/' class='nome-grande naked-link'>

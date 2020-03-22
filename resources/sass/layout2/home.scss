@@ -79,7 +79,8 @@
 .layout2-home .yellow_btn_modal {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
+    // background-color: rgba(0, 0, 0, 0.9);
+    background-color: #323479;
     position: fixed;
     z-index: 6;
     top: 0;
@@ -230,7 +231,7 @@
     align-items: center;
     padding: 8px 64px;
 
-    background-color: black;
+    background-color: #323479;
 
     @media (max-width: 425px) {
         padding: 32px 0px;
@@ -547,38 +548,38 @@
             background: -moz-linear-gradient(
                 left,
                 rgba(33, 71, 99, 0.1) 0%,
-                rgba(33, 71, 99, 1) 47%,
+                #323479 47%,
                 rgba(33, 71, 99, 0.1) 100%
             );
             background: -webkit-gradient(
                 left top,
                 right top,
                 color-stop(0%, rgba(33, 71, 99, 0.1)),
-                color-stop(47%, rgba(33, 71, 99, 1)),
+                color-stop(47%, #323479),
                 color-stop(100%, rgba(33, 71, 99, 0.1))
             );
             background: -webkit-linear-gradient(
                 left,
                 rgba(33, 71, 99, 0.1) 0%,
-                rgba(33, 71, 99, 1) 47%,
+                #323479 47%,
                 rgba(33, 71, 99, 0.1) 100%
             );
             background: -o-linear-gradient(
                 left,
                 rgba(33, 71, 99, 0.1) 0%,
-                rgba(33, 71, 99, 1) 47%,
+                #323479 47%,
                 rgba(33, 71, 99, 0.1) 100%
             );
             background: -ms-linear-gradient(
                 left,
                 rgba(33, 71, 99, 0.1) 0%,
-                rgba(33, 71, 99, 1) 47%,
+                #323479 47%,
                 rgba(33, 71, 99, 0.1) 100%
             );
             background: linear-gradient(
                 to right,
                 rgba(33, 71, 99, 0.1) 0%,
-                rgba(33, 71, 99, 1) 47%,
+                #323479 47%,
                 rgba(33, 71, 99, 0.1) 100%
             );
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#214763', endColorstr='#214763', GradientType=1 );

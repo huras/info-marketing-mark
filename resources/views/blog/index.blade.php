@@ -81,7 +81,7 @@
     </div>
     <script>
         let demos = document.querySelectorAll('.demonstration');
-        for(let item of demos){
+        for(let item of demos) {
             let str = item.innerText;
             item.innerHTML = str.substr(0, 130) + '...';
         }
