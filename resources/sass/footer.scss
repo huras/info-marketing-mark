@@ -1,32 +1,69 @@
-.footer{
+.footer {
     background-color: #14132d;
     //height: 190px;
     justify-content: flex-start;
-    padding-top: 32px;
+    padding-top: 8px;
     position: relative;
-    
+
     &:before {
         content: "";
         height: 8px;
         position: absolute;
         top: -8px;
         width: 100%;
-        
-        background: rgba(0,85,189,1);
-        background: -moz-linear-gradient(left, rgba(0,85,189,1) 0%, rgba(0,58,127,1) 13%, rgba(0,26,56,1) 28%, rgba(82,158,240,1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,85,189,1)), color-stop(13%, rgba(0,58,127,1)), color-stop(28%, rgba(0,26,56,1)), color-stop(100%, rgba(82,158,240,1)));
-        background: -webkit-linear-gradient(left, rgba(0,85,189,1) 0%, rgba(0,58,127,1) 13%, rgba(0,26,56,1) 28%, rgba(82,158,240,1) 100%);
-        background: -o-linear-gradient(left, rgba(0,85,189,1) 0%, rgba(0,58,127,1) 13%, rgba(0,26,56,1) 28%, rgba(82,158,240,1) 100%);
-        background: -ms-linear-gradient(left, rgba(0,85,189,1) 0%, rgba(0,58,127,1) 13%, rgba(0,26,56,1) 28%, rgba(82,158,240,1) 100%);
-        background: linear-gradient(to right, rgba(0,85,189,1) 0%, rgba(0,58,127,1) 13%, rgba(0,26,56,1) 28%, rgba(82,158,240,1) 100%);
+
+        background: rgba(0, 85, 189, 1);
+        background: -moz-linear-gradient(
+            left,
+            rgba(0, 85, 189, 1) 0%,
+            rgba(0, 58, 127, 1) 13%,
+            rgba(0, 26, 56, 1) 28%,
+            rgba(82, 158, 240, 1) 100%
+        );
+        background: -webkit-gradient(
+            left top,
+            right top,
+            color-stop(0%, rgba(0, 85, 189, 1)),
+            color-stop(13%, rgba(0, 58, 127, 1)),
+            color-stop(28%, rgba(0, 26, 56, 1)),
+            color-stop(100%, rgba(82, 158, 240, 1))
+        );
+        background: -webkit-linear-gradient(
+            left,
+            rgba(0, 85, 189, 1) 0%,
+            rgba(0, 58, 127, 1) 13%,
+            rgba(0, 26, 56, 1) 28%,
+            rgba(82, 158, 240, 1) 100%
+        );
+        background: -o-linear-gradient(
+            left,
+            rgba(0, 85, 189, 1) 0%,
+            rgba(0, 58, 127, 1) 13%,
+            rgba(0, 26, 56, 1) 28%,
+            rgba(82, 158, 240, 1) 100%
+        );
+        background: -ms-linear-gradient(
+            left,
+            rgba(0, 85, 189, 1) 0%,
+            rgba(0, 58, 127, 1) 13%,
+            rgba(0, 26, 56, 1) 28%,
+            rgba(82, 158, 240, 1) 100%
+        );
+        background: linear-gradient(
+            to right,
+            rgba(0, 85, 189, 1) 0%,
+            rgba(0, 58, 127, 1) 13%,
+            rgba(0, 26, 56, 1) 28%,
+            rgba(82, 158, 240, 1) 100%
+        );
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0055bd', endColorstr='#529ef0', GradientType=1 );
     }
 
-    .register{
+    .register {
         margin-top: 24px;
         margin-left: 0;
 
-        .form-holder{
+        .form-holder {
             background-color: #30356d;
             padding: 8px;
             border-radius: 8px;
@@ -34,33 +71,33 @@
             flex-wrap: wrap;
             margin-left: 24px;
 
-            @media(max-width: 425px){
+            @media (max-width: 425px) {
                 margin-left: 16px;
                 margin-right: 16px;
             }
         }
 
-        .form-group{
+        .form-group {
             display: flex;
             flex-wrap: wrap;
 
-            label{
+            label {
                 width: 100%;
                 color: white;
             }
 
-            input[type=text]{
+            input[type="text"] {
                 width: 100%;
                 border-radius: 15px;
                 height: 35px;
                 padding-left: 15px;
 
-                &::placeholder{
+                &::placeholder {
                     color: #575757;
                 }
             }
 
-            .submit-button{
+            .submit-button {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -69,20 +106,20 @@
                 border-radius: 5px;
                 background-color: #151449;
                 cursor: pointer;
-                span{
+                span {
                     color: white;
-                }                
+                }
                 text-align: center;
                 height: 40px;
 
-                &:hover{
+                &:hover {
                     background-color: #1e1d72;
                 }
             }
         }
     }
 
-    .social-nets{
+    .social-nets {
         margin-top: 24px;
         display: flex;
         // flex-direction: column;
@@ -90,70 +127,70 @@
         align-items: center;
     }
 
-    .social-net-icon{
+    .social-net-icon {
         margin: 0px 16px;
-        i{
+        i {
             color: white;
             font-size: 42px;
             // border-radius: 50%;
             // border: 3px solid white;
             padding: 8px;
 
-            @media(max-width: 425px){
+            @media (max-width: 425px) {
                 font-size: 38px;
                 padding: 1px;
             }
 
-            &.fa-instagram{
+            &.fa-instagram {
                 color: #d378fd;
-                &:hover{
+                &:hover {
                     color: #e7b4ff;
                 }
             }
-            &.fa-facebook{
+            &.fa-facebook {
                 color: #787afd;
-                &:hover{
+                &:hover {
                     color: #a2a4fa;
                 }
             }
-            &.fa-youtube{
+            &.fa-youtube {
                 color: #ff8b8b;
-                &:hover{
+                &:hover {
                     color: #fdc5c5;
                 }
             }
         }
     }
 
-    .contacts{
+    .contacts {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 24px;
-        
-        .contact-info{
+
+        .contact-info {
             display: flex;
             align-items: center;
             margin-bottom: 8px;
 
-            i{
+            i {
                 font-size: 42px;
                 color: white;
-                
-                &.fa-whatsapp{
+
+                &.fa-whatsapp {
                     color: #76d871;
 
-                    &:hover{
+                    &:hover {
                         color: #49ec41;
                     }
                 }
-                &.fa-envelope{
+                &.fa-envelope {
                     color: #71c9d8;
                 }
             }
 
-            .value{
+            .value {
                 margin-left: 16px;
                 color: white;
                 font-size: 18px;
@@ -161,19 +198,19 @@
         }
     }
 
-    .infos{
+    .infos {
         justify-content: center;
         align-content: center;
         display: flex;
         flex-direction: column;
 
-        .titulo{
+        .titulo {
             color: white;
             font-size: 18px;
             text-align: center;
             margin-top: 16px;
         }
-        .sub-titulo{
+        .sub-titulo {
             color: white;
             text-align: center;
             font-size: 14px;
