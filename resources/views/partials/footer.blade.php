@@ -6,7 +6,7 @@
                 <a class='social-net-icon' title='faceboook' target='_blank' href='https://www.facebook.com/Sogniamo-in-Grande-278875232794723/'>
                     <i class="fab fa-facebook"></i>
                 </a>
-                <a class='social-net-icon' title='linkedin' target='_blank' href='https://www.linkedin.com/in/sogniamo-in-grande-marco-polito-a94748a7/'>
+                <a class='social-net-icon' title='linkedin' target='_blank' href='https://www.linkedin.com/company/sogniamoingrande/'>
                     <i class="fab fa-linkedin-in"></i>
                 </a>
                 <a class='social-net-icon' title='instagram' target='_blank' href='https://www.instagram.com/sogniamoingrande/'>
