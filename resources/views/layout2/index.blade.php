@@ -44,8 +44,11 @@
 
             <div class='w-100 de-cima'>
                 <div class='laranja-texto animate-on-scroll fadeOut tempo-3-4 delay-1-2' my-animation='fadeIn'>
-                    WELCOME TO OUR PROJECT
+                    <span> Benvenuto Sognatore </span>
                 </div>
+                <small class='laranja-texto animate-on-scroll fadeOut tempo-3-4 delay-1-2 menor' my-animation='fadeIn'>
+                    Costruiamo insieme il tuo futuro
+                </small>
             </div>
 
             <div class='w-100 faixa-transparente de-baixo'>
