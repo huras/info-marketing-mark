@@ -67,7 +67,7 @@
                                 </div>
 
                                 <div class='demonstration'>
-                                    {!!substr($post->call, 0, 100)!!}
+                                    {!!$post->content!!}
                                 </div>
                             </div>
                         </div>
@@ -79,5 +79,12 @@
             </div>
         </div>
     </div>
+    <script>
+        let demos = document.querySelectorAll('.demonstration');
+        for(let item of demos){
+            let str = item.innerText;
+            item.innerHTML = str.substr(0, 130) + '...';
+        }
+    </script>
     @include('partials/footer')
 @endsection
