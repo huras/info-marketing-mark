@@ -1,11 +1,11 @@
-.home-videos{
-    background-color: white!important;
+.home-videos {
+    background-color: white !important;
 
     padding-top: 32px;
 }
 
-.video-list{
-    .title{
+.video-list {
+    .title {
         color: rgb(0, 0, 0);
         font-family: "Ubuntu", sans-serif;
         font-size: 32px;
@@ -14,27 +14,25 @@
         width: calc(100px - 4px);
     }
 
-    iframe{
+    iframe {
         // @media(max-width: 320px){
         //     height: 210px;
         // }
-        @media(max-width: 425px){
+        @media (max-width: 425px) {
             height: calc(168px + 16px);
         }
-        @media(max-width: 768px){
+        @media (max-width: 768px) {
             height: calc(460px + 16px);
         }
-        @media(max-width: 1024px){
+        @media (max-width: 1024px) {
             height: calc(580px + 16px);
         }
-        @media(max-width: 1440px){
+        @media (max-width: 1440px) {
             height: calc(680px + 16px);
         }
     }
 
-    
-
-    .video-slot-separator{
+    .video-slot-separator {
         width: 95%;
         background-color: rgba(50, 51, 59, 0.808);
         height: 1px;
@@ -42,20 +40,24 @@
     }
 }
 
-.social-page{
-    .paralax.n1{
-        height: 2500px!important;
+.social-page {
+    .paralax.n1 {
+        height: 2500px !important;
 
         padding-top: 0px;
         padding-left: 0px;
         padding: 0px 10px;
 
-        @media(max-width:768px){
-            height: 1600px!important;
+        @media (max-width: 768px) {
+            height: 1600px !important;
         }
-        @media(max-width:425px){
-            height: 1100px!important;
+        @media (max-width: 425px) {
+            height: 1100px !important;
             padding: 0px 0px;
         }
+    }
+
+    h1 {
+        color: black;
     }
 }

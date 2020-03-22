@@ -25,7 +25,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,900" rel="stylesheet">
@@ -53,9 +53,10 @@
   <!-- <script src="{{ asset('js/themed-slicks.js') }}"></script> -->
   <!-- <script src="{{ asset('js/select2.min.js') }}"></script> -->
   <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
-  
+
 </head>
-<body class='themed-body' style=' background-image: url( {{ asset("img/site/home-bg-dark.jpg") }} ) '>
+{{-- <body class='themed-body' style=' background-image: url( {{ asset("img/site/home-bg-dark.jpg") }} ) '> --}}
+<body class='themed-body'>
   <div id="fb-root"></div>
   <script async defer src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v3.2&appId=2018338701713124&autoLogAppEvents=1"></script>
 

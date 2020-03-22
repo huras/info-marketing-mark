@@ -14,17 +14,20 @@
                         {{ csrf_field() }}
 
                         <div class='row'>
-                            <div class='col-md-5 field'>
+                            <div class='col-md-12 field'>
                                 <div class='form-group'>
-                                    <input type='text' style='padding-left: 4px;' name='title' placeholder="per cercare..." value='@if(isset($oldQuery["title"])) {{$oldQuery["title"]}} @endif'>
+                                    <div class='input-de-pesquisa'>
+                                        <input type='text' style='padding-left: 4px;' name='title' placeholder="per cercare..." value='@if(isset($oldQuery["title"])) {{$oldQuery["title"]}} @endif'>
+                                        <div class='f-btn std-themed-search' onclick="document.getElementById('post-search').submit();" > <i class='fa fa-search'></i> </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class='col-md-3 buttons'>
+                            {{-- <div class='col-md-3 buttons'>
                                 <div class='form-group wrap' style=' align-items: center; display: flex; height: 100%; padding-top: 15px;'>
                                     <div class='f-btn std-themed-search' onclick="document.getElementById('post-search').submit();" > <i class='fa fa-search'></i> </div>
                                     <a href='/blog' class='f-btn std-themed-clear nlink'> Clear </a>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </form>
                 </div>
@@ -34,7 +37,7 @@
                     </div>
                 @endif
 
-                <div class='blog-posts col-md-12' style='background-color: #040010;'>
+                <div class='blog-posts col-md-12'>
                     @foreach($posts as $post)
                         <?php $data = date_parse($post['created_at']); ?>
 
@@ -44,22 +47,28 @@
                                 <div class='year'> <?= $data['year'] ?> </div>
                             </div>
 
-                            <div class='cover'>
-                                @if(!empty($post->cover))
-                                    @switch($post->cover_type_id)
-                                        @case(1)
-                                            <a href='/post/{{$post->id}}'> <img style='width: 100%; height: auto;' src="{{asset('images/posts/'.$post->id.'/'.$post->cover)}}"> </a>
-                                        @break
-                                        @case(2)
-                                            <iframe width="380" height="250" src="https://www.youtube.com/embed/{{$post->cover}}"> </iframe>
-                                        @break
-                                    @endswitch
-                                @endif
-                            </div>
+                            <div class='blog-readable'>
+                                <div class='readable'>
+                                    <a href='/post/{{$post->id}}' class='title'> {{$post->title}} </a>
+                                    <a href='/post/{{$post->id}}' class='call'> {{$post->call}} </a>
+                                </div>
 
-                            <div class='readable'>
-                                <a href='/post/{{$post->id}}' class='title'> {{$post->title}} </a>
-                                <a href='/post/{{$post->id}}' class='call'> {{$post->call}} </a>
+                                <div class='cover'>
+                                    @if(!empty($post->cover))
+                                        @switch($post->cover_type_id)
+                                            @case(1)
+                                                <a href='/post/{{$post->id}}'> <img style='width: 100%; height: auto;' src="{{asset('images/posts/'.$post->id.'/'.$post->cover)}}"> </a>
+                                            @break
+                                            @case(2)
+                                                <iframe width="380" height="250" src="https://www.youtube.com/embed/{{$post->cover}}"> </iframe>
+                                            @break
+                                        @endswitch
+                                    @endif
+                                </div>
+
+                                <div class='demonstration'>
+                                    {!!substr($post->call, 0, 100)!!}
+                                </div>
                             </div>
                         </div>
                     @endforeach
