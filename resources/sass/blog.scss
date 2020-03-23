@@ -168,6 +168,69 @@
             }
         }*/
     }
+
+    .slot-v2 {
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        cursor: pointer;
+        position: relative;
+
+        .info {
+            width: 100%;
+            margin-bottom: 8px;
+            background-color: #323479d9;
+            color: white;
+
+            padding: 16px 8px;
+
+            .title {
+                text-align: center;
+                line-height: 1.2;
+                margin: 12px 0px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .call {
+                line-height: 1.2;
+                text-align: justify;
+            }
+        }
+
+        .date {
+            font-weight: bold;
+            font-family: sans-serif;
+
+            .day {
+                color: #7c80d8;
+                font-size: 18px;
+            }
+        }
+
+        .show-hover {
+            display: none;
+        }
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            transition: all 0.18s ease-in;
+
+            .show-hover {
+                transition: all 0.18s ease-in;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                max-width: 86%;
+                padding: 4px;
+                top: 8px;
+                background-color: #2d3767;
+                color: white;
+                line-height: 1.3;
+            }
+        }
+    }
 }
 
 .head {
