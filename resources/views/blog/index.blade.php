@@ -99,7 +99,7 @@
                 </div>
                 </div>
 
-                <div style='display: flex; justify-content: center; align-items: center; width: 100%;'>
+                <div style='display: flex; justify-content: center; align-items: center; width: 100%; margin-top: 16px;'>
                     {{ $posts->onEachSide(1)->links() }}
                 </div>
             </div>

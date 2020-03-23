@@ -177,6 +177,8 @@
         align-items: flex-end;
         cursor: pointer;
         position: relative;
+        background-size: cover;
+        background-position: center;
 
         .info {
             width: 100%;
