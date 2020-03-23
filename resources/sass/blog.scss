@@ -183,7 +183,7 @@
         .info {
             width: 100%;
             margin-bottom: 8px;
-            background-color: #323479d9;
+            background-color: #1a3e61d9;
             color: white;
 
             padding: 16px 8px;
@@ -221,16 +221,24 @@
             transition: all 0.18s ease-in;
 
             .show-hover {
+                opacity: 0.1;
                 transition: all 0.18s ease-in;
                 display: flex;
                 flex-direction: column;
                 position: absolute;
-                max-width: 86%;
+                max-width: 100%;
+                height: 100%;
                 padding: 4px;
-                top: 8px;
+                top: 16px;
                 background-color: #2d3767;
                 color: white;
                 line-height: 1.3;
+
+                &:hover {
+                    top: 0px;
+                    opacity: 1;
+                    transition: all 0.3s ease-in;
+                }
             }
         }
     }
