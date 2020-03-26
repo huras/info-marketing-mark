@@ -46,9 +46,6 @@
                 <div class='laranja-texto animate-on-scroll fadeOut tempo-3-4 delay-1-2' my-animation='fadeIn'>
                     <span> Benvenuto Sognatore </span>
                 </div>
-                <small class='laranja-texto animate-on-scroll fadeOut tempo-3-4 delay-1-2 menor' my-animation='fadeIn'>
-                    Costruiamo insieme il tuo futuro
-                </small>
             </div>
 
             <div class='w-100 faixa-transparente de-baixo'>

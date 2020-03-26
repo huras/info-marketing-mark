@@ -347,8 +347,10 @@
         .nome-pequeno {
             line-height: 1;
             color: white;
-            font-size: 24px;
+            font-size: 18px;
             margin-top: 8px;
+            text-align: center;
+            display: flex;
 
             @media (max-width: 425px) {
                 text-align: center;
@@ -464,7 +466,7 @@
                 }
 
                 @media (max-width: 768px) {
-                    top: 64px;
+                    top: 95px;
                 }
             }
 
@@ -477,58 +479,6 @@
 
                 @media (max-width: 425px) {
                     bottom: 100px;
-                }
-            }
-        }
-
-        .laranja-texto {
-            font-size: 72px;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor: default;
-            //color: #ed7d31;
-
-            font-size: 72px;
-            background: -webkit-linear-gradient(
-                rgba(255, 226, 110, 1) 0%,
-                rgba(252, 205, 77, 1) 50%,
-                rgba(248, 181, 0, 1) 51%,
-                rgba(255, 234, 0, 1) 100%
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-
-            font-family: sans-serif;
-            //text-shadow: -3px 3px ;
-
-            &.menor {
-                font-size: 32px;
-            }
-
-            @media (max-width: 1024px) {
-                font-size: 60px;
-                text-align: center;
-            }
-
-            @media (max-width: 425px) {
-                font-size: 36px;
-                text-align: center;
-                line-height: 1.2;
-                margin-bottom: 32px;
-
-                &.menor {
-                    font-size: 18px;
-                }
-            }
-
-            @media (max-width: 320px) {
-                font-size: 28px;
-                text-align: center;
-                line-height: 1.2;
-                margin-bottom: 32px;
-
-                &.menor {
-                    font-size: 16px;
                 }
             }
         }
@@ -776,6 +726,65 @@
                 // border: 6px solid rgb(127, 96, 0);
                 text-decoration: none;
             }
+        }
+    }
+}
+
+.laranja-texto {
+    font-size: 72px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: default;
+    //color: #ed7d31;
+
+    font-size: 72px;
+    background: -webkit-linear-gradient(
+        rgba(255, 226, 110, 1) 0%,
+        rgba(252, 205, 77, 1) 50%,
+        rgba(248, 181, 0, 1) 51%,
+        rgba(255, 234, 0, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: sans-serif;
+    //text-shadow: -3px 3px ;
+
+    &.menor {
+        font-size: 21px;
+        margin-bottom: 0px;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 36px;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 32px;
+
+        &.menor {
+            font-size: 18px;
+
+            width: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 320px) {
+        font-size: 28px;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 32px;
+
+        &.menor {
+            font-size: 16px;
         }
     }
 }

@@ -23,6 +23,9 @@
             <a href='/' class='nome-pequeno naked-link'>
                 Formazione e orientamento al settore Marittimo
             </a>
+            <small class='laranja-texto animate-on-scroll fadeOut tempo-3-4 delay-1-2 menor' my-animation='fadeIn'>
+                Costruiamo insieme il tuo futuro
+            </small>
         </div>
     </div>
     <?php
