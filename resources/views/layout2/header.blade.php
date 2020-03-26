@@ -25,8 +25,7 @@
             </a>
         </div>
     </div>
-    <div class='site-navbar col-xl-6 col-lg-12'>
-      <?php
+    <?php
         $menus = [
           [
             'label' => 'Home',
@@ -50,11 +49,10 @@
           ]
         ];
       ?>
-
-      <div class='menu-opener mobile-only' onclick='open_mobile_menu({{count($menus)}})'>
+    <div class='menu-opener mobile-only' onclick='open_mobile_menu({{count($menus)}})'>
         <i class='fa fa-bars'></i>
       </div>
-
+    <div class='site-navbar col-xl-6 col-lg-12'>
       @foreach($menus as $key => $menu)
         <a class='menu-item desktop-only' href='{{$menu["link"]}}'>
           {{$menu["label"]}}
