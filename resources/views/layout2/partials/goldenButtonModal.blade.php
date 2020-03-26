@@ -26,7 +26,7 @@
             console.log("O cookie");
             console.log(getCookie("showYellowButtonModal"));
             if (!getCookie("showYellowButtonModal")){
-                setTimeout(showYellowButtonModal, <?php if(isset($delay)) { echo $delay * 1000; } else { echo '8000'; } ?>);
+                setTimeout(showYellowButtonModal, <?php if(isset($delay)) { echo $delay * 1000; } else { echo '60000'; } ?>);
             }
         }
         autoYellowButtonModalRoutine();
