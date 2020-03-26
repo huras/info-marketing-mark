@@ -21,6 +21,7 @@
     <meta property="og:title" content="Sogniamo in Grande">
     <meta property="og:site_name" content="Sogniamo in Grande">
     <meta property="og:description" content="Maritime training and orientation">
+    <meta name="theme-color" content="#1a3e61" />
   @endif
 
   <meta charset="utf-8">
