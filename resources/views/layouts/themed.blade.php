@@ -21,9 +21,14 @@
     <meta property="og:title" content="Sogniamo in Grande">
     <meta property="og:site_name" content="Sogniamo in Grande">
     <meta property="og:description" content="Maritime training and orientation">
-    <meta name="theme-color" content="#1a3e61" />
   @endif
 
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#1a3e61">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#1a3e61">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#1a3e61">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
