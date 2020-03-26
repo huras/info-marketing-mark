@@ -26,6 +26,12 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#1a3e61">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#1a3e61">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#1a3e61">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,400,700" rel="stylesheet">
