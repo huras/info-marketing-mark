@@ -40,7 +40,7 @@
           ],
           [
             'label' => 'Corso',
-            'link' => 'https://www.sogniamoingrande.info/coursi'
+            'link' => 'https://www.sogniamoingrande.info/corsi'
           ],
           [
             'label' => 'Blog',
