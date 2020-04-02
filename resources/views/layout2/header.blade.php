@@ -40,7 +40,7 @@
           ],
           [
             'label' => 'Corso',
-            'link' => 'https://www.sogniamoingrande.info/webinar-gratuito'
+            'link' => 'https://www.sogniamoingrande.info/coursi'
           ],
           [
             'label' => 'Blog',
