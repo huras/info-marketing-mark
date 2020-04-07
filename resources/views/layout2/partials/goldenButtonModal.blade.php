@@ -52,8 +52,8 @@
 
             @csrf
             <div class='textao'>SOGNIAMO IN GRANDE</div>
-            <div class='texto-azul'> Iscriviti per assistere al WEBINAR Gratuito dove comprenderai come applicare candidature vincenti per compagnie internazionali. </div>
-            <div class='texto-branco'> Inoltre, SEMPRE GRATIS, potrai scaricare il tuo <b> Ebook </b> con la lista di tutte le compagnie di Crociera presenti sul mercato.</div>
+            <div class='texto-azul'> Iscriviti per rimanere aggiornato sulle opportunità lavorative e su tutte le novità dei corsi di formazione online. </div>
+            <div class='texto-branco'> Partecipa gratuitamente ai primi moduli del progetto Sogniamo in Grande per creare il tuo profilo professionale. </div>
             <input type='text' name='first_name'  placeholder='Nome e Cognome' value='{{old("first_name")}}'>
             @if($errors->has('first_name'))
                 <div class="mensagem-de-erro">
