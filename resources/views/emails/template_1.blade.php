@@ -9,7 +9,7 @@
                 font-size: 28.0pt;
                 font-family: "Calibri Light",sans-serif;
                 letter-spacing: -.5pt;
-                
+
                 text-align: center; */
             }
             .a1 a{
@@ -41,7 +41,7 @@
         <table style="width:100; border-collapse: collapse; padding: 32px;">
             <tr>
                 <td style='background-color: #05406c; text-align: center; border: 0;'>
-                    <a href='http://www.sogniamoingrande.it/admin/subscriptions'>
+                    <a href='http://www.sogniamoingrande.it/'>
                         <img src='http://www.sogniamoingrande.it/img/site/logo.jpg' style='max-height: 150px;'>
                     </a>
                 </td>
@@ -50,10 +50,10 @@
                 <td class='a1 blue-td' style='font-size: 20px; white-space: pre-line!important;'>
                     {!!$content!!}
                 </td>
-            </tr>            
+            </tr>
             <tr>
-                <td class='a1 blue-td' style='text-align: center; padding-bottom: 48px; font-size: 24px;'>     
-                    <a class='site-link' href='http://www.sogniamoingrande.it/admin/subscriptions'> sogniamoingrande.it </a>
+                <td class='a1 blue-td' style='text-align: center; padding-bottom: 48px; font-size: 24px;'>
+                    <a class='site-link' href='http://www.sogniamoingrande.it/'> sogniamoingrande.it </a>
                 </td>
             </tr>
         </table>
