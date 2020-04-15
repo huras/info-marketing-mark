@@ -43,8 +43,9 @@ Route::get('/post/{id}', 'PagesController@post');
 Route::get('/about', 'PagesController@about');
 Route::get('/social', 'PagesController@social');
 Route::get('/blog', 'PagesController@blog');
+Route::post('/blog', 'PagesController@blog');
 Route::get('/video', 'PagesController@video');
-Route::post('/blog', 'BlogController@blog');
+
 
 Route::get('/webinar-gratis', 'PagesController@WebinarGratis');
 Route::get('/webinar-gratis-2', 'PagesController@WebinarGratis2');

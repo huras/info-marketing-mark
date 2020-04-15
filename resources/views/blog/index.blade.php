@@ -33,7 +33,8 @@
                 </div>
                 @if(isset($oldQuery["title"]))
                     <div class='blog-posts col-md-12' style='background-color: #040010; color: white; font-size: 16px; padding: 8px 16px; text-align: center;'>
-                        Your search returned <?= count($posts); ?> result<?php if(count($posts)>1) echo 's'; ?>
+                        <?php /* Your search returned <?= count($posts); ?> result<?php if(count($posts)>1) echo 's'; ?> */ ?>
+                        La tua ricerca ha prodotto <?= count($posts); ?> risultati
                     </div>
                 @endif
 
@@ -43,7 +44,8 @@
 
                         <div class='col-lg-3 col-md-6 col-sm-12'>
                             <div onclick="window.location = '/post/{{$post->id}}';">
-                                <div class='slot-v2' style="background-image: url({{asset('images/posts/'.$post->id.'/'.$post->cover)}});">
+                                <div class='slot-v2' style="@if($post->cover_type_id == 1) background-image: url({{asset('images/posts/'.$post->id.'/'.$post->cover)}} @else background-color: #1a3e61;
+                                    background-position-y: -90px; background-image: url({{asset('img/site/logo_2.png')}} @endif);">
                                     <div class='show-hover'>
                                         <div class='demonstration'>
                                             {!!$post->content!!}
