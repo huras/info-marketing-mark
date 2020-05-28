@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/fonts', function(){
+Route::get('/fonts', function () {
     return view('layouts/layout/fonts');
 });
 
@@ -17,11 +17,13 @@ Route::get('/fonts', function(){
 
 Auth::routes();
 
+Route::get('/divisao-2-kart', 'TestsController@kartGame');
+
 Route::get('/test-email-layout', 'TestsController@emailLayout');
 Route::get('/test-email-sending', 'TestsController@emailSend');
 //Automail
 Route::get('/automail-routine', 'AutomailController@autosend');
-Route::group(['prefix' => 'automail'], function () {    
+Route::group(['prefix' => 'automail'], function () {
     Route::get('/list', 'AutomailController@listAutomail')->name('automail.list');
     Route::get('/new', 'AutomailController@newAutomail')->name('automail.new');
     Route::get('/activate/{id}', 'AutomailController@activate')->name('automail.activate');
@@ -30,7 +32,7 @@ Route::group(['prefix' => 'automail'], function () {
     Route::get('/destroy/{id}', 'AutomailController@destroy')->name('automail.destroy');
 });
 
-Route::group(['prefix' => 'newlayout'], function () { 
+Route::group(['prefix' => 'newlayout'], function () {
     Route::get('home', 'PagesController2@index')->name('newlayout.index');
 });
 
@@ -78,13 +80,13 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/dashboard', 'CriadorController@dashboard');
     Route::get('/home-dashboard', 'CriadorController@home_dashboard');
     Route::get('/home-dashboard/bigMosaic', 'CriadorController@bigMosaic');
-    
+
     Route::get('/contacts', 'ContactsController@list');
     Route::get('/contact/view/{id}', 'ContactsController@view');
     Route::get('/contact/destroy/{id}', 'ContactsController@destroy');
-    
+
     Route::get('/subscriptions', 'CriadorController@subscriptions');
-    
+
     Route::get('/blog', 'BlogController@list');
     Route::get('/blog/new', 'BlogController@new');
     Route::post('/blog/create', 'BlogController@create');
@@ -96,4 +98,5 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 
-Route::get('/homa', 'HomeController@index');Route::get('/app', 'AplicativoController@login');
+Route::get('/homa', 'HomeController@index');
+Route::get('/app', 'AplicativoController@login');
